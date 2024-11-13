@@ -14,6 +14,11 @@ Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Cultural Artefact Contextual Ontology")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000003>))
+Declaration(AnnotationProperty(dcterms:contributor))
+Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -33,6 +38,32 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000000> (Campaign)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000000> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000000> "2024-11-13T16:17:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000000> "Campaign"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000000> <http://www.cidoc-crm.org/cidoc-crm/E5_Event>)
+
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000002> (User)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000002> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000002> "2024-11-13T16:18:33Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000002> "User"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000002> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000003> (Digital Artefact)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000003> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000003> "2024-11-13T16:20:05Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000003> "Digital Artefact"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000003> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>)
 
 
 )

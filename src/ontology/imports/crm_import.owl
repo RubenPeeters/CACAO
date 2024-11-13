@@ -11,7 +11,12 @@ Ontology(<http://purl.obolibrary.org/obo/cacao/imports/crm_import.owl>
 Annotation(owl:versionInfo "2024-11-13")
 
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E21_Person>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object>))
@@ -29,6 +34,7 @@ Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E74_Group>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume>))
@@ -73,6 +79,39 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> "实物"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object>)
 
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> (E19 Materieller Gegenstand)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Scope note:
+This class comprises items of a material nature that are units for documentation and have physical boundaries that separate them completely in an objective way from other objects. 
+The class also includes all aggregates of objects made for functional purposes of whatever kind, independent of physical coherence, such as a set of chessmen. Typically, instances of E19 Physical Object can be moved (if not too heavy).
+In some contexts, such objects, except for aggregates, are also called “bona fide objects”, i.e. naturally defined objects (Smith & Varzi, 2000). 
+The decision as to what is documented as a complete item, rather than by its parts or components, may be purely administrative or may be a result of the order in which the item was acquired.
+
+Examples:
+- Aphrodite of Milos (E22) (Kousser, 2005)
+- the Cullinan Diamond (Scarratt and Shor, 2006)
+- Apollo 13 at the time of launch (E22) (Lovell and Kluger, 1994)
+
+In First Order Logic:
+- E19(x) ⇒ E18(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 Materieller Gegenstand"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 Objet matériel"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 Objeto Material"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 Physical Object"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 Υλικό Αντικείμενο"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 Матeриальный Объeкт"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 物质对象"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Materieller Gegenstand"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Objet matériel"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Objeto Material"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Physical Object"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Υλικό Αντικείμενο"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Матeриальный Объeкт"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "物质对象"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>)
+
 # Class: <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> (E1 CRM实体)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> "Scope note:
@@ -104,6 +143,128 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> "Entidade CRM"@pt)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> "Entité CRM"@fr)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> "Οντότητα CIDOC CRM"@el)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> (E20 Βιολογικό Ακτικείμενο)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "Scope note:
+This class comprises individual items of a material nature, which live, have lived, or are natural products of or from living organisms. 
+Artificial objects that incorporate biological elements, such as Victorian butterfly frames, can be documented as both instances of E20 Biological Object and E22 Human-Made Object.
+
+Examples:
+- me (fictitious)
+- Tut-Ankh-Amun (Edwards and Boltin, 1979)
+- Boukephalus [Horse of Alexander the Great] (Lamb, 2005)
+- petrified dinosaur excrement PA1906-344
+
+In First Order Logic:
+- E20(x) ⇒ E19(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "E20 Biological Object"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "E20 Biologischer Gegenstand"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "E20 Objet biologique"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "E20 Objeto Biológico"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "E20 Βιολογικό Ακτικείμενο"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "E20 Биологичeский Объeкт"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "E20 生物对象"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "E20"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "Biological Object"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "Biologischer Gegenstand"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "Objet biologique"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "Objeto Biológico"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "Βιολογικό Ακτικείμενο"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "Биологичeский Объeкт"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> "生物对象"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E21_Person> (E21 Person)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "Scope note:
+This class comprises real persons who live or are assumed to have lived. 
+Legendary figures that may have existed, such as Ulysses and King Arthur, fall into this class if the documentation refers to them as historical figures. In cases where doubt exists as to whether several persons are in fact identical, multiple instances can be created and linked to indicate their relationship. The CIDOC CRM does not propose a specific form to support reasoning about possible identity.
+In a bibliographic context, a name presented following the conventions usually employed for personal names will be assumed to correspond to an actual real person (an instance of E21 Person), unless evidence is available to indicate that this is not the case. The fact that a persona may erroneously be classified as an instance of E21 Person does not imply that the concept comprises personae.
+
+Examples:
+- Tut-Ankh-Amun (Edwards and Boltin, 1979)
+- Nelson Mandela (Brown and Hort, 2006)
+
+In First Order Logic:
+- E21(x) ⇒ E20(x)
+- E21(x) ⇒ E39(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "E21 Person"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "E21 Person"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "E21 Personne"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "E21 Pessoa"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "E21 Πρόσωπο"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "E21 Личность"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "E21 人物"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "E21"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "Person"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "Person"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "Personne"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "Pessoa"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "Πρόσωπο"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "Личность"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> "人物"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object>)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> (E22 Human-Made Object)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "Scope note:
+This class comprises all persistent physical objects of any size that are purposely created by human activity and have physical boundaries that separate them completely in an objective way from other objects. 
+The class also includes all aggregates of objects made for functional purposes of whatever kind, independent of physical coherence, such as a set of chessmen.
+
+Examples:
+- the Rosetta Stone (E22)
+- LNER Class A4 4468 Mallard [the World’s fastest steam locomotive, preserved at the National Railway Museum of York, UK] (Solomon, 2003)
+- the Portland Vase (Walker, 2004)
+
+In First Order Logic:
+- E22(x) ⇒ E19(x)
+- E22(x) ⇒ E24(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "E22 Human-Made Object"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "E22 Objet élaboré par l’humain"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "E22 Рукотворный Объeкт"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "E22"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "Human-Made Object"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "Objet élaboré par l’humain"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "Рукотворный Объeкт"@ru)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object>)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> (E24 Physical Human-Made Thing)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "Scope note:
+This class comprises all persistent physical items of any size that are purposely created by human activity. This class comprises, besides others, human-made objects, such as a sword, and human-made features, such as rock art. For example, a “cup and ring” carving on bedrock is regarded as instance of E24 Physical Human-Made Thing.
+Instances of E24 Physical Human-Made Thing may be the result of modifying pre-existing physical things, preserving larger parts or most of the original matter and structure, which poses the question if they are new or even human-made, the respective interventions of production made on such original material should be obvious and sufficient to regard that the product has a new, distinct identity and intended function and is human-made. Substantial continuity of the previous matter and structure in the new product can be documented by describing the production process also as an instance of E81 Transformation.
+Whereas interventions of conservation and repair are not regarded to produce a new instance of E24 Physical Human-Made Thing, the results of preparation of natural history specimens that substantially change their natural or original state should be regarded as instances of E24 Physical Human-Made Things, including the uncovering of petrified biological features from a solid piece of stone. On the other side, scribbling a museum number on a natural object should not be regarded to make it human-made. This notwithstanding, parts, sections, segments, or features of an instance of E24 Physical Human-Made Thing may continue to be non-human-made and preserved during the production process, for example natural pearls used as a part of an eardrop.
+
+Examples:
+- the Forth Railway Bridge (Shipway, Bouch, Baker and Fowler, 1990).
+- the Channel Tunnel (E25) (Holliday, Marcou and Vickerman, 1991)
+- the Palace of Knossos (Evans, 1921)
+- the Colosseum in Rome, Italy (Hopkins and Beard, 2011)
+- the Historical Collection of the Museum Benaki in Athens (E78) (Georgoula, 2005)
+- the Rosetta Stone (E22)
+- my paperback copy of Crime & Punishment (E22) (fictitious)
+- the computer disk at ICS-FORTH that stores the canonical Definition of the CIDOC CRM v.3.2 (E22)
+- my empty DVD disk (E22) (fictitious)
+
+In First Order Logic:
+- E24(x) ⇒ E18(x)
+- E24(x) ⇒ E71(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "E24 Chose matérielle élaborée par l’humain"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "E24 Physical Human-Made Thing"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "E24 Матeриальный Рукотворный Объeкт"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "E24"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "Chose matérielle élaborée par l’humain"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "Physical Human-Made Thing"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "Матeриальный Рукотворный Объeкт"@ru)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing>)
 
 # Class: <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> (E28 Objeto Conceitual)
 
@@ -437,7 +598,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "类型"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E55_Type> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E57_Material> (E57 Матeриал)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E57_Material> (E57 Material)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "Scope note:
 This class is a specialization of E55 Type and comprises the concepts of materials. 
@@ -472,7 +633,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "材质"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E57_Material> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E5_Event> (E5 Ereignis)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E5_Event> (E5 Συμβάν)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "Scope note:
 This class comprises distinct, delimited and coherent processes and interactions of a material nature, in cultural, social or physical systems, involving and affecting instances of E77 Persistent Item in a way characteristic of the kind of process. Typical examples are meetings, births, deaths, actions of decision taking, making or inventing things, but also more complex and extended ones such as conferences, elections, building of a castle, or battles.
@@ -711,6 +872,31 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> "Постоянная Сущность"@ru)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> "持久项"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> (E78 Отвeтствeнноe Хранeниe)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> "Scope note:
+This class comprises aggregations of instances of E18 Physical Thing that are assembled and maintained (“curated” and “preserved,” in museological terminology) by one or more instances of E39 Actor over time for a specific purpose and audience, and according to a particular collection development plan. Typical instances of curated holdings are museum collections, archives, library holdings and digital libraries. A digital library is regarded as an instance of E18 Physical Thing because it requires keeping physical carriers of the electronic content.
+Items may be added or removed from an E78 Curated Holding in pursuit of this plan. This class should not be confused with the E39 Actor maintaining the E78 Curated Holding who is often referred to using the name of the E78 Curated Holding (e.g. “The Wallace Collection decided…”). 
+Collective objects in the general sense, like a tomb full of gifts, a folder with stamps, or a set of chessmen, should be documented as instances of E19 Physical Object, and not as instances of E78 Curated Holding. This is because they form wholes, either because they are physically bound together or because they are kept together for their functionality.
+
+Examples:
+- the John Clayton Herbarium (Blake, 1918), (Natural History Museum, 2021)
+- the Wallace Collection (Ingamells, 1990)
+- Mikael Heggelund Foslie’s coralline red algae Herbarium at the Museum of Natural History and Archaeology, Trondheim, Norway (Woelkerling et al., 2005)
+- the Digital Collections of the Munich DigitiZation Center (MDZ) accessible via https://www.digitale-sammlungen.de/ at least in January 2018.
+
+In First Order Logic:
+- E78(x) ⇒ E24(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> "E78 Collection"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> "E78 Curated Holding"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> "E78 Отвeтствeнноe Хранeниe"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> "E78"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> "Collection"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> "Curated Holding"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> "Отвeтствeнноe Хранeниe"@ru)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing>)
 
 # Class: <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> (E89 Propositional Object)
 
