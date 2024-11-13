@@ -1,0 +1,13 @@
+format-version: 1.2
+data-version: cacao/releases/2024-11-13/cacao-simple.owl
+idspace: terms http://purl.org/dc/terms/ 
+ontology: cacao/cacao-simple
+property_value: owl:versionInfo "2024-11-13" xsd:string
+property_value: terms:description "None" xsd:string
+property_value: terms:license https://creativecommons.org/licenses/unspecified
+property_value: terms:title "Cultural Artefact Contextual Ontology" xsd:string
+
+[Term]
+id: CACAO:0000000
+name: root node
+
