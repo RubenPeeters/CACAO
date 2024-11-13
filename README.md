@@ -1,5 +1,5 @@
 
-![Build Status](https://github.com/REEVALUATE/noname/actions/workflows/qc.yml/badge.svg)
+![Build Status](https://github.com/REEVALUATE/cacao/actions/workflows/qc.yml/badge.svg)
 # Cultural Artefact Contextual Ontology
 
 Description: None
@@ -22,7 +22,7 @@ Editors of this ontology should use the edit version, [src/ontology/cacao-edit.o
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/REEVALUATE/noname/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](https://github.com/REEVALUATE/cacao/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 
