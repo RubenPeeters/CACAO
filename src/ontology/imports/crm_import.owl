@@ -11,14 +11,27 @@ Ontology(<http://purl.obolibrary.org/obo/cacao/imports/crm_import.owl>
 Annotation(owl:versionInfo "2024-11-13")
 
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>))
-Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>))
-Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>))
-Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E35_Title>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E39_Actor>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E4_Period>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E53_Place>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E55_Type>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E57_Material>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E5_Event>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E70_Thing>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E74_Group>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#notation>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
 
@@ -60,40 +73,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> "实物"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> (E19 Materieller Gegenstand)
-
-AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Scope note:
-This class comprises items of a material nature that are units for documentation and have physical boundaries that separate them completely in an objective way from other objects. 
-The class also includes all aggregates of objects made for functional purposes of whatever kind, independent of physical coherence, such as a set of chessmen. Typically, instances of E19 Physical Object can be moved (if not too heavy).
-In some contexts, such objects, except for aggregates, are also called “bona fide objects”, i.e. naturally defined objects (Smith & Varzi, 2000). 
-The decision as to what is documented as a complete item, rather than by its parts or components, may be purely administrative or may be a result of the order in which the item was acquired.
-
-Examples:
-- Aphrodite of Milos (E22) (Kousser, 2005)
-- the Cullinan Diamond (Scarratt and Shor, 2006)
-- Apollo 13 at the time of launch (E22) (Lovell and Kluger, 1994)
-
-In First Order Logic:
-- E19(x) ⇒ E18(x)
-"@en)
-AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 Materieller Gegenstand"@de)
-AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 Objet matériel"@fr)
-AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 Objeto Material"@pt)
-AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 Physical Object"@en)
-AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 Υλικό Αντικείμενο"@el)
-AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 Матeриальный Объeкт"@ru)
-AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19 物质对象"@zh)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "E19"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Materieller Gegenstand"@de)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Objet matériel"@fr)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Objeto Material"@pt)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Physical Object"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Υλικό Αντικείμενο"@el)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "Матeриальный Объeкт"@ru)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "物质对象"@zh)
-SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>)
-
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> (E1 Οντότητα CIDOC CRM)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> (E1 CRM实体)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> "Scope note:
 This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model. 
@@ -125,62 +105,411 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> "Entité CRM"@fr)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> "Οντότητα CIDOC CRM"@el)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> (E22 Human-Made Object)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> (E28 Objeto Conceitual)
 
-AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "Scope note:
-This class comprises all persistent physical objects of any size that are purposely created by human activity and have physical boundaries that separate them completely in an objective way from other objects. 
-The class also includes all aggregates of objects made for functional purposes of whatever kind, independent of physical coherence, such as a set of chessmen.
-
-Examples:
-- the Rosetta Stone (E22)
-- LNER Class A4 4468 Mallard [the World’s fastest steam locomotive, preserved at the National Railway Museum of York, UK] (Solomon, 2003)
-- the Portland Vase (Walker, 2004)
-
-In First Order Logic:
-- E22(x) ⇒ E19(x)
-- E22(x) ⇒ E24(x)
-"@en)
-AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "E22 Human-Made Object"@en)
-AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "E22 Objet élaboré par l’humain"@fr)
-AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "E22 Рукотворный Объeкт"@ru)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "E22"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "Human-Made Object"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "Objet élaboré par l’humain"@fr)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> "Рукотворный Объeкт"@ru)
-SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object>)
-SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing>)
-
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> (E24 Physical Human-Made Thing)
-
-AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "Scope note:
-This class comprises all persistent physical items of any size that are purposely created by human activity. This class comprises, besides others, human-made objects, such as a sword, and human-made features, such as rock art. For example, a “cup and ring” carving on bedrock is regarded as instance of E24 Physical Human-Made Thing.
-Instances of E24 Physical Human-Made Thing may be the result of modifying pre-existing physical things, preserving larger parts or most of the original matter and structure, which poses the question if they are new or even human-made, the respective interventions of production made on such original material should be obvious and sufficient to regard that the product has a new, distinct identity and intended function and is human-made. Substantial continuity of the previous matter and structure in the new product can be documented by describing the production process also as an instance of E81 Transformation.
-Whereas interventions of conservation and repair are not regarded to produce a new instance of E24 Physical Human-Made Thing, the results of preparation of natural history specimens that substantially change their natural or original state should be regarded as instances of E24 Physical Human-Made Things, including the uncovering of petrified biological features from a solid piece of stone. On the other side, scribbling a museum number on a natural object should not be regarded to make it human-made. This notwithstanding, parts, sections, segments, or features of an instance of E24 Physical Human-Made Thing may continue to be non-human-made and preserved during the production process, for example natural pearls used as a part of an eardrop.
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "Scope note:
+This class comprises non-material products of our minds and other human produced data that have become objects of a discourse about their identity, circumstances of creation, or historical implication. The production of such information might have been supported by the use of technical devices such as cameras or computers.
+Characteristically, instances of this class are created, invented or thought by someone, and then may be documented or communicated between persons. Instances of E28 Conceptual Object have the ability to exist on more than one particular carrier at the same time, such as paper, electronic signals, marks, audio media, paintings, photos, human memories, etc.
+They cannot be destroyed. They exist as long as they can be found on at least one carrier or in at least one human memory. Their existence ends when the last carrier and the last memory are lost.
 
 Examples:
-- the Forth Railway Bridge (Shipway, Bouch, Baker and Fowler, 1990).
-- the Channel Tunnel (E25) (Holliday, Marcou and Vickerman, 1991)
-- the Palace of Knossos (Evans, 1921)
-- the Colosseum in Rome, Italy (Hopkins and Beard, 2011)
-- the Historical Collection of the Museum Benaki in Athens (E78) (Georgoula, 2005)
-- the Rosetta Stone (E22)
-- my paperback copy of Crime & Punishment (E22) (fictitious)
-- the computer disk at ICS-FORTH that stores the canonical Definition of the CIDOC CRM v.3.2 (E22)
-- my empty DVD disk (E22) (fictitious)
+- Beethoven’s “Ode an die Freude” (Ode to Joy) (E73) (Kershaw, 1999)
+- the definition of “ontology” in the Oxford English Dictionary (E73) (Oxford University Press, 1989)
+- the knowledge about the victory at Marathon carried by the famous runner (E89) (Lagos & Karyanos, 2020)
+- [Explanation note: The following examples illustrate the distinction between a propositional object, its names and its encoded forms. The Maxwell equations (Ball, 1962) are a good example, because they belong to the fundamental laws of physics and their mathematical content yields identical, unambiguous results regardless formulation and encoding.] 
+- “Maxwell equations” (E41) [preferred subject access point from LCSH, http://lccn.loc.gov/sh85082387, accessed 18(th) April 2021. This is only the name for the Maxwell equations as standardized by the Library of Congress and not the equations themselves.]
+- “Equations, Maxwell” (E41) [variant subject access point from LCSH, http://lccn.loc.gov/sh85082387, accessed 18(th) April 2021. This is another name for the equation standardized by the Library of Congress and not the equations themselves.]
+- Maxwell's equations (E89) [This is the propositional content of the equations proper, independent of any particular notation or mathematical formalism.] (Ball, 1962)
+- The encoding of Maxwells equations as in https://upload.wikimedia.org/wikipedia/commons/c/c4/Maxwell%27sEquations.svg (E73) [accessed 18(th) April 2021. This is one possible symbolic encoding of the propositional content of the equations.]
 
 In First Order Logic:
-- E24(x) ⇒ E18(x)
-- E24(x) ⇒ E71(x)
+- E28(x) ⇒ E71(x)
 "@en)
-AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "E24 Chose matérielle élaborée par l’humain"@fr)
-AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "E24 Physical Human-Made Thing"@en)
-AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "E24 Матeриальный Рукотворный Объeкт"@ru)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "E24"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "Chose matérielle élaborée par l’humain"@fr)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "Physical Human-Made Thing"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> "Матeриальный Рукотворный Объeкт"@ru)
-SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>)
-SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing>)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "E28 Begrifflicher Gegenstand"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "E28 Conceptual Object"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "E28 Objet conceptuel"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "E28 Objeto Conceitual"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "E28 Νοητικό Αντικείμενο"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "E28 Концeптуальный Объeкт"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "E28 概念对象"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "E28"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "Begrifflicher Gegenstand"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "Conceptual Object"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "Objet conceptuel"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "Objeto Conceitual"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "Νοητικό Αντικείμενο"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "Концeптуальный Объeкт"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> "概念对象"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> (E2 Temporal Entity)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "Scope note:
+This class comprises all phenomena, such as the instances of E4 Periods and E5 Events, which happen over a limited extent in time. This extent in time must be contiguous, i.e., without gaps. In case the defining kinds of phenomena for an instance of E2 Temporal Entity cease to happen, and occur later again at another time, we regard that the former instance of E2 Temporal Entity has ended and a new instance has come into existence. In more intuitive terms, the same event cannot happen twice.
+In some contexts, such phenomena are also called perdurants. This class is disjoint from E77 Persistent Item and is an abstract class that typically has no direct instances. E2 Temporal Entity is specialized into E4 Period, which applies to a particular geographic area (defined with a greater or lesser degree of precision), and E3 Condition State, which applies to instances of E18 Physical Thing.
+
+Examples:
+- Bronze Age (E4) (Childe, 1963)
+- the earthquake in Lisbon 1755 (E5) (Chester, 2001)
+- the Peterhof Palace near Saint Petersburg being in ruins from 1944 to 1946 (E3) (Maddox, 2015)
+
+In First Order Logic:
+- E2(x) ⇒ E1(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "E2 Entidade Temporal"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "E2 Entité temporelle"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "E2 Geschehendes"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "E2 Temporal Entity"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "E2 Έγχρονη Οντότητα"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "E2 Врeмeнная Сущность"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "E2 时序实体"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "E2"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "Entidade Temporal"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "Entité temporelle"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "Geschehendes"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "Temporal Entity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "Έγχρονη Οντότητα"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "Врeмeнная Сущность"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> "时序实体"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> (E33 Linguistic Object)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "Scope note:
+This class comprises identifiable expressions in natural language or languages. 
+Instances of E33 Linguistic Object can be expressed in many ways: e.g. as written texts, recorded speech, or sign language. However, the CIDOC CRM treats instances of E33 Linguistic Object independently from the medium or method by which they are expressed. Expressions in formal languages, such as computer code or mathematical formulae, are not treated as instances of E33 Linguistic Object by the CIDOC CRM. These should be modelled as instances of E73 Information Object.
+In general, an instance of E33 Linguistic Object may also contain non-linguistic information, often of artistic or aesthetic value. Only in cases in which the content of an instance of E33 Linguistic Object can completely be expressed by a series of binary-encoded symbols, its content may be documented within a respective knowledge base by the property P190 has symbolic content: E62 String. Otherwise, it should be understood as an identifiable digital resource only available independently from the respective knowledge base. 
+In other cases, such as pages of an illuminated manuscript or recordings containing speech in a language supported by a writing system, the linguistic part of the content of an instance of E33 Linguistic Object may be documented within a respective knowledge base in a note by P3 has note: E62 String. Otherwise, it may be described using the property P165 incorporates (is incorporated in): E73 Information Object as a different object with its own identity.
+
+Examples:
+- the text of the Ellesmere Chaucer manuscript (Hilmo, 2019)
+- the lyrics of the song “Blue Suede Shoes” (Cooper, 2008)
+- the text of the “Jabberwocky” by Lewis Carroll (Carroll, 1981)
+- the text of “Doktoro Jekyll kaj Sinjoro Hyde” [an Esperanto translation of Dr. Jekyll and Mr. Hyde]. (Stevenson, Morrison and Mann, 1909)
+- the free dialog in the local dialect recorded in 1958, Telemark, Norway stored on tape or.7-89.s1 (00.15:46-00:34), The Language Collection at the University Library in Bergen, Norway (verified on 2020)
+
+In First Order Logic:
+- E33(x) ⇒ E73(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "E33 Linguistic Object"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "E33 Objet linguistique"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "E33 Objeto Lingüístico"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "E33 Sprachlicher Gegenstand"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "E33 Γλωσσικό Αντικείμενο"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "E33 Лингвистичeский Объeкт"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "E33 语言对象"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "E33"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "Linguistic Object"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "Objet linguistique"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "Objeto Lingüístico"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "Sprachlicher Gegenstand"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "Γλωσσικό Αντικείμενο"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "Лингвистичeский Объeкт"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> "语言对象"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E35_Title> (E35 题名)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "Scope note:
+This class comprises the textual strings that within a cultural context can be clearly identified as titles due to their form. Being a subclass of E41 Appellation, E35 Title can only be used when such a string is actually used as a title of a work, such as a text, an artwork, or a piece of music.
+Titles are proper noun phrases or verbal phrases, and should not be confused with generic object names such as “chair”, “painting”, or “book” (the latter are common nouns that stand for instances of E55 Type). Titles may be assigned by the creator of the work itself, or by a social group.
+This class also comprises the translations of titles that are used as surrogates for the original titles in different social contexts.
+
+Examples:
+- “The Merchant of Venice” (McCullough, 2005)
+- “Mona Lisa” (Mohen, Menu and Mottin, 2006)
+- “La Pie” (Bortolatto, 1981)
+- “Lucy in the Sky with Diamonds” (Lennon, 1967)
+
+In First Order Logic:
+- E35(x) ⇒ E33(x)
+- E35(x) ⇒ E41(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "E35 Titel"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "E35 Title"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "E35 Titre"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "E35 Título"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "E35 Τίτλος"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "E35 Названиe"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "E35 题名"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "E35"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "Titel"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "Title"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "Titre"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "Título"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "Τίτλος"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "Названиe"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E35_Title> "题名"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E35_Title> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object>)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E35_Title> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> (E39 Дeйствующий Субъeкт)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "Scope note:
+This class comprises people, either individually or in groups, who have the potential to perform intentional actions of kinds for which they can be held responsible.
+
+Examples:
+- London and Continental Railways (E74)
+- the Governor of the Bank of England in 1975 (E21)
+- Sir Ian McKellen (E21) (Gibson, 1986)
+
+In First Order Logic:
+- E39(x) ⇒ E77(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "E39 Actant"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "E39 Actor"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "E39 Agente"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "E39 Akteur"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "E39 Δράστης"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "E39 Дeйствующий Субъeкт"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "E39 参与者"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "E39"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "Actant"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "Actor"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "Agente"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "Akteur"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "Δράστης"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "Дeйствующий Субъeкт"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> "参与者"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E39_Actor> <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> (E41 Ονομασία)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "Scope note:
+This class comprises all signs, either meaningful or not, or arrangements of signs following a specific syntax, that are used or can be used to refer to and identify a specific instance of some class within a certain context.
+Instances of E41 Appellation do not identify things by their meaning, even if they happen to have one, but by convention, tradition, or agreement. Instances of E41 Appellation are cultural constructs; as such, they have a context, a history, and a use in time and space by some group of users. A given instance of E41 Appellation can have alternative forms, i.e. other instances of E41 Appellation that are regarded as equivalent, regardless of the thing it denotes.
+Different languages may use different appellations for the same thing, such as the names of major cities. Some appellations may be formulated using a valid noun phrase of a particular language. In these cases, the respective instances of E41 Appellation should also be declared as instances of E33 Linguistic Object. Then the language using the appellation can be declared with the property P72 has language: E56 Language.
+Instances of E41 Appellation may be used to identify any instance of E1 CRM Entity and sometimes are characteristic for instances of more specific subclasses of E1 CRM Entity, such as for instances of E52 Time-Span (for instance “dates”), E39 Actor, E53 Place or E28 Conceptual Object. Postal addresses and E-mail addresses are characteristic examples of identifiers used by services transporting things between clients.
+Even numerically expressed identifiers for extents in space or time are also regarded as instances of E41 Appellation, such as Gregorian dates or spatial coordinates, even though they allow for determining some time or location by a known procedure starting from a reference point and by virtue of that fact play a double role as instances of E59 Primitive Value.
+E41 Appellation should not be confused with the act of naming something. Cf. E15 Identifier Assignment.
+
+Examples:
+- “Martin”
+- “Aquae Sulis Minerva”
+- “the Merchant of Venice” (E35) (McCullough, 2005)
+- “Spigelia marilandica (L.) L.” [not the species, just the name] (Hershberger, Robacker and Jenkins, 2015)
+- “information science” [not the science itself, but the name used to refer to the subject matter in an English-speaking context]
+- “安” [Chinese “an”, meaning “peace”]
+- “6°5’29”N 45°12’13”W” [example of a spatial coordinate]
+- “Black queen’s bishop 4” [chess coordinate, example of an identifier in a conceptual space (E89)]
+- “19-MAR-1922” [example of date]
+- “+41 22 418 5571” [example of contact point]
+- “weasel@paveprime.com” [example of contact point]
+- “CH-1211, Genève” [example of place appellation]
+- “1-29-3 Otsuka, Bunkyo-ku, Tokyo, 121, Japan” [example of a postal address]
+- “the poop deck of H.M.S Victory” [example of a section definition on a human-made object (E22)]
+- “the Venus de Milo’s left buttock” [example of a section definition on a human-made object (E22)]
+
+In First Order Logic:
+- E41(x) ⇒ E90(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "E41 Appellation"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "E41 Appellation"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "E41 Benennung"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "E41 Designação"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "E41 Ονομασία"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "E41 Обозначeниe"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "E41 称谓"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "E41"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "Appellation"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "Appellation"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "Benennung"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "Designação"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "Ονομασία"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "Обозначeниe"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> "称谓"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E4_Period> (E4 Période)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "Scope note:
+This class comprises sets of coherent phenomena or cultural manifestations occurring in time and space.
+It is the social or physical coherence of these phenomena that identify an instance of E4 Period and not the associated spatiotemporal extent. This extent is only the “ground” or space in an abstract physical sense that the actual process of growth, spread and retreat has covered. Consequently, different periods can overlap and coexist in time and space, such as when a nomadic culture exists in the same area and time as a sedentary culture. This also means that overlapping land use rights, common among first nations, amounts to overlapping periods.
+Often, this class is used to describe prehistoric or historic periods such as the “Neolithic Period”, the “Ming Dynasty” or the “McCarthy Era”, but also geopolitical units and activities of settlements are regarded as special cases of E4 Period. However, there are no assumptions about the scale of the associated phenomena. In particular all events are seen as synthetic processes consisting of coherent phenomena. Therefore, E4 Period is a superclass of E5 Event. For example, a modern clinical birth, an instance of E67 Birth, can be seen as both a single event, i.e. an instance of E5 Event, and as an extended period, i.e. an instance of E4 Period, that consists of multiple physical processes and complementary activities performed by multiple instances of E39 Actor.
+E4 Period is a subclass of E2 Temporal Entity and of E92 Spacetime Volume. The latter is intended as a phenomenal spacetime volume as defined in CIDOC CRMgeo (Doerr & Hiebel, 2013). By virtue of this multiple inheritance, it is possible to discuss the physical extent of an instance of E4 Period without representing each instance of it together with an instance of its associated spacetime volume. This model combines two quite different kinds of substance: an instance of E4 Period is a phenomenon while an instance of E92 Spacetime Volume is an aggregation of points in spacetime. However, the real spatiotemporal extent of an instance of E4 Period is regarded to be unique to it due to all its details and fuzziness; its identity and existence depends uniquely on the identity of the instance of E4 Period. Therefore, this multiple inheritance is unambiguous and effective and furthermore corresponds to the intuitions of natural language.
+Typical use of this class in cultural heritage documentation is for documenting cultural and artistic periods. There are two different conceptualisations of ‘artistic style’, defined either by physical features or by historical context. For example, “Impressionism” can be viewed as a period in the European sphere of influence lasting from approximately 1870 to 1905 during which paintings with particular characteristics were produced by a group of artists that included (among others) Monet, Renoir, Pissarro, Sisley and Degas. Alternatively, it can be regarded as a style applicable to all paintings sharing the characteristics of the works produced by the Impressionist painters, regardless of historical context. The first interpretation is an instance of E4 Period, and the second defines morphological object types that fall under E55 Type.
+A geopolitical unit as a specific case of an instance of E4 Period is the set of activities and phenomena related to the claim of power, the consequences of belonging to a jurisdictional area and an administrative system that establishes a geopolitical unit. Examples from the modern period are countries or administrative areas of countries such as districts whose actions and structures define activities and phenomena in the area that they intend to govern. The borders of geopolitical units are often defined in contracts or treaties although they may deviate from the actual practice. The spatiotemporal properties of Geopolitical units can be modelled through the properties inherited from E92 Spacetime Volume.
+Another specific case of an instance of E4 Period is the actual extent of the set of activities and phenomena as evidenced by their physical traces that define a settlement, such as the populated period of Nineveh.
+
+Examples:
+- Jurassic (Hallam, 1975)
+- Populated Period of Nineveh
+- Imperial Rome under Marcus Aurelius
+- European Bronze Age (Harrison, 2004) 
+- Italian Renaissance (Macdonald, 1992)
+- Thirty Years War (Lee, 1991)
+- Sturm und Drang (Berkoff, 2013)
+- Cubism (Cox, 2000)
+- The Capital of Russia (E4) [the capital of Russia in the sense of an administrative unit moved in historical times from Moscow to St Petersburg and then back to Moscow. This exemplifies an administrative unit changing place over time without temporal discontinuity]
+- The settling activity of the community of Helsinki (a.k.a. Helsingfors) (E7) [the original settlement called Helsinki was located in the area of the modern airport. The community moved later to settle on the coast. This exemplifies a continued activity changing place over time without temporal discontinuity]
+- Bronze Age (E4) [Bronze Age, in the sense of technological adoption, spread over disjoint areas including islands such as the British Isles without temporal discontinuity]
+- Japan, the state (E4) [In 2021, the Japanese state as a political unit comprised in 6852 islands extending along the Pacific coast of Asia]
+
+In First Order Logic:
+- E4(x) ⇒ E2(x)
+- E4(x) ⇒ E92(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "E4 Period"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "E4 Período"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "E4 Phase"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "E4 Période"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "E4 Περίοδος"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "E4 Пeриод"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "E4 时期"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "E4"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "Period"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "Período"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "Phase"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "Période"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "Περίοδος"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "Пeриод"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E4_Period> "时期"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E4_Period> <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity>)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E4_Period> <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E53_Place> (E53 Lieu)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "Scope note:
+This class comprises extents in the natural space where people live, in particular on the surface of the Earth, in the pure sense of physics: independent from temporal phenomena and matter. They may serve describing the physical location of things or phenomena or other areas of interest. Geometrically, instances of E53 Place constitute single contiguous areas or a finite aggregation of disjoint areas in space which are each individually contiguous. They may have fuzzy boundaries.
+The instances of E53 Place are usually determined by reference to the position of “immobile” objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks, but may also be determined by reference to mobile objects. A Place can be determined by combining a frame of reference and a location with respect to this frame.
+It is sometimes argued that instances of E53 Place are best identified by global coordinates or absolute reference systems. However, relative references are often more relevant in the context of cultural documentation and tend to be more precise. In particular, people are often interested in position in relation to large, mobile objects, such as ships. For example, the Place at which Nelson died is known with reference to a large mobile object, i.e. H.M.S Victory. A resolution of this Place in terms of absolute coordinates would require knowledge of the movements of the vessel and the precise time of death, either of which may be revised, and the result would lack historical and cultural relevance.
+Any instance of E18 Physical Thing can serve as a frame of reference for an instance of E53 Place. This may be documented using the property P157 is at rest relative to (provides reference space for).
+
+Examples:
+- the extent of the UK in the year 2003
+- the position of the hallmark on the inside of my wedding ring (fictitious)
+- the place referred to in the phrase: “Fish collected at three miles north of the confluence of the Arve and the Rhone”
+- here -> <- [the place between these two arrows in one of the reader's paper copy of this document. Each copy constitutes a different place of this spot.]
+
+In First Order Logic:
+- E53(x) ⇒ E1(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "E53 Lieu"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "E53 Local"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "E53 Ort"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "E53 Place"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "E53 Τόπος"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "E53 Мeсто"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "E53 地点"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "E53"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "Lieu"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "Local"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "Ort"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "Place"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "Τόπος"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "Мeсто"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> "地点"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E53_Place> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E55_Type> (E55 Τύπος)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "Scope note:
+This class comprises concepts denoted by terms from thesauri and controlled vocabularies used to characterize and classify instances of CIDOC CRM classes. Instances of E55 Type represent concepts, in contrast to instances of E41 Appellation which are used to name instances of CIDOC CRM classes. 
+E55 Type provides an interface to domain specific ontologies and thesauri. These can be represented in the CIDOC CRM as subclasses of E55 Type, forming hierarchies of terms, i.e. instances of E55 Type linked via P127 has broader term (has narrower term): E55 Type. Such hierarchies may be extended with additional properties.
+
+Examples:
+- weight, length, depth [types for instances of E54 Dimension]
+- portrait, sketch, animation [types for instances of E36 Visual Item]
+- French, English, German [types for instances of E56 Language]
+- excellent, good, poor [types for instances of E3 Condition State]
+- Ford Model T, chop stick [types for instances of E22 Human-Made Object]
+- cave, doline, scratch [types for instances of E26 Physical Feature]
+- poem, short story [types for instances of E33 Linguistic Object]
+- wedding, earthquake, skirmish [types for instances of E5 Event]
+
+In First Order Logic:
+- E55(x) ⇒ E28(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "E55 Tipo"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "E55 Type"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "E55 Type"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "E55 Typus"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "E55 Tип"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "E55 Τύπος"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "E55 类型"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "E55"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "Tipo"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "Type"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "Type"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "Typus"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "Tип"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "Τύπος"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "类型"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E55_Type> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E57_Material> (E57 Матeриал)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "Scope note:
+This class is a specialization of E55 Type and comprises the concepts of materials. 
+Instances of E57 Material may denote properties of matter before its use, during its use, and as incorporated in an object, such as ultramarine powder, tempera paste, reinforced concrete. Discrete pieces of raw-materials kept in museums, such as bricks, sheets of fabric, pieces of metal, should be modelled individually in the same way as other objects. Discrete used or processed pieces, such as the stones from Nefer Titi's temple, should be modelled as parts (cf. P46 is composed of (forms part of): E18 Physical Thing).
+This type is used categorically in the model without reference to instances of it, i.e. the Model does not foresee the description of instances of instances of E57 Material, e.g. “instances of gold”.
+It is recommended that internationally or nationally agreed codes and terminology should be used.
+
+Examples:
+- brick (Gurcke, 1987)
+- gold (Watson, 1990)
+- aluminium (Norman, 1986)
+- polycarbonate (Mhaske, 2011)
+- resin (Barton, 1992)
+
+In First Order Logic:
+- E57(x) ⇒ E55(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "E57 Material"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "E57 Material"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "E57 Material"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "E57 Matériau"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "E57 Υλικό"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "E57 Матeриал"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "E57 材质"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "E57"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "Material"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "Material"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "Material"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "Matériau"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "Υλικό"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "Матeриал"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "材质"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E57_Material> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E5_Event> (E5 Ereignis)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "Scope note:
+This class comprises distinct, delimited and coherent processes and interactions of a material nature, in cultural, social or physical systems, involving and affecting instances of E77 Persistent Item in a way characteristic of the kind of process. Typical examples are meetings, births, deaths, actions of decision taking, making or inventing things, but also more complex and extended ones such as conferences, elections, building of a castle, or battles.
+While the continuous growth of a tree lacks the limits characteristic of an event, its germination from a seed does qualify as an event. Similarly, the blowing of the wind lacks the distinctness and limits of an event, but a hurricane, flood or earthquake would qualify as an event. Mental processes are considered as events, in cases where they are connected with the material externalization of their results; for example, the creation of a poem, a performance or a change of intention that becomes obvious from subsequent actions or declarations.
+The effects of an instance of E5 Event may not lead to relevant permanent changes of properties or relations of the items involved in it, for example an unrecorded performance. Of course, in order to be documented, some kind of evidence for an event must exist, be it witnesses, traces or products of the event.
+While instances of E4 Period always require some form of coherence between its constituent phenomena, in addition, the essential constituents of instances of E5 Event should contribute to an overall effect; for example, the statements made during a meeting and the listening of the audience.
+Viewed at a coarse level of detail, an instance of E5 Event may appear as if it had an ‘instantaneous’ overall effect, but any process or interaction of material nature in reality have an extent in time and space. At a fine level, instances of E5 Event may be analysed into component phenomena and phases within a space and timeframe, and as such can be seen as a period, regardless of the size of the phenomena. The reverse is not necessarily the case: not all instances of E4 Period give rise to a noteworthy overall effect and are thus not instances of E5 Event.
+
+Examples:
+- the birth of Cleopatra (E67) (Pomeroy, 1984)
+- the destruction of Herculaneum by volcanic eruption in 79 AD (E6) (Camardo, 2013)
+- World War II (E7) (Barber, 1994)
+- the Battle of Stalingrad (E7) (Hoyt, 1993)
+- the Yalta Conference (E7) (Harbutt, 2010)
+- my birthday celebration 28-6-1995 (E7)
+- the falling of a tile from my roof last Sunday (fictitious)
+- the CIDOC conference 2003 (E7)
+
+In First Order Logic:
+- E5(x) ⇒ E4(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "E5 Ereignis"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "E5 Event"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "E5 Evento"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "E5 Évènement"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "E5 Συμβάν"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "E5 Событиe"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "E5 事件"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "E5"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "Ereignis"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "Event"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "Evento"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "Évènement"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "Συμβάν"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "Событиe"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "事件"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E5_Event> <http://www.cidoc-crm.org/cidoc-crm/E4_Period>)
 
 # Class: <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> (E70 Chose)
 
@@ -270,6 +599,83 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> "法律对象"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.cidoc-crm.org/cidoc-crm/E70_Thing>)
 
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> (E73 Информационный Объeкт)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "Scope note:
+This class comprises identifiable immaterial items, such as poems, jokes, data sets, images, texts, multimedia objects, procedural prescriptions, computer program code, algorithm or mathematical formulae, that have an objectively recognizable structure and are documented as single units. The encoding structure known as a “named graph” also falls under this class, so that each “named graph” is an instance of E73 Information Object.
+An instance of E73 Information Object does not depend on a specific physical carrier, which can include human memory, and it can exist on one or more carriers simultaneously.
+Instances of E73 Information Object of a linguistic nature should be declared as instances of the E33 Linguistic Object subclass. Instances of E73 Information Object of a documentary nature should be declared as instances of the E31 Document subclass. Conceptual items such as types and classes are not instances of E73 Information Object, nor are ideas without a reproducible expression.
+
+Examples:
+- image BM000038850.JPG from the Clayton Herbarium in London (E31) (Natural History Museum, 2021)
+- E. A. Poe's “The Raven” (Poe, 1869)
+- the movie “The Seven Samurai” by Akira Kurosawa (Mellen, 2002)
+- the text of Huray describing the Maxwell Equations (Huray, 2010)
+- the Getty AAT as published as Linked Open Data, accessed 1/10/2014
+
+In First Order Logic:
+- E73(x) ⇒ E89(x)
+- E73(x) ⇒ E90(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "E73 Information Object"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "E73 Informationsgegenstand"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "E73 Objet informationnel"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "E73 Objeto de Informação"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "E73 Πληροφοριακό Αντικείμενο"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "E73 Информационный Объeкт"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "E73 信息对象"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "E73"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "Information Object"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "Informationsgegenstand"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "Objet informationnel"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "Objeto de Informação"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "Πληροφοριακό Αντικείμενο"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "Информационный Объeкт"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> "信息对象"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object>)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E74_Group> (E74 Groupe)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "Scope note:
+This class comprises any gatherings or organizations of human individuals or groups that act collectively or in a similar way due to any form of unifying relationship. In the wider sense this class also comprises official positions which used to be regarded in certain contexts as one actor, independent of the current holder of the office, such as the president of a country. In such cases, it may happen that the group never had more than one member. A joint pseudonym (i.e. a name that seems indicative of an individual but that is actually used as a persona by two or more people) is a particular case of E74 Group.
+A gathering of people becomes an instance of E74 Group when it exhibits organizational characteristics usually typified by a set of ideas or beliefs held in common, or actions performed together. These might be communication, creating some common artifact, a common purpose such as study, worship, business, sports, etc. Nationality can be modelled as membership in an instance of E74 Group. Married couples and other concepts of family are regarded as particular examples of E74 Group.
+
+Examples:
+- the Impressionists (Wilson, 1994)
+- the Navajo (Correll, 1972)
+- the Greeks (Williams, 1993)
+- the peace protestors in New York City on 15(th) February 2003
+- Exxon-Mobil (Raymond, 2006)
+- King Solomon and his wives (Thieberger, 1947)
+- the President of the Swiss Confederation
+- Nicolas Bourbaki [the collective pseudonym of a group of mathematicians, predominantly French alumni of the École normale supérieure] (Aczel, 2007)
+- Betty Crocker (Crocker, 2012)
+- Ellery Queen [Ellery Queen is a pseudonym created in 1929 by American crime fiction writers Frederic Dannay and Manfred Bennington Lee.] (Wheat, 2005)
+- Greenpeace
+- Paveprime Ltd
+- the National Museum of Denmark
+
+In First Order Logic:
+- E74(x) ⇒ E39(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "E74 Group"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "E74 Groupe"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "E74 Grupo"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "E74 Menschliche Gruppe"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "E74 Ομάδα"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "E74 Группа"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "E74 团体"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "E74"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "Group"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "Groupe"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "Grupo"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "Menschliche Gruppe"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "Ομάδα"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "Группа"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> "团体"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E74_Group> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
 # Class: <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> (E77 Ον)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> "Scope note:
@@ -305,6 +711,93 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> "Постоянная Сущность"@ru)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> "持久项"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> (E89 Propositional Object)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> "Scope note:
+This class comprises immaterial items, including but not limited to stories, plots, procedural prescriptions, algorithms, laws of physics or images that are, or represent in some sense, sets of propositions about real or imaginary things and that are documented as single units or serve as topic of discourse. 
+This class also comprises items that are “about” something in the sense of a subject. In the wider sense, this class includes expressions of psychological value such as non-figural art and musical themes. However, conceptual items such as types and classes are not instances of E89 Propositional Object. This should not be confused with the definition of a type, which is indeed an instance of E89 Propositional Object.
+
+Examples:
+- Maxwell’s Equations (Ball, 1962)
+- the ideational contents of Aristotle’s book entitled ‘Metaphysics’ as rendered in the Greek texts translated in Oxford edition
+- the underlying prototype of any “no-smoking” sign (E36)
+- the common ideas of the plots of the movie “The Seven Samurai” by Akira Kurosawa and the movie “The Magnificent Seven” by John Sturges (Mellen, 2002)
+- the image content of the photo of the Allied Leaders at Yalta published by UPI, 1945 (E36)
+- the character “Little Red Riding Hood”, variants of which appear amongst others in Grimm brothers’ “Rotkäppchen”, other oral fairy tales and the film “Hoodwinked”
+- the place “Havnor” as invented by Ursula K. Le Guin for her “Earthsea” book series, the related maps and appearing in derivative works based on these novels
+
+In First Order Logic:
+- E89(x) ⇒ E28(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> "E89 Aussagenobjekt"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> "E89 Objet propositionnel"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> "E89 Propositional Object"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> "E89 Пропозициональный Объeкт"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> "E89 命题对象"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> "E89"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> "Aussagenobjekt"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> "Objet propositionnel"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> "Propositional Object"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> "Пропозициональный Объeкт"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> "命题对象"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> (E90 Symbolisches Objekt)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> "Scope note:
+This class comprises identifiable symbols and any aggregation of symbols, such as characters, identifiers, traffic signs, emblems, texts, data sets, images, musical scores, multimedia objects, computer program code, or mathematical formulae that have an objectively recognizable structure and that are documented as single units.
+It includes sets of signs of any nature, which may serve to designate something, or to communicate some propositional content. An instance of E90 Symbolic Object may or may not have a specific meaning, for example an arbitrary character string.
+In some cases, the content of an instance of E90 Symbolic Object may completely be represented by a serialized digital content model, such as a sequence of ASCII-encoded characters, an XML or HTML document, or a TIFF image. The property P3 has note and its subproperty P190 has symbolic content allow for the description of this content model. In order to disambiguate which symbolic level is the carrier of the meaning, the property P3.1 has type can be used to specify the encoding (e.g. “bit”, “Latin character”, RGB pixel).
+
+Examples:
+- ‘ecognizabl’
+- the “no-smoking” sign (E36)
+- “BM000038850.JPG” (E41) [identifies a digital image] (Natural History Museum, 2021)
+- image BM000038850.JPG from the Clayton Herbarium in London (E36) [depicts specimen of Verbesina virginica] (Natural History Museum, 2021)
+- the distribution of form, tone and colour found on Leonardo da Vinci’s painting named “Mona Lisa” in daylight (E36)
+- the Italian text of Dante’s “Divina Commedia” as found in the authoritative critical edition “La Commedia secondo l’antica vulgata a cura di Giorgio Petrocchi” (E33) (Petrocchi, 1967)
+
+In First Order Logic:
+- E90(x) ⇒ E28(x)
+- E90(x) ⇒ E72(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> "E90 Objet symbolique"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> "E90 Symbolic Object"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> "E90 Symbolisches Objekt"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> "E90 Символичeский Объeкт"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> "E90 符号对象"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> "E90"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> "Objet symbolique"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> "Symbolic Object"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> "Symbolisches Objekt"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> "Символичeский Объeкт"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> "符号对象"@zh)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object>)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> (E92 Spacetime Volume)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> "Scope note:
+This class comprises 4-dimensional point sets (volumes) in physical spacetime (in contrast to mathematical models of it) regardless of their true geometric forms. They may derive their identity from being the extent of a material phenomenon or from being the interpretation of an expression defining an extent in spacetime. Intersections of instances of E92 Spacetime Volume, E53 Place, and E52 Time-Span are also regarded as instances of E92 Spacetime Volume. An instance of E92 Spacetime Volume is either contiguous or composed of a finite number of contiguous subsets. Its boundaries may be fuzzy due to the properties of the phenomena it derives from or due to the limited precision up to which defining expression can be identified with a real extent in spacetime. The duration of existence of an instance of E92 Spacetime Volume is its projection on time.
+
+Examples:
+- the extent in space and time of the Event of Caesar’s murder (Irwin, 1935)
+- where and when the carbon 14 dating of the “Schoeninger Speer II” in 1996 took place (Kouwenhoven, 1997)
+- the spatio-temporal trajectory of the H.M.S. Victory from its building to its actual location (Goodwin, 2015)
+- the extent in space and time defined by a polygon approximating the Danube river flood in Austria between 6(th) and 9(th) August 2002
+
+In First Order Logic:
+- E92(x) ⇒ E1(x)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> "E92 Spacetime Volume"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> "E92 Volume spatio-temporel"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> "E92 Область Пространства-Врeмeни"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> "E92"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> "Spacetime Volume"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> "Volume spatio-temporel"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> "Область Пространства-Врeмeни"@ru)
+SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
 
 
 )
