@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                0b12d85c64891cbe3aedd187a231eeea6741cb06d98201f747a9cf030e959d6f
+CONFIG_HASH=                e861980373d32ec79a425e5eb42023e27faf84d163830a7bf93a0b9f67c95dfe
 
 
 # ----------------------------------------
@@ -160,7 +160,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  crm
+IMPORTS =  crm schema
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -413,6 +413,13 @@ ifeq ($(strip $(MIR)),true)
 .PRECIOUS: $(MIRRORDIR)/crm.owl
 mirror-crm: | $(TMPDIR)
 	$(ROBOT) convert -I https://gitlab.isl.ics.forth.gr/cidoc-crm/cidoc_crm_rdf/-/raw/master/7.1.3/owl/CIDOC_CRM_v7.1.3.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: schema
+.PHONY: mirror-schema
+.PRECIOUS: $(MIRRORDIR)/schema.owl
+mirror-schema: | $(TMPDIR)
+	$(ROBOT) convert -I https://schema.org/docs/schemaorg.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

@@ -15,6 +15,9 @@ import_group:
   products:
     - id: crm
       mirror_from: https://gitlab.isl.ics.forth.gr/cidoc-crm/cidoc_crm_rdf/-/raw/master/7.1.3/owl/CIDOC_CRM_v7.1.3.owl
+    - id: schema
+      mirror_from: https://schema.org/docs/schemaorg.owl
+
 robot_java_args: "-Xmx8G"
 robot_report:
   use_labels: TRUE
