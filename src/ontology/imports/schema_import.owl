@@ -7,23 +7,27 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/cacao/imports/schema_import.owl>
-<http://purl.obolibrary.org/obo/cacao/releases/2024-11-14/imports/schema_import.owl>
-Annotation(owl:versionInfo "2024-11-14")
+<http://purl.obolibrary.org/obo/cacao/releases/2024-11-15/imports/schema_import.owl>
+Annotation(owl:versionInfo "2024-11-15")
 
 Declaration(Class(rdfs:Class))
 Declaration(Class(<https://schema.org/AdministrativeArea>))
 Declaration(Class(<https://schema.org/Class>))
 Declaration(Class(<https://schema.org/Country>))
+Declaration(Class(<https://schema.org/CreativeWork>))
 Declaration(Class(<https://schema.org/DataType>))
 Declaration(Class(<https://schema.org/Enumeration>))
 Declaration(Class(<https://schema.org/Intangible>))
+Declaration(Class(<https://schema.org/MediaObject>))
 Declaration(Class(<https://schema.org/Person>))
 Declaration(Class(<https://schema.org/Place>))
 Declaration(Class(<https://schema.org/Property>))
 Declaration(Class(<https://schema.org/Role>))
 Declaration(Class(<https://schema.org/Text>))
+Declaration(Class(<https://schema.org/TextObject>))
 Declaration(Class(<https://schema.org/Thing>))
 Declaration(Class(<https://schema.org/URL>))
+Declaration(ObjectProperty(<https://schema.org/description>))
 Declaration(ObjectProperty(<https://schema.org/nationality>))
 Declaration(ObjectProperty(<https://schema.org/supersededBy>))
 Declaration(NamedIndividual(<https://schema.org/actionApplication>))
@@ -167,6 +171,14 @@ Declaration(Datatype(xsd:date))
 #   Object Properties
 ############################
 
+# Object Property: <https://schema.org/description> (description)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/description> "A description of the item."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/description> <https://schema.org/description>)
+AnnotationAssertion(rdfs:label <https://schema.org/description> "description"@en)
+ObjectPropertyDomain(<https://schema.org/description> <https://schema.org/Thing>)
+ObjectPropertyRange(<https://schema.org/description> ObjectUnionOf(<https://schema.org/Role> <https://schema.org/Text> <https://schema.org/TextObject> <https://schema.org/URL>))
+
 # Object Property: <https://schema.org/nationality> (nationality)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/nationality> "Nationality of the person."@en)
@@ -210,6 +222,13 @@ AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Country> <https://schem
 AnnotationAssertion(rdfs:label <https://schema.org/Country> "Country"@en)
 SubClassOf(<https://schema.org/Country> <https://schema.org/AdministrativeArea>)
 
+# Class: <https://schema.org/CreativeWork> (CreativeWork)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/CreativeWork> "The most generic kind of creative work, including books, movies, photographs, software programs, etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/CreativeWork> <https://schema.org/CreativeWork>)
+AnnotationAssertion(rdfs:label <https://schema.org/CreativeWork> "CreativeWork"@en)
+SubClassOf(<https://schema.org/CreativeWork> <https://schema.org/Thing>)
+
 # Class: <https://schema.org/DataType> (DataType)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/DataType> "The basic data types such as Integers, Strings, etc."@en)
@@ -230,6 +249,13 @@ AnnotationAssertion(rdfs:comment <https://schema.org/Intangible> "A utility clas
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Intangible> <https://schema.org/Intangible>)
 AnnotationAssertion(rdfs:label <https://schema.org/Intangible> "Intangible"@en)
 SubClassOf(<https://schema.org/Intangible> <https://schema.org/Thing>)
+
+# Class: <https://schema.org/MediaObject> (MediaObject)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/MediaObject> "A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 AudioObject's)."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/MediaObject> <https://schema.org/MediaObject>)
+AnnotationAssertion(rdfs:label <https://schema.org/MediaObject> "MediaObject"@en)
+SubClassOf(<https://schema.org/MediaObject> <https://schema.org/CreativeWork>)
 
 # Class: <https://schema.org/Person> (Person)
 
@@ -267,6 +293,13 @@ AnnotationAssertion(rdfs:comment <https://schema.org/Text> "Data type: Text."@en
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Text> <https://schema.org/Text>)
 AnnotationAssertion(rdfs:label <https://schema.org/Text> "Text"@en)
 SubClassOf(<https://schema.org/Text> <https://schema.org/DataType>)
+
+# Class: <https://schema.org/TextObject> (TextObject)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/TextObject> "A text file. The text can be unformatted or contain markup, html, etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/TextObject> <https://schema.org/TextObject>)
+AnnotationAssertion(rdfs:label <https://schema.org/TextObject> "TextObject"@en)
+SubClassOf(<https://schema.org/TextObject> <https://schema.org/MediaObject>)
 
 # Class: <https://schema.org/Thing> (Thing)
 
