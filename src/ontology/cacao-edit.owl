@@ -18,9 +18,7 @@ Annotation(dcterms:title "Cultural Artefact Contextual Ontology")
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000003>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000006>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/CACAO_0000005>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/CACAO_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000005>))
 Declaration(AnnotationProperty(dcterms:contributor))
 Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
@@ -41,30 +39,6 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 # Annotation Property: dcterms:title (title)
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
-
-
-############################
-#   Object Properties
-############################
-
-# Object Property: <http://purl.obolibrary.org/obo/CACAO_0000005> (hasContext)
-
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000005> <https://orcid.org/0000-0002-0905-7033>)
-AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000005> "2024-11-15T13:22:02Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000005> "hasContext"@en)
-SubObjectPropertyOf(<http://purl.obolibrary.org/obo/CACAO_0000005> owl:topObjectProperty)
-InverseObjectProperties(<http://purl.obolibrary.org/obo/CACAO_0000005> <http://purl.obolibrary.org/obo/CACAO_0000008>)
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/CACAO_0000005> <http://purl.obolibrary.org/obo/CACAO_0000003>)
-ObjectPropertyRange(<http://purl.obolibrary.org/obo/CACAO_0000005> <http://purl.obolibrary.org/obo/CACAO_0000006>)
-
-# Object Property: <http://purl.obolibrary.org/obo/CACAO_0000008> (isContextOf)
-
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000008> <https://orcid.org/0000-0002-0905-7033>)
-AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000008> "2024-11-15T13:25:32Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000008> "isContextOf"@en)
-SubObjectPropertyOf(<http://purl.obolibrary.org/obo/CACAO_0000008> owl:topObjectProperty)
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/CACAO_0000008> <http://purl.obolibrary.org/obo/CACAO_0000006>)
-ObjectPropertyRange(<http://purl.obolibrary.org/obo/CACAO_0000008> <http://purl.obolibrary.org/obo/CACAO_0000003>)
 
 
 
@@ -93,12 +67,13 @@ AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000003> 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000003> "Digital Artefact"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000003> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>)
 
-# Class: <http://purl.obolibrary.org/obo/CACAO_0000006> (Context)
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000005> (Historical Event)
 
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000006> <https://orcid.org/0000-0002-0905-7033>)
-AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000006> "2024-11-15T13:23:24Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000006> "Context"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000006> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000005> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000005> "2024-11-19T12:02:07Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CACAO_0000005> "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000005> "Historical Event"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000005> <http://www.cidoc-crm.org/cidoc-crm/E5_Event>)
 
 # Class: <http://www.cidoc-crm.org/cidoc-crm/E21_Person> (E21 Person)
 
