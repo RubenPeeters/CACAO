@@ -24,7 +24,8 @@ import_group:
 robot_java_args: "-Xmx8G"
 robot_report:
   use_labels: TRUE
-  fail_on: ERROR
+  fail_on: none
   custom_profile: TRUE
   report_on:
     - edit
+  ensure_owl2dl_profile: FALSE

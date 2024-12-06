@@ -9,12 +9,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cacao/cacao-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cacao/releases/2024-11-13/cacao-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cacao/releases/2024-12-06/cacao-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Cultural Artefact Contextual Ontology</dcterms:title>
-        <owl:versionInfo>2024-11-13</owl:versionInfo>
+        <owl:versionInfo>2024-12-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -33,6 +33,18 @@
     <!-- http://purl.org/dc/elements/1.1/type -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
     
 
 
@@ -65,11 +77,165 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CACAO_0000000 -->
+    <!-- http://purl.obolibrary.org/obo/CACAO_0000002 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000002">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-13T16:18:33Z</dcterms:date>
+        <rdfs:label xml:lang="en">User</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CACAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000003">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-13T16:20:05Z</dcterms:date>
+        <rdfs:label xml:lang="en">Digital Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CACAO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000005">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:02:07Z</dcterms:date>
+        <dcterms:description>A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.</dcterms:description>
+        <rdfs:label xml:lang="en">Historical Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CACAO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000009">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:43:53Z</dcterms:date>
+        <rdfs:label xml:lang="en">Physical Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CACAO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000010">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:50:33Z</dcterms:date>
+        <dcterms:description>From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals</dcterms:description>
+        <rdfs:label xml:lang="en">Social movement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CACAO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CACAO_0000010"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:51:24Z</dcterms:date>
+        <dcterms:description>Wikidata: Q1826286, social and ideological movement in the religious sphere</dcterms:description>
+        <rdfs:label xml:lang="en">Religious movement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CACAO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CACAO_0000010"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:51:32Z</dcterms:date>
+        <dcterms:description>Wikidata: Q2198855, period and movement in cultural history</dcterms:description>
+        <rdfs:label xml:lang="en">Cultural movement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CACAO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CACAO_0000010"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:51:42Z</dcterms:date>
+        <dcterms:description>Wikidata: Q2738074, movement to obtain a political goal</dcterms:description>
+        <rdfs:label xml:lang="en">Political movement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CACAO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000014">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-06T13:27:25Z</dcterms:date>
+        <rdfs:label xml:lang="en">Domain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CACAO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000015">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-06T13:30:25Z</dcterms:date>
+        <rdfs:label xml:lang="en">Economic Relevance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CACAO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000016">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-06T13:43:53Z</dcterms:date>
+        <rdfs:label xml:lang="en">Symbolism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E39_Actor -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E55_Type -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E5_Event -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
 </rdf:RDF>
 
 
