@@ -3,10 +3,10 @@ layout: ontology_detail
 id: cacao
 title: Cultural Artefact Contextual Ontology
 jobs:
-  - id: https://travis-ci.org/REEVALUATE/noname
+  - id: https://travis-ci.org/REEVALUATE/cacao
     type: travis-ci
 build:
-  checkout: git clone https://github.com/REEVALUATE/noname.git
+  checkout: git clone https://github.com/REEVALUATE/cacao.git
   system: git
   path: "."
 contact:
@@ -15,7 +15,7 @@ contact:
   github: 
 description: Cultural Artefact Contextual Ontology is an ontology...
 domain: stuff
-homepage: https://github.com/REEVALUATE/noname
+homepage: https://github.com/REEVALUATE/cacao
 products:
   - id: cacao.owl
     name: "Cultural Artefact Contextual Ontology main release in OWL format"
@@ -32,7 +32,7 @@ products:
 dependencies:
 - id: crm
 
-tracker: https://github.com/REEVALUATE/noname/issues
+tracker: https://github.com/REEVALUATE/cacao/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY

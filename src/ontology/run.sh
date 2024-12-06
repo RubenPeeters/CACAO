@@ -16,14 +16,6 @@
 
 set -e
 
-# Check for spaces in the current directory path
-for item in $PWD ; do
-    if [ "$item" != "$PWD" ]; then
-        echo "${0##*/}: error: repository path must not contain whitespace characters" >&2
-        exit 1
-    fi
-done
-
 if [ -f run.sh.conf ]; then
     . ./run.sh.conf
 fi
@@ -63,9 +55,7 @@ if [ -n "$TAG_IN_IMAGE" ]; then
   ODK_IMAGE=$(echo $ODK_IMAGE | awk -F':' '{ print $1 }')
 fi
 ODK_TAG=${ODK_TAG:-latest}
-
 ODK_JAVA_OPTS=${ODK_JAVA_OPTS:--Xmx8G}
-
 ODK_DEBUG=${ODK_DEBUG:-no}
 
 ODK_USER_ID=${ODK_USER_ID:-$(id -u)}
@@ -92,22 +82,6 @@ rm -f tmp/debug.log
 VOLUME_BIND=$PWD/../../:/work$ODK_SSH_BIND
 WORK_DIR=/work/src/ontology
 
-# Support for OAK cache sharing
-if [ -n "$ODK_SHARE_OAK_CACHE" ]; then
-    case "$ODK_SHARE_OAK_CACHE" in
-    user)
-        # We assume the cache is in its default location; if it is not,
-        # ODK_SHARE_OAK_CACHE must point to the actual location.
-        ODK_SHARE_OAK_CACHE="$HOME/.data/oaklib"
-        ;;
-    repo)
-        ODK_SHARE_OAK_CACHE="$PWD/tmp/oaklib"
-        ;;
-    esac
-    [ $ODK_USER_ID -eq 0 ] && OAK_DEST=/root/.data/oaklib || OAK_DEST=/home/odkuser/.data/oaklib
-    VOLUME_BIND="$VOLUME_BIND,$ODK_SHARE_OAK_CACHE:$OAK_DEST"
-fi
-
 if [ -n "$ODK_BINDS" ]; then
     VOLUME_BIND="$VOLUME_BIND,$ODK_BINDS"
 fi
@@ -120,7 +94,7 @@ if [ -n "$USE_SINGULARITY" ]; then
         -W $WORK_DIR \
         docker://obolibrary/$ODK_IMAGE:$ODK_TAG $TIMECMD "$@"
 else
-    BIND_OPTIONS="-v $(echo $VOLUME_BIND | sed 's/,/ -v /g')"
+    BIND_OPTIONS="-v $(echo $VOLUME_BIND | sed 's/,/ -v /')"
     docker run $ODK_DOCKER_OPTIONS $BIND_OPTIONS -w $WORK_DIR \
         -e ROBOT_JAVA_ARGS="$ODK_JAVA_OPTS" -e JAVA_OPTS="$ODK_JAVA_OPTS" -e SSH_AUTH_SOCK=/run/host-services/ssh-auth.sock -e ODK_USER_ID=$ODK_USER_ID -e ODK_GROUP_ID=$ODK_GROUP_ID -e ODK_DEBUG=$ODK_DEBUG \
         --rm -ti obolibrary/$ODK_IMAGE:$ODK_TAG $TIMECMD "$@"

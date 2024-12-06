@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: cacao/releases/2024-11-13/cacao-base.owl
+data-version: cacao/releases/2024-12-06/cacao-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 ontology: cacao/cacao-base
@@ -7,9 +7,87 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "None" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
 property_value: dcterms:title "Cultural Artefact Contextual Ontology" xsd:string
-property_value: owl:versionInfo "2024-11-13" xsd:string
+property_value: owl:versionInfo "2024-12-06" xsd:string
 
 [Term]
-id: CACAO:0000000
-name: root node
+id: CACAO:0000002
+name: User
+is_a: E39:Actor
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2024-11-13T16:18:33Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000003
+name: Digital Artefact
+is_a: http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2024-11-13T16:20:05Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000005
+name: Historical Event
+is_a: E5:Event
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2024-11-19T12:02:07Z" xsd:dateTime
+property_value: dcterms:description "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods." xsd:string
+
+[Term]
+id: CACAO:0000009
+name: Physical Artefact
+is_a: http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2024-11-19T12:43:53Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000010
+name: Social movement
+is_a: http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2024-11-19T12:50:33Z" xsd:dateTime
+property_value: dcterms:description "From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals" xsd:string
+
+[Term]
+id: CACAO:0000011
+name: Religious movement
+is_a: CACAO:0000010 ! Social movement
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2024-11-19T12:51:24Z" xsd:dateTime
+property_value: dcterms:description "Wikidata: Q1826286, social and ideological movement in the religious sphere" xsd:string
+
+[Term]
+id: CACAO:0000012
+name: Cultural movement
+is_a: CACAO:0000010 ! Social movement
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2024-11-19T12:51:32Z" xsd:dateTime
+property_value: dcterms:description "Wikidata: Q2198855, period and movement in cultural history" xsd:string
+
+[Term]
+id: CACAO:0000013
+name: Political movement
+is_a: CACAO:0000010 ! Social movement
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2024-11-19T12:51:42Z" xsd:dateTime
+property_value: dcterms:description "Wikidata: Q2738074, movement to obtain a political goal" xsd:string
+
+[Term]
+id: CACAO:0000014
+name: Domain
+is_a: E55:Type
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2024-12-06T13:27:25Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000015
+name: Economic Relevance
+is_a: http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2024-12-06T13:30:25Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000016
+name: Symbolism
+is_a: http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2024-12-06T13:43:53Z" xsd:dateTime
 
