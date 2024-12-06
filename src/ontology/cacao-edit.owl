@@ -10,6 +10,8 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.obolibrary.org/obo/cacao.owl>
 Import(<http://purl.obolibrary.org/obo/cacao/imports/crm_import.owl>)
+Import(<http://purl.obolibrary.org/obo/cacao/imports/foaf_import.owl>)
+Import(<http://purl.obolibrary.org/obo/cacao/imports/odrl_import.owl>)
 Import(<http://purl.obolibrary.org/obo/cacao/imports/schema_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
@@ -23,6 +25,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000016>))
 Declaration(AnnotationProperty(dcterms:contributor))
 Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
@@ -111,9 +116,38 @@ AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CACAO_00
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000013> "Political movement"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000013> <http://purl.obolibrary.org/obo/CACAO_0000010>)
 
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000014> (Domain)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000014> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000014> "2024-12-06T13:27:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000014> "Domain"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000014> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000015> (Economic Relevance)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000015> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000015> "2024-12-06T13:30:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000015> "Economic Relevance"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000015> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object>)
+
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000016> (Symbolism)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000016> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000016> "2024-12-06T13:43:53Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000016> "Symbolism"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000016> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object>)
+
 # Class: <http://www.cidoc-crm.org/cidoc-crm/E21_Person> (E21 Person)
 
 EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <https://schema.org/Person>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E30_Right> (E30 权限)
+
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E30_Right> <http://www.w3.org/ns/odrl/2/Policy>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Νομικό Αντικείμενο)
+
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/ns/odrl/2/Asset>)
 
 
 )

@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                e861980373d32ec79a425e5eb42023e27faf84d163830a7bf93a0b9f67c95dfe
+CONFIG_HASH=                cd9577acac0dc1ff614f1e2ff81e652fa4f79508cf73a40802fe9c34998b698c
 
 
 # ----------------------------------------
@@ -160,7 +160,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  crm schema
+IMPORTS =  crm schema odrl foaf
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -420,6 +420,20 @@ mirror-crm: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/schema.owl
 mirror-schema: | $(TMPDIR)
 	$(ROBOT) convert -I https://schema.org/docs/schemaorg.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: odrl
+.PHONY: mirror-odrl
+.PRECIOUS: $(MIRRORDIR)/odrl.owl
+mirror-odrl: | $(TMPDIR)
+	$(ROBOT) convert -I https://www.w3.org/ns/odrl/2/ODRL22.ttl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: foaf
+.PHONY: mirror-foaf
+.PRECIOUS: $(MIRRORDIR)/foaf.owl
+mirror-foaf: | $(TMPDIR)
+	$(ROBOT) convert -I http://xmlns.com/foaf/spec/index.rdf -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

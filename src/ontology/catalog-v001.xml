@@ -6,6 +6,8 @@
   
   <uri name="http://purl.obolibrary.org/obo/cacao/imports/crm_import.owl" uri="imports/crm_import.owl"/>
   <uri name="http://purl.obolibrary.org/obo/cacao/imports/schema_import.owl" uri="imports/schema_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/cacao/imports/foaf_import.owl" uri="imports/foaf_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/cacao/imports/odrl_import.owl" uri="imports/odrl_import.owl"/>
   
   
 
