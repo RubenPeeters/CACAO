@@ -28,6 +28,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000016>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/CACAO_0000017>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/CACAO_0000018>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/CACAO_0000019>))
 Declaration(AnnotationProperty(dcterms:contributor))
 Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
@@ -48,6 +51,32 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 # Annotation Property: dcterms:title (title)
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/CACAO_0000017> (genre)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000017> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000017> "2025-04-10T14:50:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000017> "genre"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/CACAO_0000017> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
+
+# Object Property: <http://purl.obolibrary.org/obo/CACAO_0000018> (movement)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000018> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000018> "2025-04-10T14:51:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000018> "movement"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/CACAO_0000018> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
+
+# Object Property: <http://purl.obolibrary.org/obo/CACAO_0000019> (field)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000019> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000019> "2025-04-10T14:51:58Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000019> "field"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/CACAO_0000019> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
 
 
 
@@ -145,7 +174,7 @@ EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <https://schem
 
 EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E30_Right> <http://www.w3.org/ns/odrl/2/Policy>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Νομικό Αντικείμενο)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Объeкт Права)
 
 EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/ns/odrl/2/Asset>)
 
