@@ -20,7 +20,6 @@ Annotation(dcterms:title "Cultural Artefact Contextual Ontology")
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000005>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000012>))
@@ -28,9 +27,16 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000028>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/CACAO_0000017>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/CACAO_0000018>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/CACAO_0000019>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/CACAO_0000026>))
 Declaration(AnnotationProperty(dcterms:contributor))
 Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
@@ -62,21 +68,28 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000017> <https://orcid.org/0000-0002-0905-7033>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000017> "2025-04-10T14:50:30Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000017> "genre"@en)
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/CACAO_0000017> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/CACAO_0000017> <http://purl.obolibrary.org/obo/CACAO_0000022>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/CACAO_0000017> <http://purl.obolibrary.org/obo/CACAO_0000023>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/CACAO_0000017> <http://purl.obolibrary.org/obo/CACAO_0000027>)
 
 # Object Property: <http://purl.obolibrary.org/obo/CACAO_0000018> (movement)
 
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000018> <https://orcid.org/0000-0002-0905-7033>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000018> "2025-04-10T14:51:45Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000018> "movement"@en)
+IrreflexiveObjectProperty(<http://purl.obolibrary.org/obo/CACAO_0000018>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/CACAO_0000018> <http://purl.obolibrary.org/obo/CACAO_0000023>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/CACAO_0000018> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/CACAO_0000018> <http://purl.obolibrary.org/obo/CACAO_0000010>)
 
-# Object Property: <http://purl.obolibrary.org/obo/CACAO_0000019> (field)
+# Object Property: <http://purl.obolibrary.org/obo/CACAO_0000026> (fieldOfWork)
 
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000019> <https://orcid.org/0000-0002-0905-7033>)
-AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000019> "2025-04-10T14:51:58Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000019> "field"@en)
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/CACAO_0000019> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000026> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000026> "2025-04-11T10:40:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000026> "fieldOfWork"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/CACAO_0000026> owl:topObjectProperty)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/CACAO_0000026> <http://purl.obolibrary.org/obo/CACAO_0000022>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/CACAO_0000026> <http://purl.obolibrary.org/obo/CACAO_0000028>)
 
 
 
@@ -105,13 +118,6 @@ AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000005> 
 AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/CACAO_0000005> "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000005> "Historical Event"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000005> <http://www.cidoc-crm.org/cidoc-crm/E5_Event>)
-
-# Class: <http://purl.obolibrary.org/obo/CACAO_0000009> (Physical Artefact)
-
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000009> <https://orcid.org/0000-0002-0905-7033>)
-AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000009> "2024-11-19T12:43:53Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000009> "Physical Artefact"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000009> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>)
 
 # Class: <http://purl.obolibrary.org/obo/CACAO_0000010> (Social movement)
 
@@ -165,6 +171,55 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_00
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000016> "2024-12-06T13:43:53Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000016> "Symbolism"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000016> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object>)
+
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000020> (Museum)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000020> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000020> "2025-04-11T08:31:05Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000020> "Museum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000020> <http://www.cidoc-crm.org/cidoc-crm/E74_Group>)
+
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000022> (Artist)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000022> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000022> "2025-04-11T08:32:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000022> "Artist"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000022> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
+
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000023> (Physical Artefact)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000023> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000023> "2025-04-11T08:35:55Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000023> "Physical Artefact"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000023> <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>)
+
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000024> (Artwork)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000024> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000024> "2025-04-11T08:37:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000024> "Artwork"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000024> <http://purl.obolibrary.org/obo/CACAO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000025> (Instrument)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000025> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000025> "2025-04-11T08:37:08Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000025> "Instrument"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000025> <http://purl.obolibrary.org/obo/CACAO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000027> (Genre)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000027> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000027> "2025-04-11T11:18:31Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000027> "Genre"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000027> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <http://purl.obolibrary.org/obo/CACAO_0000028> (Field Of Work)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/CACAO_0000028> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/CACAO_0000028> "2025-04-11T11:18:41Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000028> "Field Of Work"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CACAO_0000028> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
 # Class: <http://www.cidoc-crm.org/cidoc-crm/E21_Person> (E21 Person)
 

@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/cacao/imports/schema_import.owl#>)
+Prefix(:=<https://reevaluate.eu/cacao/ns/cacao/imports/schema_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,9 +6,9 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/cacao/imports/schema_import.owl>
-<http://purl.obolibrary.org/obo/cacao/releases/2024-12-06/imports/schema_import.owl>
-Annotation(owl:versionInfo "2024-12-06")
+Ontology(<https://reevaluate.eu/cacao/ns/cacao/imports/schema_import.owl>
+<https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-11/imports/schema_import.owl>
+Annotation(owl:versionInfo "2025-04-11")
 
 Declaration(Class(rdfs:Class))
 Declaration(Class(<https://schema.org/AdministrativeArea>))
@@ -23,6 +23,7 @@ Declaration(Class(<https://schema.org/Person>))
 Declaration(Class(<https://schema.org/Place>))
 Declaration(Class(<https://schema.org/Property>))
 Declaration(Class(<https://schema.org/Role>))
+Declaration(Class(<https://schema.org/Specialty>))
 Declaration(Class(<https://schema.org/Text>))
 Declaration(Class(<https://schema.org/TextObject>))
 Declaration(Class(<https://schema.org/Thing>))
@@ -286,6 +287,13 @@ See also <a href=\"http://blog.schema.org/2014/06/introducing-role.html\">blog p
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Role> <https://schema.org/Role>)
 AnnotationAssertion(rdfs:label <https://schema.org/Role> "Role"@en)
 SubClassOf(<https://schema.org/Role> <https://schema.org/Intangible>)
+
+# Class: <https://schema.org/Specialty> (Specialty)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Specialty> "Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Specialty> <https://schema.org/Specialty>)
+AnnotationAssertion(rdfs:label <https://schema.org/Specialty> "Specialty"@en)
+SubClassOf(<https://schema.org/Specialty> <https://schema.org/Enumeration>)
 
 # Class: <https://schema.org/Text> (Text)
 

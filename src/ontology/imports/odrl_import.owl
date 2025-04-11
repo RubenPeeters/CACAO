@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/cacao/imports/odrl_import.owl#>)
+Prefix(:=<https://reevaluate.eu/cacao/ns/cacao/imports/odrl_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,9 +6,9 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/cacao/imports/odrl_import.owl>
-<http://purl.obolibrary.org/obo/cacao/releases/2024-12-06/imports/odrl_import.owl>
-Annotation(owl:versionInfo "2024-12-06")
+Ontology(<https://reevaluate.eu/cacao/ns/cacao/imports/odrl_import.owl>
+<https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-11/imports/odrl_import.owl>
+Annotation(owl:versionInfo "2025-04-11")
 
 Declaration(Class(<http://schema.org/Action>))
 Declaration(Class(<http://schema.org/Organization>))
@@ -337,7 +337,7 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
-Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#broaderTransitive>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#broader>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#exactMatch>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#member>))
@@ -1254,7 +1254,7 @@ ClassAssertion(<http://www.w3.org/ns/odrl/2/LeftOperand> <http://www.w3.org/ns/o
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> <http://www.w3.org/ns/odrl/2/>)
 AnnotationAssertion(rdfs:label <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> "Absolute Spatial Asset Position"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> <http://www.w3.org/ns/odrl/2/absolutePosition>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> <http://www.w3.org/ns/odrl/2/absolutePosition>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> "The absolute spatial positions of four corners of a rectangle on a 2D-canvas or the eight corners of a cuboid in a 3D-space for the target Asset to fit."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> "Example: The upper left corner of a picture may be constrained to a specific position of the canvas rendering it. Note: see also the Left Operand Relative Spatial Asset Position. "@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/ns/odrl/2/absoluteSpatialPosition> "Non-Normative"@en)
@@ -1265,7 +1265,7 @@ ClassAssertion(<http://www.w3.org/ns/odrl/2/LeftOperand> <http://www.w3.org/ns/o
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> <http://www.w3.org/ns/odrl/2/>)
 AnnotationAssertion(rdfs:label <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> "Absolute Temporal Asset Position"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> <http://www.w3.org/ns/odrl/2/absolutePosition>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> <http://www.w3.org/ns/odrl/2/absolutePosition>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> "The absolute temporal positions in a media stream the target Asset has to fit."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> "Use with Actions including the target Asset in a larger media stream. The fragment part of a Media Fragment URI (https://www.w3.org/TR/media-frags/) may be used for the right operand. See the Left Operand realativeTemporalPosition. <br />Example: The MP3 music file must be positioned between second 192 and 250 of the temporal length of a stream."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/ns/odrl/2/absoluteTemporalPosition> "Non-Normative"@en)
@@ -2306,7 +2306,7 @@ ClassAssertion(<http://www.w3.org/ns/odrl/2/LeftOperand> <http://www.w3.org/ns/o
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> <http://www.w3.org/ns/odrl/2/>)
 AnnotationAssertion(rdfs:label <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> "Relative Spatial Asset Position"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> <http://www.w3.org/ns/odrl/2/relativePosition>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> <http://www.w3.org/ns/odrl/2/relativePosition>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> "The relative spatial positions - expressed as percentages of full values - of four corners of a rectangle on a 2D-canvas or the eight corners of a cuboid in a 3D-space of the target Asset."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> "See also Absolute Spatial Asset Position."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/ns/odrl/2/relativeSpatialPosition> "Non-Normative"@en)
@@ -2317,7 +2317,7 @@ ClassAssertion(<http://www.w3.org/ns/odrl/2/LeftOperand> <http://www.w3.org/ns/o
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> <http://www.w3.org/ns/odrl/2/>)
 AnnotationAssertion(rdfs:label <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> "Relative Temporal Asset Position"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> <http://www.w3.org/ns/odrl/2/relativePosition>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> <http://www.w3.org/ns/odrl/2/relativePosition>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> "A point in space or time defined with coordinates relative to full measures the positioning of the target Asset."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> "See also Absolute Temporal Asset Position. <br />Example: The MP3 music file must be positioned between the positions at 33% and 48% of the temporal length of a stream. "@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/ns/odrl/2/relativeTemporalPosition> "Non-Normative"@en)
@@ -2441,7 +2441,7 @@ ClassAssertion(<http://www.w3.org/ns/odrl/2/LeftOperand> <http://www.w3.org/ns/o
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/ns/odrl/2/spatialCoordinates> <http://www.w3.org/ns/odrl/2/>)
 AnnotationAssertion(rdfs:label <http://www.w3.org/ns/odrl/2/spatialCoordinates> "Geospatial Coordinates"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#broaderTransitive> <http://www.w3.org/ns/odrl/2/spatialCoordinates> <http://www.w3.org/ns/odrl/2/spatial>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/ns/odrl/2/spatialCoordinates> <http://www.w3.org/ns/odrl/2/spatial>)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/ns/odrl/2/spatialCoordinates> "A set of coordinates setting the borders of a geospatial area used for exercising the action of the Rule. The coordinates MUST include longitude and latitude, they MAY include altitude and the geodetic datum."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/ns/odrl/2/spatialCoordinates> "The default values are the altitude of earth's surface at this location and the WGS 84 datum."@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/ns/odrl/2/spatialCoordinates> "Non-Normative"@en)
