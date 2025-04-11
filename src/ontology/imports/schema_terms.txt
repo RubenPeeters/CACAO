@@ -1,3 +1,4 @@
 https://schema.org/nationality
 https://schema.org/description
 https://schema.org/Role
+https://schema.org/Specialty

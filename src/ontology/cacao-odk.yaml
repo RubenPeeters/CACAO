@@ -2,6 +2,7 @@ id: cacao
 title: "Cultural Artefact Contextual Ontology"
 github_org: REEVALUATE
 repo: CACAO
+uribase: https://reevaluate.eu/cacao/ns
 release_artefacts:
   - base
   - full

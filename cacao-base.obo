@@ -1,13 +1,13 @@
 format-version: 1.2
-data-version: cacao/releases/2024-12-06/cacao-base.owl
+data-version: https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-11/cacao-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
-ontology: cacao/cacao-base
+ontology: https://reevaluate.eu/cacao/ns/cacao/cacao-base.owl
 property_value: dce:type IAO:8000001
 property_value: dcterms:description "None" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
 property_value: dcterms:title "Cultural Artefact Contextual Ontology" xsd:string
-property_value: owl:versionInfo "2024-12-06" xsd:string
+property_value: owl:versionInfo "2025-04-11" xsd:string
 
 [Term]
 id: CACAO:0000002
@@ -30,13 +30,6 @@ is_a: E5:Event
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2024-11-19T12:02:07Z" xsd:dateTime
 property_value: dcterms:description "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods." xsd:string
-
-[Term]
-id: CACAO:0000009
-name: Physical Artefact
-is_a: http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing
-property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
-property_value: dcterms:date "2024-11-19T12:43:53Z" xsd:dateTime
 
 [Term]
 id: CACAO:0000010
@@ -90,4 +83,80 @@ name: Symbolism
 is_a: http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2024-12-06T13:43:53Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000020
+name: Museum
+is_a: E74:Group
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-11T08:31:05Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000022
+name: Artist
+is_a: E21:Person
+is_a: https://schema.org/Person
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-11T08:32:18Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000023
+name: Physical Artefact
+is_a: http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-11T08:35:55Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000024
+name: Artwork
+is_a: CACAO:0000023 ! Physical Artefact
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-11T08:37:01Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000025
+name: Instrument
+is_a: CACAO:0000023 ! Physical Artefact
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-11T08:37:08Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000027
+name: Genre
+is_a: E55:Type
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-11T11:18:31Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000028
+name: Field Of Work
+is_a: E55:Type
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-11T11:18:41Z" xsd:dateTime
+
+[Typedef]
+id: CACAO:0000017
+name: genre
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-10T14:50:30Z" xsd:dateTime
+domain: CACAO:0000022 ! Artist
+domain: CACAO:0000023 ! Physical Artefact
+range: CACAO:0000027 ! Genre
+
+[Typedef]
+id: CACAO:0000018
+name: movement
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-10T14:51:45Z" xsd:dateTime
+domain: CACAO:0000023 ! Physical Artefact
+domain: E21:Person
+range: CACAO:0000010 ! Social movement
+
+[Typedef]
+id: CACAO:0000026
+name: fieldOfWork
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-11T10:40:25Z" xsd:dateTime
+domain: CACAO:0000022 ! Artist
+range: CACAO:0000028 ! Field Of Work
 
