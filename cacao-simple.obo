@@ -10,12 +10,14 @@ property_value: terms:title "Cultural Artefact Contextual Ontology" xsd:string
 [Term]
 id: CACAO:0000002
 name: User
+comment: Scope note:\nThis class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​\n\nUnlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​\n\nThe classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity's functional role in interacting with digital systems in a manner that can be documented and attributed.​\n\nExamples:\n- A registered individual accessing an online museum catalog.​\n- An AI-driven recommendation engine suggesting artifacts to users.​\n- A software bot performing automated data curation tasks.​
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2024-11-13T16:18:33Z" xsd:dateTime
 
 [Term]
 id: CACAO:0000003
 name: Digital Artefact
+comment: Scope note:\nThis class comprises identifiable immaterial items, such as digital images, texts, multimedia objects, computer program code, algorithms, or mathematical formulae, that are created, modified, or stored in digital formats. Digital Artefacts have an objectively recognizable structure and are documented as single units. They exist independently of specific physical carriers and can reside on multiple digital mediums simultaneously. While E73 Information Objects encompass a broad range of immaterial items, including those stored in human memory or on physical media, Digital Artefacts are specifically associated with digital technologies. This subclassification aids in distinguishing between general information entities and those uniquely tied to digital environments.​\n\nExamples:\n- A digital photograph of an ancient manuscript.​\n- A 3D model of an archaeological excavation site.​\n- The source code of a software application developed to catalog museum collections.​\n- A dataset containing measurements of physical artefacts.
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2024-11-13T16:20:05Z" xsd:dateTime
 
@@ -29,6 +31,7 @@ property_value: terms:description "A specialized version of E5_Event, where we o
 [Term]
 id: CACAO:0000010
 name: Social movement
+comment: From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals\n\nScope note:\nA Social Movement is a loosely organized effort by a large group of people to achieve a particular set of goals, typically aiming to promote or resist changes in society's structure or values. These movements are characterized by collective action, where individuals unite based on shared beliefs or objectives, often seeking social, political, economic, or cultural transformations. ​\n\nSocial movements differ from formal organizations in that they may lack a defined organizational structure or formal membership, relying instead on informal networks and shared commitments. They can vary widely in size and scope, ranging from localized grassroots initiatives to large-scale national or international campaigns. The methods employed can include protests, demonstrations, advocacy, and other forms of collective action aimed at influencing public opinion and policy. ​\n\nExamples:\n- The Civil Rights Movement in the United States,\n- The Environmental Movement\n- The Feminist Movement,\n- The LGBTQ+ Rights Movement
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2024-11-19T12:50:33Z" xsd:dateTime
 property_value: terms:description "From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals" xsd:string
@@ -36,6 +39,7 @@ property_value: terms:description "From wikidata (Q49773): loosely organized eff
 [Term]
 id: CACAO:0000011
 name: Religious movement
+comment: Wikidata: Q1826286, social and ideological movement in the religious sphere\n\nScope note:\nA Religious Movement is a collective effort by a group of people aiming to promote, reform, or resist changes within religious beliefs, practices, or institutions.\n\nExamples:\n- The Protestant Reformation in the 16th century, which led to significant changes in Christian practices and beliefs.​\n- The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​\n- The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s.
 is_a: CACAO:0000010 ! Social movement
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2024-11-19T12:51:24Z" xsd:dateTime
@@ -44,6 +48,7 @@ property_value: terms:description "Wikidata: Q1826286, social and ideological mo
 [Term]
 id: CACAO:0000012
 name: Cultural movement
+comment: Wikidata: Q2198855, period and movement in cultural history\n\nScope note:\nA Cultural Movement is a collective effort by loosely affiliated individuals aiming to transform societal perspectives through the dissemination of ideas via various art forms and intentional lifestyle choices. These movements often overlap with social and political movements, making them integral to broader cultural transformations. ​\n\nExamples:\n- The Renaissance\n- The Romanticism movement\n- The Alté Movement in Nigeria
 is_a: CACAO:0000010 ! Social movement
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2024-11-19T12:51:32Z" xsd:dateTime
@@ -52,6 +57,7 @@ property_value: terms:description "Wikidata: Q2198855, period and movement in cu
 [Term]
 id: CACAO:0000013
 name: Political movement
+comment: Wikidata: Q2738074, movement to obtain a political goal\n\nScope note:\nA Political Movement is a collective effort by a group of people aiming to influence government policy, social values, or achieve specific political objectives. These movements are typically organized around particular issues or ideologies and seek to bring about change within the political system. They differ from political parties, which aim to gain political office, by focusing on specific goals rather than seeking electoral power. ​\n\nExamples:\n- The Anti-Apartheid Movement, which campaigned against the system of racial segregation in South Africa.​\n- The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​\n- The Brexit Movement, which sought the United Kingdom's withdrawal from the European Union.
 is_a: CACAO:0000010 ! Social movement
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2024-11-19T12:51:42Z" xsd:dateTime
@@ -60,12 +66,14 @@ property_value: terms:description "Wikidata: Q2738074, movement to obtain a poli
 [Term]
 id: CACAO:0000014
 name: Domain
+comment: Scope note:\nThis class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​\n\nThe Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of "archaeology" or "art history" helps in understanding its scholarly context and the methodologies applied to its study.​\n\nExamples:\n- Archaeology​\n- Art History​\n- Ethnomusicology​\n- Conservation Science
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2024-12-06T13:27:25Z" xsd:dateTime
 
 [Term]
 id: CACAO:0000015
 name: Economic Relevance
+comment: Scope note:\nEconomic Relevance pertains to concepts that define the economic significance or impact of entities, events, or activities. This class encompasses terms and categories used to classify and assess the economic aspects of cultural heritage items, historical events, or societal practices.\n\nExamples:\n- The economic impact of the Silk Road trade routes on participating civilizations.​\n- The assessment of a museum's collection in terms of its monetary value and contribution to tourism revenue.​\n- Analysis of the financial significance of a historical event, such as the Industrial Revolution, on global markets.
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2024-12-06T13:30:25Z" xsd:dateTime
 
@@ -78,24 +86,28 @@ property_value: terms:date "2024-12-06T13:43:53Z" xsd:dateTime
 [Term]
 id: CACAO:0000020
 name: Museum
+comment: Scope note:\nThis class comprises organizations that are established to collect, preserve, research, interpret, and exhibit tangible and intangible cultural heritage for the purposes of education, study, and enjoyment. Museums operate as collective entities, often encompassing various departments and professionals, and may be public or private institutions.​\n\nAs instances of E74 Group, museums are characterized by their organizational structure and collective actions aimed at the stewardship of cultural artifacts and information. They may also engage in activities such as publishing, educational programming, and community outreach.​\n\nMuseums can vary widely in scope and specialization, including but not limited to art museums, history museums, science museums, and ethnographic museums. Their defining feature is the systematic curation and presentation of collections to the public or specific audiences.​\n\nExamples:\n- The British Museum​\n- The Louvre​\n- The Metropolitan Museum of Art​\n- The National Museum of Denmark
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2025-04-11T08:31:05Z" xsd:dateTime
 
 [Term]
 id: CACAO:0000022
 name: Artist
+comment: Scope note:\nThis class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).\n\nArtists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.\n\nIn bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.\n\nExamples:\n- Leonardo da Vinci\n- Frida Kahlo\n- William Shakespeare\n- Maya Deren
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2025-04-11T08:32:18Z" xsd:dateTime
 
 [Term]
 id: CACAO:0000023
 name: Physical Artefact
+comment: Scope note:\nThis class comprises all persistent physical objects of any size that are purposely created by human activity and have physical boundaries that separate them completely in an objective way from other objects. The class also includes all aggregates of objects made for functional purposes of whatever kind, independent of physical coherence, such as a set of chessmen.​\n\nPhysical Artefacts are distinguished by their tangible nature and intentional creation, serving various purposes such as utility, artistic expression, or cultural significance. They may range from individual items like tools and artworks to assembled collections designed to function as a whole.​\n\nExamples:\n- The Rosetta Stone\n- LNER Class A4 4468 Mallard [the World’s fastest steam locomotive, preserved at the National Railway Museum of York, UK]\n- The Portland Vase
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2025-04-11T08:35:55Z" xsd:dateTime
 
 [Term]
 id: CACAO:0000024
 name: Artwork
+comment: Scope note:\nThis class comprises physical artefacts that are primarily created as expressions of aesthetic, conceptual, or symbolic intent. Artworks encompass a wide range of tangible objects produced through artistic practices, including but not limited to paintings, sculptures, installations, and mixed-media pieces.​\n\nArtworks are distinguished by their purpose of conveying artistic expression, emotion, or commentary, rather than serving utilitarian functions. They are often characterized by their unique form, style, and the creative processes involved in their production.​\n\nWhile all artworks are physical artefacts, not all physical artefacts qualify as artworks; the classification depends on the creator's intent and the cultural context attributing artistic value to the object.​\nCIDOC CRM\n\nExamples:\n- The Mona Lisa by Leonardo da Vinci​\n- The Thinker by Auguste Rodin​\n- The Starry Night by Vincent van Gogh​\n- Balloon Dog (Red) by Jeff Koons
 is_a: CACAO:0000023 ! Physical Artefact
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2025-04-11T08:37:01Z" xsd:dateTime
@@ -103,6 +115,7 @@ property_value: terms:date "2025-04-11T08:37:01Z" xsd:dateTime
 [Term]
 id: CACAO:0000025
 name: Instrument
+comment: Scope note:\nThis class comprises physical artefacts that are intentionally created and utilized by humans to produce, modify, or measure sound, music, or other forms of audio. Instruments are designed with specific acoustic properties or mechanisms to facilitate the creation or manipulation of auditory phenomena. This includes, but is not limited to, musical instruments such as string, wind, percussion, and electronic instruments.​\n\nInstruments are characterized by their functional design aimed at generating or controlling sound, distinguishing them from other physical artefacts. They may vary in complexity from simple objects like drums and flutes to intricate devices like synthesizers and orchestral instruments.​\n\nExamples:\n- A Stradivarius violin​\n- A Steinway grand piano​\n- A traditional African djembe drum​\n- A Moog synthesizer
 is_a: CACAO:0000023 ! Physical Artefact
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2025-04-11T08:37:08Z" xsd:dateTime
@@ -110,12 +123,14 @@ property_value: terms:date "2025-04-11T08:37:08Z" xsd:dateTime
 [Term]
 id: CACAO:0000027
 name: Genre
+comment: Scope note:\nThe Genre class encompasses concepts that denote specific categories or styles of creative works, including but not limited to:​\n\n- Music Genres: Such as classical, jazz, rock, or electronic.​\n- Film Genres: Including drama, comedy, thriller, or documentary.​\n- Artistic Genres: Like impressionism, surrealism, or abstract expressionism.​\n- Literary Genres: Such as fiction, non-fiction, poetry, or drama.​\n\nInstances of the Genre class provide a means to classify and contextualize creative works within their respective domains, enhancing the discovery and analysis of cultural heritage materials based on their genre-specific characteristics.​\n\nExamples:\n- Jazz (music genre)​\n- Film Noir (film genre)​\n- Renaissance Art (artistic genre)​\n- Science Fiction (literary genre)
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2025-04-11T11:18:31Z" xsd:dateTime
 
 [Term]
 id: CACAO:0000028
 name: Field Of Work
+comment: Scope note:\nThis class comprises concepts that denote areas of professional, academic, or creative activity in which individuals, groups, or organizations engage. Instances of Field of Work represent specific domains of expertise or practice, such as "architecture," "literature," or "engineering," and are used to classify and contextualize the roles, contributions, or affiliations of persons within the CIDOC CRM framework.​\n\nBy associating persons with a Field of Work, one can provide semantic context regarding the nature of their activities or specializations. \n\nExamples:\n- Architecture​\n- Literature​\n- Engineering​\n- Performing Arts​
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2025-04-11T11:18:41Z" xsd:dateTime
 
