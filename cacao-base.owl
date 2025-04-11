@@ -140,12 +140,6 @@
     
 
 
-    <!-- http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object -->
-
-    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
-    
-
-
     <!-- http://www.cidoc-crm.org/cidoc-crm/E39_Actor -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
@@ -182,6 +176,17 @@
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-13T16:18:33Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​
+
+Unlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​
+
+The classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity&apos;s functional role in interacting with digital systems in a manner that can be documented and attributed.​
+
+Examples:
+- A registered individual accessing an online museum catalog.​
+- An AI-driven recommendation engine suggesting artifacts to users.​
+- A software bot performing automated data curation tasks.​</rdfs:comment>
         <rdfs:label xml:lang="en">User</rdfs:label>
     </owl:Class>
     
@@ -193,6 +198,14 @@
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-13T16:20:05Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises identifiable immaterial items, such as digital images, texts, multimedia objects, computer program code, algorithms, or mathematical formulae, that are created, modified, or stored in digital formats. Digital Artefacts have an objectively recognizable structure and are documented as single units. They exist independently of specific physical carriers and can reside on multiple digital mediums simultaneously. While E73 Information Objects encompass a broad range of immaterial items, including those stored in human memory or on physical media, Digital Artefacts are specifically associated with digital technologies. This subclassification aids in distinguishing between general information entities and those uniquely tied to digital environments.​
+
+Examples:
+- A digital photograph of an ancient manuscript.​
+- A 3D model of an archaeological excavation site.​
+- The source code of a software application developed to catalog museum collections.​
+- A dataset containing measurements of physical artefacts.</rdfs:comment>
         <rdfs:label xml:lang="en">Digital Artefact</rdfs:label>
     </owl:Class>
     
@@ -213,10 +226,22 @@
     <!-- https://reevaluate.eu/cacao/ns/CACAO_0000010 -->
 
     <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000010">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:50:33Z</dcterms:date>
         <dcterms:description>From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals</dcterms:description>
+        <rdfs:comment xml:lang="en">From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals
+
+Scope note:
+A Social Movement is a loosely organized effort by a large group of people to achieve a particular set of goals, typically aiming to promote or resist changes in society&apos;s structure or values. These movements are characterized by collective action, where individuals unite based on shared beliefs or objectives, often seeking social, political, economic, or cultural transformations. ​
+
+Social movements differ from formal organizations in that they may lack a defined organizational structure or formal membership, relying instead on informal networks and shared commitments. They can vary widely in size and scope, ranging from localized grassroots initiatives to large-scale national or international campaigns. The methods employed can include protests, demonstrations, advocacy, and other forms of collective action aimed at influencing public opinion and policy. ​
+
+Examples:
+- The Civil Rights Movement in the United States,
+- The Environmental Movement
+- The Feminist Movement,
+- The LGBTQ+ Rights Movement</rdfs:comment>
         <rdfs:label xml:lang="en">Social movement</rdfs:label>
     </owl:Class>
     
@@ -229,6 +254,15 @@
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:51:24Z</dcterms:date>
         <dcterms:description>Wikidata: Q1826286, social and ideological movement in the religious sphere</dcterms:description>
+        <rdfs:comment xml:lang="en">Wikidata: Q1826286, social and ideological movement in the religious sphere
+
+Scope note:
+A Religious Movement is a collective effort by a group of people aiming to promote, reform, or resist changes within religious beliefs, practices, or institutions.
+
+Examples:
+- The Protestant Reformation in the 16th century, which led to significant changes in Christian practices and beliefs.​
+- The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​
+- The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s.</rdfs:comment>
         <rdfs:label xml:lang="en">Religious movement</rdfs:label>
     </owl:Class>
     
@@ -241,6 +275,15 @@
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:51:32Z</dcterms:date>
         <dcterms:description>Wikidata: Q2198855, period and movement in cultural history</dcterms:description>
+        <rdfs:comment xml:lang="en">Wikidata: Q2198855, period and movement in cultural history
+
+Scope note:
+A Cultural Movement is a collective effort by loosely affiliated individuals aiming to transform societal perspectives through the dissemination of ideas via various art forms and intentional lifestyle choices. These movements often overlap with social and political movements, making them integral to broader cultural transformations. ​
+
+Examples:
+- The Renaissance
+- The Romanticism movement
+- The Alté Movement in Nigeria</rdfs:comment>
         <rdfs:label xml:lang="en">Cultural movement</rdfs:label>
     </owl:Class>
     
@@ -253,6 +296,15 @@
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:51:42Z</dcterms:date>
         <dcterms:description>Wikidata: Q2738074, movement to obtain a political goal</dcterms:description>
+        <rdfs:comment>Wikidata: Q2738074, movement to obtain a political goal
+
+Scope note:
+A Political Movement is a collective effort by a group of people aiming to influence government policy, social values, or achieve specific political objectives. These movements are typically organized around particular issues or ideologies and seek to bring about change within the political system. They differ from political parties, which aim to gain political office, by focusing on specific goals rather than seeking electoral power. ​
+
+Examples:
+- The Anti-Apartheid Movement, which campaigned against the system of racial segregation in South Africa.​
+- The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​
+- The Brexit Movement, which sought the United Kingdom&apos;s withdrawal from the European Union.</rdfs:comment>
         <rdfs:label xml:lang="en">Political movement</rdfs:label>
     </owl:Class>
     
@@ -264,6 +316,16 @@
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-06T13:27:25Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​
+
+The Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of &quot;archaeology&quot; or &quot;art history&quot; helps in understanding its scholarly context and the methodologies applied to its study.​
+
+Examples:
+- Archaeology​
+- Art History​
+- Ethnomusicology​
+- Conservation Science</rdfs:comment>
         <rdfs:label xml:lang="en">Domain</rdfs:label>
     </owl:Class>
     
@@ -272,9 +334,16 @@
     <!-- https://reevaluate.eu/cacao/ns/CACAO_0000015 -->
 
     <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000015">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-06T13:30:25Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+Economic Relevance pertains to concepts that define the economic significance or impact of entities, events, or activities. This class encompasses terms and categories used to classify and assess the economic aspects of cultural heritage items, historical events, or societal practices.
+
+Examples:
+- The economic impact of the Silk Road trade routes on participating civilizations.​
+- The assessment of a museum&apos;s collection in terms of its monetary value and contribution to tourism revenue.​
+- Analysis of the financial significance of a historical event, such as the Industrial Revolution, on global markets.</rdfs:comment>
         <rdfs:label xml:lang="en">Economic Relevance</rdfs:label>
     </owl:Class>
     
@@ -283,7 +352,7 @@
     <!-- https://reevaluate.eu/cacao/ns/CACAO_0000016 -->
 
     <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000016">
-        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-06T13:43:53Z</dcterms:date>
         <rdfs:label xml:lang="en">Symbolism</rdfs:label>
@@ -297,6 +366,18 @@
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:31:05Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises organizations that are established to collect, preserve, research, interpret, and exhibit tangible and intangible cultural heritage for the purposes of education, study, and enjoyment. Museums operate as collective entities, often encompassing various departments and professionals, and may be public or private institutions.​
+
+As instances of E74 Group, museums are characterized by their organizational structure and collective actions aimed at the stewardship of cultural artifacts and information. They may also engage in activities such as publishing, educational programming, and community outreach.​
+
+Museums can vary widely in scope and specialization, including but not limited to art museums, history museums, science museums, and ethnographic museums. Their defining feature is the systematic curation and presentation of collections to the public or specific audiences.​
+
+Examples:
+- The British Museum​
+- The Louvre​
+- The Metropolitan Museum of Art​
+- The National Museum of Denmark</rdfs:comment>
         <rdfs:label xml:lang="en">Museum</rdfs:label>
     </owl:Class>
     
@@ -309,6 +390,18 @@
         <rdfs:subClassOf rdf:resource="https://schema.org/Person"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:32:18Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).
+
+Artists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.
+
+In bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.
+
+Examples:
+- Leonardo da Vinci
+- Frida Kahlo
+- William Shakespeare
+- Maya Deren</rdfs:comment>
         <rdfs:label xml:lang="en">Artist</rdfs:label>
     </owl:Class>
     
@@ -320,6 +413,15 @@
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:35:55Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises all persistent physical objects of any size that are purposely created by human activity and have physical boundaries that separate them completely in an objective way from other objects. The class also includes all aggregates of objects made for functional purposes of whatever kind, independent of physical coherence, such as a set of chessmen.​
+
+Physical Artefacts are distinguished by their tangible nature and intentional creation, serving various purposes such as utility, artistic expression, or cultural significance. They may range from individual items like tools and artworks to assembled collections designed to function as a whole.​
+
+Examples:
+- The Rosetta Stone
+- LNER Class A4 4468 Mallard [the World’s fastest steam locomotive, preserved at the National Railway Museum of York, UK]
+- The Portland Vase</rdfs:comment>
         <rdfs:label xml:lang="en">Physical Artefact</rdfs:label>
     </owl:Class>
     
@@ -331,6 +433,19 @@
         <rdfs:subClassOf rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000023"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:37:01Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises physical artefacts that are primarily created as expressions of aesthetic, conceptual, or symbolic intent. Artworks encompass a wide range of tangible objects produced through artistic practices, including but not limited to paintings, sculptures, installations, and mixed-media pieces.​
+
+Artworks are distinguished by their purpose of conveying artistic expression, emotion, or commentary, rather than serving utilitarian functions. They are often characterized by their unique form, style, and the creative processes involved in their production.​
+
+While all artworks are physical artefacts, not all physical artefacts qualify as artworks; the classification depends on the creator&apos;s intent and the cultural context attributing artistic value to the object.​
+CIDOC CRM
+
+Examples:
+- The Mona Lisa by Leonardo da Vinci​
+- The Thinker by Auguste Rodin​
+- The Starry Night by Vincent van Gogh​
+- Balloon Dog (Red) by Jeff Koons</rdfs:comment>
         <rdfs:label xml:lang="en">Artwork</rdfs:label>
     </owl:Class>
     
@@ -342,6 +457,16 @@
         <rdfs:subClassOf rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000023"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:37:08Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises physical artefacts that are intentionally created and utilized by humans to produce, modify, or measure sound, music, or other forms of audio. Instruments are designed with specific acoustic properties or mechanisms to facilitate the creation or manipulation of auditory phenomena. This includes, but is not limited to, musical instruments such as string, wind, percussion, and electronic instruments.​
+
+Instruments are characterized by their functional design aimed at generating or controlling sound, distinguishing them from other physical artefacts. They may vary in complexity from simple objects like drums and flutes to intricate devices like synthesizers and orchestral instruments.​
+
+Examples:
+- A Stradivarius violin​
+- A Steinway grand piano​
+- A traditional African djembe drum​
+- A Moog synthesizer</rdfs:comment>
         <rdfs:label xml:lang="en">Instrument</rdfs:label>
     </owl:Class>
     
@@ -353,6 +478,21 @@
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T11:18:31Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+The Genre class encompasses concepts that denote specific categories or styles of creative works, including but not limited to:​
+
+- Music Genres: Such as classical, jazz, rock, or electronic.​
+- Film Genres: Including drama, comedy, thriller, or documentary.​
+- Artistic Genres: Like impressionism, surrealism, or abstract expressionism.​
+- Literary Genres: Such as fiction, non-fiction, poetry, or drama.​
+
+Instances of the Genre class provide a means to classify and contextualize creative works within their respective domains, enhancing the discovery and analysis of cultural heritage materials based on their genre-specific characteristics.​
+
+Examples:
+- Jazz (music genre)​
+- Film Noir (film genre)​
+- Renaissance Art (artistic genre)​
+- Science Fiction (literary genre)</rdfs:comment>
         <rdfs:label xml:lang="en">Genre</rdfs:label>
     </owl:Class>
     
@@ -364,6 +504,16 @@
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T11:18:41Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises concepts that denote areas of professional, academic, or creative activity in which individuals, groups, or organizations engage. Instances of Field of Work represent specific domains of expertise or practice, such as &quot;architecture,&quot; &quot;literature,&quot; or &quot;engineering,&quot; and are used to classify and contextualize the roles, contributions, or affiliations of persons within the CIDOC CRM framework.​
+
+By associating persons with a Field of Work, one can provide semantic context regarding the nature of their activities or specializations. 
+
+Examples:
+- Architecture​
+- Literature​
+- Engineering​
+- Performing Arts​</rdfs:comment>
         <rdfs:label xml:lang="en">Field Of Work</rdfs:label>
     </owl:Class>
     
