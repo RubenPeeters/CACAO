@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cacao/cacao-simple.owl#"
-     xml:base="http://purl.obolibrary.org/obo/cacao/cacao-simple.owl"
+<rdf:RDF xmlns="https://reevaluate.eu/cacao/ns/cacao/cacao-simple.owl#"
+     xml:base="https://reevaluate.eu/cacao/ns/cacao/cacao-simple.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cacao/cacao-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cacao/releases/2024-12-06/cacao-simple.owl"/>
+    <owl:Ontology rdf:about="https://reevaluate.eu/cacao/ns/cacao/cacao-simple.owl">
+        <owl:versionIRI rdf:resource="https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-11/cacao-simple.owl"/>
         <terms:description>None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>Cultural Artefact Contextual Ontology</terms:title>
-        <owl:versionInfo>2024-12-06</owl:versionInfo>
+        <owl:versionInfo>2025-04-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -67,6 +67,55 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000017 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000017">
+        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000022"/>
+        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000023"/>
+        <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000027"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-10T14:50:30Z</terms:date>
+        <rdfs:label xml:lang="en">genre</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000018 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000018">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000023"/>
+        <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000010"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-10T14:51:45Z</terms:date>
+        <rdfs:label xml:lang="en">movement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000026 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000026">
+        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000022"/>
+        <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000028"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T10:40:25Z</terms:date>
+        <rdfs:label xml:lang="en">fieldOfWork</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -75,9 +124,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CACAO_0000002 -->
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000002 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000002">
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000002">
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-13T16:18:33Z</terms:date>
         <rdfs:label xml:lang="en">User</rdfs:label>
@@ -85,9 +134,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CACAO_0000003 -->
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000003 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000003">
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000003">
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-13T16:20:05Z</terms:date>
         <rdfs:label xml:lang="en">Digital Artefact</rdfs:label>
@@ -95,9 +144,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CACAO_0000005 -->
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000005 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000005">
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000005">
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:02:07Z</terms:date>
         <terms:description>A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.</terms:description>
@@ -106,19 +155,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CACAO_0000009 -->
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000010 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000009">
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
-        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:43:53Z</terms:date>
-        <rdfs:label xml:lang="en">Physical Artefact</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CACAO_0000010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000010">
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000010">
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:50:33Z</terms:date>
         <terms:description>From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals</terms:description>
@@ -127,10 +166,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CACAO_0000011 -->
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CACAO_0000010"/>
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000011">
+        <rdfs:subClassOf rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000010"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:51:24Z</terms:date>
         <terms:description>Wikidata: Q1826286, social and ideological movement in the religious sphere</terms:description>
@@ -139,10 +178,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CACAO_0000012 -->
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000012 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CACAO_0000010"/>
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000012">
+        <rdfs:subClassOf rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000010"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:51:32Z</terms:date>
         <terms:description>Wikidata: Q2198855, period and movement in cultural history</terms:description>
@@ -151,10 +190,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CACAO_0000013 -->
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000013 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CACAO_0000010"/>
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000013">
+        <rdfs:subClassOf rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000010"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:51:42Z</terms:date>
         <terms:description>Wikidata: Q2738074, movement to obtain a political goal</terms:description>
@@ -163,9 +202,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CACAO_0000014 -->
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000014 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000014">
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000014">
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-06T13:27:25Z</terms:date>
         <rdfs:label xml:lang="en">Domain</rdfs:label>
@@ -173,9 +212,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CACAO_0000015 -->
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000015 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000015">
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000015">
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-06T13:30:25Z</terms:date>
         <rdfs:label xml:lang="en">Economic Relevance</rdfs:label>
@@ -183,12 +222,84 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CACAO_0000016 -->
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000016 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000016">
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000016">
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-06T13:43:53Z</terms:date>
         <rdfs:label xml:lang="en">Symbolism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000020 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000020">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:31:05Z</terms:date>
+        <rdfs:label xml:lang="en">Museum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000022 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000022">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:32:18Z</terms:date>
+        <rdfs:label xml:lang="en">Artist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000023 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000023">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:35:55Z</terms:date>
+        <rdfs:label xml:lang="en">Physical Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000024 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000024">
+        <rdfs:subClassOf rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000023"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:37:01Z</terms:date>
+        <rdfs:label xml:lang="en">Artwork</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000025 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000025">
+        <rdfs:subClassOf rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000023"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:37:08Z</terms:date>
+        <rdfs:label xml:lang="en">Instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000027 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000027">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T11:18:31Z</terms:date>
+        <rdfs:label xml:lang="en">Genre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000028 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000028">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T11:18:41Z</terms:date>
+        <rdfs:label xml:lang="en">Field Of Work</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

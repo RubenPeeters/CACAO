@@ -1,6 +1,6 @@
 {
   "graphs" : [ {
-    "id" : "http://purl.obolibrary.org/obo/cacao.json",
+    "id" : "https://reevaluate.eu/cacao/ns/cacao.json",
     "meta" : {
       "basicPropertyValues" : [ {
         "pred" : "http://purl.org/dc/terms/description",
@@ -13,169 +13,11 @@
         "val" : "Cultural Artefact Contextual Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-12-06"
+        "val" : "2025-04-11"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/cacao/releases/2024-12-06/cacao.json"
+      "version" : "https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-11/cacao.json"
     },
     "nodes" : [ {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000002",
-      "lbl" : "User",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-13T16:18:33Z"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000003",
-      "lbl" : "Digital Artefact",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-13T16:20:05Z"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000005",
-      "lbl" : "Historical Event",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-19T12:02:07Z"
-        }, {
-          "pred" : "http://purl.org/dc/terms/description",
-          "val" : "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods."
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000009",
-      "lbl" : "Physical Artefact",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-19T12:43:53Z"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000010",
-      "lbl" : "Social movement",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-19T12:50:33Z"
-        }, {
-          "pred" : "http://purl.org/dc/terms/description",
-          "val" : "From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000011",
-      "lbl" : "Religious movement",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-19T12:51:24Z"
-        }, {
-          "pred" : "http://purl.org/dc/terms/description",
-          "val" : "Wikidata: Q1826286, social and ideological movement in the religious sphere"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000012",
-      "lbl" : "Cultural movement",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-19T12:51:32Z"
-        }, {
-          "pred" : "http://purl.org/dc/terms/description",
-          "val" : "Wikidata: Q2198855, period and movement in cultural history"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000013",
-      "lbl" : "Political movement",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-19T12:51:42Z"
-        }, {
-          "pred" : "http://purl.org/dc/terms/description",
-          "val" : "Wikidata: Q2738074, movement to obtain a political goal"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000014",
-      "lbl" : "Domain",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-12-06T13:27:25Z"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000015",
-      "lbl" : "Economic Relevance",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-12-06T13:30:25Z"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000016",
-      "lbl" : "Symbolism",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-12-06T13:43:53Z"
-        } ]
-      }
-    }, {
       "id" : "http://schema.org/Action",
       "type" : "CLASS"
     }, {
@@ -1918,6 +1760,242 @@
       "id" : "http://xmlns.com/foaf/0.1/Person",
       "type" : "CLASS"
     }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000002",
+      "lbl" : "User",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-13T16:18:33Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000003",
+      "lbl" : "Digital Artefact",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-13T16:20:05Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000005",
+      "lbl" : "Historical Event",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-19T12:02:07Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods."
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000010",
+      "lbl" : "Social movement",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-19T12:50:33Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000011",
+      "lbl" : "Religious movement",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-19T12:51:24Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Wikidata: Q1826286, social and ideological movement in the religious sphere"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000012",
+      "lbl" : "Cultural movement",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-19T12:51:32Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Wikidata: Q2198855, period and movement in cultural history"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000013",
+      "lbl" : "Political movement",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-19T12:51:42Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Wikidata: Q2738074, movement to obtain a political goal"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000014",
+      "lbl" : "Domain",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-12-06T13:27:25Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000015",
+      "lbl" : "Economic Relevance",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-12-06T13:30:25Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000016",
+      "lbl" : "Symbolism",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-12-06T13:43:53Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000020",
+      "lbl" : "Museum",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:31:05Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000022",
+      "lbl" : "Artist",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:32:18Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000023",
+      "lbl" : "Physical Artefact",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:35:55Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000024",
+      "lbl" : "Artwork",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:37:01Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000025",
+      "lbl" : "Instrument",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:37:08Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000027",
+      "lbl" : "Genre",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T11:18:31Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000028",
+      "lbl" : "Field Of Work",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T11:18:41Z"
+        } ]
+      }
+    }, {
       "id" : "https://schema.org/AdministrativeArea",
       "lbl" : "AdministrativeArea",
       "type" : "CLASS",
@@ -2047,6 +2125,17 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "https://schema.org/Role"
+        } ]
+      }
+    }, {
+      "id" : "https://schema.org/Specialty",
+      "lbl" : "Specialty",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "https://schema.org/Specialty"
         } ]
       }
     }, {
@@ -5237,6 +5326,48 @@
         } ]
       }
     }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000017",
+      "lbl" : "genre",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-10T14:50:30Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000018",
+      "lbl" : "movement",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-10T14:51:45Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000026",
+      "lbl" : "fieldOfWork",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T10:40:25Z"
+        } ]
+      }
+    }, {
       "id" : "https://schema.org/description",
       "lbl" : "description",
       "type" : "PROPERTY",
@@ -5771,7 +5902,7 @@
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "http://www.w3.org/ns/odrl/2/"
         }, {
-          "pred" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+          "pred" : "http://www.w3.org/2004/02/skos/core#broader",
           "val" : "http://www.w3.org/ns/odrl/2/absolutePosition"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
@@ -5793,7 +5924,7 @@
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "http://www.w3.org/ns/odrl/2/"
         }, {
-          "pred" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+          "pred" : "http://www.w3.org/2004/02/skos/core#broader",
           "val" : "http://www.w3.org/ns/odrl/2/absolutePosition"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
@@ -7354,7 +7485,7 @@
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "http://www.w3.org/ns/odrl/2/"
         }, {
-          "pred" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+          "pred" : "http://www.w3.org/2004/02/skos/core#broader",
           "val" : "http://www.w3.org/ns/odrl/2/relativePosition"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
@@ -7376,7 +7507,7 @@
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "http://www.w3.org/ns/odrl/2/"
         }, {
-          "pred" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+          "pred" : "http://www.w3.org/2004/02/skos/core#broader",
           "val" : "http://www.w3.org/ns/odrl/2/relativePosition"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
@@ -7584,7 +7715,7 @@
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "http://www.w3.org/ns/odrl/2/"
         }, {
-          "pred" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+          "pred" : "http://www.w3.org/2004/02/skos/core#broader",
           "val" : "http://www.w3.org/ns/odrl/2/spatial"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
@@ -10441,7 +10572,7 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+      "id" : "http://www.w3.org/2004/02/skos/core#broader",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -10474,50 +10605,6 @@
       "propertyType" : "ANNOTATION"
     } ],
     "edges" : [ {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000002",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000003",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000005",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000009",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000010",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000011",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CACAO_0000010"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000012",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CACAO_0000010"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000013",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CACAO_0000010"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000014",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000015",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000016",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
-    }, {
       "sub" : "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment",
       "pred" : "is_a",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
@@ -10822,6 +10909,78 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/ns/odrl/2/Policy"
     }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000002",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000003",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000005",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000010",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000011",
+      "pred" : "is_a",
+      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000010"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000012",
+      "pred" : "is_a",
+      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000010"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000013",
+      "pred" : "is_a",
+      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000010"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000014",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000015",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000016",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000020",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E74_Group"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000022",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000022",
+      "pred" : "is_a",
+      "obj" : "https://schema.org/Person"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000023",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000024",
+      "pred" : "is_a",
+      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000023"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000025",
+      "pred" : "is_a",
+      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000023"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000027",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000028",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    }, {
       "sub" : "https://schema.org/AdministrativeArea",
       "pred" : "is_a",
       "obj" : "https://schema.org/Place"
@@ -10877,6 +11036,10 @@
       "sub" : "https://schema.org/Role",
       "pred" : "is_a",
       "obj" : "https://schema.org/Intangible"
+    }, {
+      "sub" : "https://schema.org/Specialty",
+      "pred" : "is_a",
+      "obj" : "https://schema.org/Enumeration"
     }, {
       "sub" : "https://schema.org/Text",
       "pred" : "is_a",
@@ -13062,6 +13225,10 @@
       "pred" : "subPropertyOf",
       "obj" : "http://www.w3.org/ns/odrl/2/operand"
     }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000026",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    }, {
       "sub" : "http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of",
       "pred" : "inverseOf",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/P100i_died_in"
@@ -13594,6 +13761,18 @@
     }, {
       "predicateId" : "http://www.w3.org/ns/odrl/2/rightOperand",
       "domainClassIds" : [ "http://www.w3.org/ns/odrl/2/Constraint" ]
+    }, {
+      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000017",
+      "domainClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000022", "https://reevaluate.eu/cacao/ns/CACAO_0000023" ],
+      "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000027" ]
+    }, {
+      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000018",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E21_Person", "https://reevaluate.eu/cacao/ns/CACAO_0000023" ],
+      "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000010" ]
+    }, {
+      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000026",
+      "domainClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000022" ],
+      "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000028" ]
     }, {
       "predicateId" : "https://schema.org/description",
       "domainClassIds" : [ "https://schema.org/Thing" ]

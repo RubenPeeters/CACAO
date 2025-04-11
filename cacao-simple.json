@@ -1,6 +1,6 @@
 {
   "graphs" : [ {
-    "id" : "http://purl.obolibrary.org/obo/cacao/cacao-simple.json",
+    "id" : "https://reevaluate.eu/cacao/ns/cacao/cacao-simple.json",
     "meta" : {
       "basicPropertyValues" : [ {
         "pred" : "http://purl.org/dc/terms/description",
@@ -13,12 +13,12 @@
         "val" : "Cultural Artefact Contextual Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-12-06"
+        "val" : "2025-04-11"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/cacao/releases/2024-12-06/cacao-simple.json"
+      "version" : "https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-11/cacao-simple.json"
     },
     "nodes" : [ {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000002",
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000002",
       "lbl" : "User",
       "type" : "CLASS",
       "meta" : {
@@ -31,7 +31,7 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000003",
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000003",
       "lbl" : "Digital Artefact",
       "type" : "CLASS",
       "meta" : {
@@ -44,7 +44,7 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000005",
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000005",
       "lbl" : "Historical Event",
       "type" : "CLASS",
       "meta" : {
@@ -60,20 +60,7 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000009",
-      "lbl" : "Physical Artefact",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-19T12:43:53Z"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000010",
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000010",
       "lbl" : "Social movement",
       "type" : "CLASS",
       "meta" : {
@@ -89,7 +76,7 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000011",
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000011",
       "lbl" : "Religious movement",
       "type" : "CLASS",
       "meta" : {
@@ -105,7 +92,7 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000012",
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000012",
       "lbl" : "Cultural movement",
       "type" : "CLASS",
       "meta" : {
@@ -121,7 +108,7 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000013",
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000013",
       "lbl" : "Political movement",
       "type" : "CLASS",
       "meta" : {
@@ -137,7 +124,7 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000014",
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000014",
       "lbl" : "Domain",
       "type" : "CLASS",
       "meta" : {
@@ -150,7 +137,7 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000015",
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000015",
       "lbl" : "Economic Relevance",
       "type" : "CLASS",
       "meta" : {
@@ -163,7 +150,7 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/CACAO_0000016",
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000016",
       "lbl" : "Symbolism",
       "type" : "CLASS",
       "meta" : {
@@ -173,6 +160,139 @@
         }, {
           "pred" : "http://purl.org/dc/terms/date",
           "val" : "2024-12-06T13:43:53Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000020",
+      "lbl" : "Museum",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:31:05Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000022",
+      "lbl" : "Artist",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:32:18Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000023",
+      "lbl" : "Physical Artefact",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:35:55Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000024",
+      "lbl" : "Artwork",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:37:01Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000025",
+      "lbl" : "Instrument",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:37:08Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000027",
+      "lbl" : "Genre",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T11:18:31Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000028",
+      "lbl" : "Field Of Work",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T11:18:41Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000017",
+      "lbl" : "genre",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-10T14:50:30Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000018",
+      "lbl" : "movement",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-10T14:51:45Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000026",
+      "lbl" : "fieldOfWork",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T10:40:25Z"
         } ]
       }
     }, {
@@ -200,17 +320,38 @@
       "propertyType" : "ANNOTATION"
     } ],
     "edges" : [ {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000011",
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000011",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CACAO_0000010"
+      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000010"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000012",
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000012",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CACAO_0000010"
+      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000010"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CACAO_0000013",
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000013",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CACAO_0000010"
+      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000010"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000024",
+      "pred" : "is_a",
+      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000023"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000025",
+      "pred" : "is_a",
+      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000023"
+    } ],
+    "domainRangeAxioms" : [ {
+      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000017",
+      "domainClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000022", "https://reevaluate.eu/cacao/ns/CACAO_0000023" ],
+      "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000027" ]
+    }, {
+      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000018",
+      "domainClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000023" ],
+      "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000010" ]
+    }, {
+      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000026",
+      "domainClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000022" ],
+      "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000028" ]
     } ]
   } ]
 }

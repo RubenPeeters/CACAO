@@ -1,8 +1,8 @@
 format-version: 1.2
-data-version: cacao/releases/2024-12-06/cacao-simple.owl
+data-version: https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-11/cacao-simple.owl
 idspace: terms http://purl.org/dc/terms/ 
-ontology: cacao/cacao-simple
-property_value: owl:versionInfo "2024-12-06" xsd:string
+ontology: https://reevaluate.eu/cacao/ns/cacao/cacao-simple.owl
+property_value: owl:versionInfo "2025-04-11" xsd:string
 property_value: terms:description "None" xsd:string
 property_value: terms:license https://creativecommons.org/licenses/unspecified
 property_value: terms:title "Cultural Artefact Contextual Ontology" xsd:string
@@ -25,12 +25,6 @@ name: Historical Event
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2024-11-19T12:02:07Z" xsd:dateTime
 property_value: terms:description "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods." xsd:string
-
-[Term]
-id: CACAO:0000009
-name: Physical Artefact
-property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
-property_value: terms:date "2024-11-19T12:43:53Z" xsd:dateTime
 
 [Term]
 id: CACAO:0000010
@@ -80,4 +74,73 @@ id: CACAO:0000016
 name: Symbolism
 property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: terms:date "2024-12-06T13:43:53Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000020
+name: Museum
+property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: terms:date "2025-04-11T08:31:05Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000022
+name: Artist
+property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: terms:date "2025-04-11T08:32:18Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000023
+name: Physical Artefact
+property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: terms:date "2025-04-11T08:35:55Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000024
+name: Artwork
+is_a: CACAO:0000023 ! Physical Artefact
+property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: terms:date "2025-04-11T08:37:01Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000025
+name: Instrument
+is_a: CACAO:0000023 ! Physical Artefact
+property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: terms:date "2025-04-11T08:37:08Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000027
+name: Genre
+property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: terms:date "2025-04-11T11:18:31Z" xsd:dateTime
+
+[Term]
+id: CACAO:0000028
+name: Field Of Work
+property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: terms:date "2025-04-11T11:18:41Z" xsd:dateTime
+
+[Typedef]
+id: CACAO:0000017
+name: genre
+property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: terms:date "2025-04-10T14:50:30Z" xsd:dateTime
+domain: CACAO:0000022 ! Artist
+domain: CACAO:0000023 ! Physical Artefact
+range: CACAO:0000027 ! Genre
+
+[Typedef]
+id: CACAO:0000018
+name: movement
+property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: terms:date "2025-04-10T14:51:45Z" xsd:dateTime
+domain: CACAO:0000023 ! Physical Artefact
+range: CACAO:0000010 ! Social movement
+
+[Typedef]
+id: CACAO:0000026
+name: fieldOfWork
+property_value: terms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: terms:date "2025-04-11T10:40:25Z" xsd:dateTime
+domain: CACAO:0000022 ! Artist
+range: CACAO:0000028 ! Field Of Work
 
