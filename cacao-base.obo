@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-11/cacao-base.owl
+data-version: https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-12/cacao-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 ontology: https://reevaluate.eu/cacao/ns/cacao/cacao-base.owl
@@ -7,7 +7,7 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "None" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
 property_value: dcterms:title "Cultural Artefact Contextual Ontology" xsd:string
-property_value: owl:versionInfo "2025-04-11" xsd:string
+property_value: owl:versionInfo "2025-04-12" xsd:string
 
 [Term]
 id: CACAO:0000002
@@ -149,29 +149,105 @@ is_a: E55:Type
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2025-04-11T11:18:41Z" xsd:dateTime
 
+[Term]
+id: CACAO:0000036
+name: Movement
+comment: Scope note:\nThis class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. \n\nExamples:\n- Impressionism\n- Romanticism\n- Modernism\n- Existentialism
+is_a: E55:Type
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-12T09:17:34Z" xsd:dateTime
+
 [Typedef]
 id: CACAO:0000017
 name: genre
+comment: Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an Entity with a particular Genre. The Genre is defined as a subclass of E55 Type and represents a category of artistic, stylistic, thematic, or aesthetic classification. Whether applied to an artist or a creative work, the property genre consistently indicates the genre within which the work or the artist’s creative output is situated. \n\nExamples:\n- An artist might be associated with the genre "Impressionism" to indicate that their body of work is typically aligned with this artistic style.\n- A painting (as a physical artefact) may be categorized under "Portrait" to denote the genre of the artwork.
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2025-04-10T14:50:30Z" xsd:dateTime
-domain: CACAO:0000022 ! Artist
-domain: CACAO:0000023 ! Physical Artefact
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity
 range: CACAO:0000027 ! Genre
 
 [Typedef]
 id: CACAO:0000018
-name: movement
+name: socialMovement
+comment: Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an Entity with a specific Social Movement. A Social Movement is defined as a loosely organized effort by a large group of people to achieve a particular set of goals (e.g., political, cultural, or religious change). Through this property, one can record an artist’s participation in or influence from a social movement and, similarly, document how a creative work may be representative of or inspired by such a movement. \n\nExamples:\n- An artist (E21 Person) who was actively involved in the Civil Rights Movement might be linked via the movement property to that Social Movement.\n- A poster or photograph (E22 Physical Artefact) produced during a protest could be associated with the relevant Social Movement that motivated its creation.
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2025-04-10T14:51:45Z" xsd:dateTime
-domain: CACAO:0000023 ! Physical Artefact
-domain: E21:Person
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity
 range: CACAO:0000010 ! Social movement
 
 [Typedef]
 id: CACAO:0000026
 name: fieldOfWork
+comment: Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property links an instance of an Actor (typically an instance of E21 Person) with a Field of Work, an element of the controlled vocabulary defined as a subclass of E55 Type. It is used to classify the professional or creative domain in which an Actor (especially an artist) is active. \n\nExamples:\n- An artist (E21 Person) might have a fieldOfWork assignment indicating they work in “Painting” (an instance of Field of Work).\n- A creator could be linked to the fieldOfWork “Sculpture” as well as “Mixed Media,” reflecting multiple areas of engagement.
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2025-04-11T10:40:25Z" xsd:dateTime
-domain: CACAO:0000022 ! Artist
+domain: E39:Actor
 range: CACAO:0000028 ! Field Of Work
+
+[Typedef]
+id: CACAO:0000030
+name: height
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-12T09:12:56Z" xsd:dateTime
+is_a: http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension
+
+[Typedef]
+id: CACAO:0000031
+name: width
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-12T09:12:56Z" xsd:dateTime
+is_a: http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension
+
+[Typedef]
+id: CACAO:0000032
+name: diameter
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-12T09:12:56Z" xsd:dateTime
+is_a: http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension
+
+[Typedef]
+id: CACAO:0000033
+name: thickness
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-12T09:12:56Z" xsd:dateTime
+is_a: http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension
+
+[Typedef]
+id: CACAO:0000034
+name: length
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-12T09:12:56Z" xsd:dateTime
+is_a: http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension
+
+[Typedef]
+id: CACAO:0000035
+name: movement
+comment: Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an entity,such as a person (e.g., an artist) or a physical artefact (e.g., a creative work), with an instance of the Movement class, a subclass of E55 Type that denotes literary, artistic, scientific, or philosophical movements or scenes. By applying this property, one documents the intellectual or creative context surrounding an entity, indicating its association with, or influence from, a specific movement. \n\nExamples:\n- An artist might be associated with the movement Modernism.\n- A painting might be linked to the artistic movement Impressionism.\n- A literary work might be classified under the movement Romanticism.
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-12T09:16:19Z" xsd:dateTime
+domain: http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity
+range: CACAO:0000036 ! Movement
+
+[Typedef]
+id: CACAO:0000038
+name: website
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-12T10:00:52Z" xsd:dateTime
+is_a: http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by
+
+[Typedef]
+id: CACAO:0000039
+name: europeana
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-12T10:00:52Z" xsd:dateTime
+is_a: http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by
+
+[Typedef]
+id: CACAO:0000040
+name: partner
+comment: Scope note:\nThe property partner denotes that an Actor has committed to a partnership with another Actor.
+property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
+property_value: dcterms:date "2025-04-12T10:13:16Z" xsd:dateTime
+domain: E39:Actor
+range: E39:Actor
 

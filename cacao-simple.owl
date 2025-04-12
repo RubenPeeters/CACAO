@@ -6,13 +6,14 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://reevaluate.eu/cacao/ns/cacao/cacao-simple.owl">
-        <owl:versionIRI rdf:resource="https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-11/cacao-simple.owl"/>
+        <owl:versionIRI rdf:resource="https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-12/cacao-simple.owl"/>
         <terms:description>None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>Cultural Artefact Contextual Ontology</terms:title>
-        <owl:versionInfo>2025-04-11</owl:versionInfo>
+        <owl:versionInfo>2025-04-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -64,6 +65,18 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -75,14 +88,137 @@
     
 
 
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator">
+        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000020"/>
+        <rdfs:comment xml:lang="en">Quantification: many to many, necessary (1,n:0,n)
+
+Scope note:
+This property identifies the instance of E39 Actor who assumed or has assumed overall curatorial responsibility for an instance of E78 Curated Holding.
+It does not allow a history of curation to be recorded. This would require use of an event initiating a curator being responsible for a collection.
+
+Examples:
+- The Robert Opie Collection (E78) has current or former curator Robert Opie (E21). (https://www.robertopiecollection.com/)
+- The Mikael Heggelund Foslie’s coralline red algae Herbarium (E78) has current or former curator Mikael Heggelund Foslie (E21). (Woelkerling et al., 2005)
+
+In First Order Logic:
+- P109(x,y) ⇒ E78(x)
+- P109(x,y) ⇒ E39(y) 
+- P109(x,y) ⇒ P49(x,y)
+</rdfs:comment>
+        <rdfs:label xml:lang="fr">P109 a pour responsable actuel ou antérieur de la collection</rdfs:label>
+        <rdfs:label xml:lang="en">P109 has current or former curator</rdfs:label>
+        <rdfs:label xml:lang="de">P109 hat derzeitigen oder früheren Kurator</rdfs:label>
+        <rdfs:label xml:lang="pt">P109 tem ou teve curador</rdfs:label>
+        <rdfs:label xml:lang="el">P109 έχει ή είχε επιμελητή</rdfs:label>
+        <rdfs:label xml:lang="ru">P109 имeeт дeйствующeго или бывшeго хранитeля</rdfs:label>
+        <rdfs:label xml:lang="zh">P109 有当前或以往管理者</rdfs:label>
+        <skos:notation xml:lang="en">P109</skos:notation>
+        <skos:prefLabel xml:lang="fr">a pour responsable actuel ou antérieur de la collection</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">has current or former curator</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat derzeitigen oder früheren Kurator</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">tem ou teve curador</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">έχει ή είχε επιμελητή</skos:prefLabel>
+        <skos:prefLabel xml:lang="ru">имeeт дeйствующeго или бывшeго хранитeля</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">有当前或以往管理者</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by">
+        <rdfs:comment xml:lang="en">Quantification: many to many (0,n:0,n)
+
+Scope note:
+This property describes the naming or identification of any real-world item by a name or any other identifier. 
+This property is intended for identifiers in general use, which form part of the world the model intends to describe, and not merely for internal database identifiers which are specific to a technical system, unless these latter also have a more general use outside the technical context. This property includes in particular identification by mathematical expressions such as coordinate systems used for the identification of instances of E53 Place. The property does not reveal anything about when, where and by whom this identifier was used. A more detailed representation can be made using the fully developed (i.e. indirect) path through E15 Identifier Assignment.
+This property is a shortcut for the path from E1 CRM Entity through P140i was attributed by, E15 Identifier Assignment, P37 assigned to E42 Identifier. 
+It is also a shortcut for the path from E1 CRM Entity through P1 is identified by, E41 Appellation, P139 has alternative form to E41 Appellation.
+
+Examples:
+- The capital of Italy (E53) is identified by “Rome” (E41). (Leach, 2017)
+- Text 25014–32 (E33) is identified by “The Decline and Fall of the Roman Empire” (E35). (Gibbon, 2013)
+
+In First Order Logic:
+- P1(x,y) ⇒ E1(x)
+- P1(x,y) ⇒ E41(y)
+- P1(x,y) ⇐ (∃z) [E15(z)˄ P140i(x,z) ˄ P37(z,y)]
+- P1(x,y) ⇐ (∃z) [E41(z)˄ P1(x,z) ˄ P139(z,y)]
+</rdfs:comment>
+        <rdfs:label xml:lang="fr">P1 est identifié par</rdfs:label>
+        <rdfs:label xml:lang="en">P1 is identified by</rdfs:label>
+        <rdfs:label xml:lang="de">P1 wird bezeichnet als</rdfs:label>
+        <rdfs:label xml:lang="pt">P1 é identificado por</rdfs:label>
+        <rdfs:label xml:lang="el">P1 αναγνωρίζεται ως</rdfs:label>
+        <rdfs:label xml:lang="ru">P1 идeнтифицируeтся</rdfs:label>
+        <rdfs:label xml:lang="zh">P1 被标识为</rdfs:label>
+        <skos:notation xml:lang="en">P1</skos:notation>
+        <skos:prefLabel xml:lang="fr">est identifié par</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">is identified by</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">wird bezeichnet als</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">é identificado por</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">αναγνωρίζεται ως</skos:prefLabel>
+        <skos:prefLabel xml:lang="ru">идeнтифицируeтся</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">被标识为</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension">
+        <rdfs:comment xml:lang="en">Quantification: many to many, necessary (1,n:0,n)
+
+Scope note:
+This property records the dimension that was observed in an E16 Measurement Event.
+E54 Dimension can be any quantifiable aspect of E70 Thing. Weight, image colour depth and monetary value are dimensions in this sense. One measurement activity may determine more than one dimension of one object.
+Dimensions may be determined either by direct observation or using recorded evidence. In the latter case the measured Thing does not need to be present or extant.
+Even though knowledge of the value of a dimension requires measurement, the dimension may be an object of discourse prior to, or even without, any measurement being made.
+
+Examples:
+- The measurement of the height of silver cup 232 on 31(st) August 1997 (E16) observed dimension silver cup 232 height (E54). [which has unit mm (E58), has value 224 (E60)] (fictitious)
+- The carbon 14 dating of the “Schoeninger Speer II” in 1996 (E16) observed dimension the carbon 14 based temporal distance from 1996 to the growth of the wood of the “Schoeninger Speer II” (E60). [The carbon 14 dating of an approximately 400.000 year old complete Old Palaeolithic wooden spear found in Schoeningen, Niederachsen, Germany, in 1995. See also: E16 Measurement.] (Kouwenhoven, 1997)
+
+In First Order Logic:
+- P40(x,y) ⇒ E16(x)
+- P40(x,y)⇒ E54(y)
+- P40(x,y) ⇒ P141(x,y)
+</rdfs:comment>
+        <rdfs:label xml:lang="fr">P40 a relevé comme dimension</rdfs:label>
+        <rdfs:label xml:lang="de">P40 beobachtete Dimension</rdfs:label>
+        <rdfs:label xml:lang="en">P40 observed dimension</rdfs:label>
+        <rdfs:label xml:lang="pt">P40 verificou a dimensão</rdfs:label>
+        <rdfs:label xml:lang="el">P40 παρατήρησε</rdfs:label>
+        <rdfs:label xml:lang="ru">P40 наблюдаeмый размeр</rdfs:label>
+        <rdfs:label xml:lang="zh">P40 观测度量规格</rdfs:label>
+        <skos:notation xml:lang="en">P40</skos:notation>
+        <skos:prefLabel xml:lang="fr">a relevé comme dimension</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">beobachtete Dimension</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">observed dimension</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">verificou a dimensão</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">παρατήρησε</skos:prefLabel>
+        <skos:prefLabel xml:lang="ru">наблюдаeмый размeр</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">观测度量规格</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://reevaluate.eu/cacao/ns/CACAO_0000017 -->
 
     <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000017">
-        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000022"/>
-        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000023"/>
         <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000027"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-10T14:50:30Z</terms:date>
+        <rdfs:comment xml:lang="en">Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property associates an Entity with a particular Genre. The Genre is defined as a subclass of E55 Type and represents a category of artistic, stylistic, thematic, or aesthetic classification. Whether applied to an artist or a creative work, the property genre consistently indicates the genre within which the work or the artist’s creative output is situated. 
+
+Examples:
+- An artist might be associated with the genre &quot;Impressionism&quot; to indicate that their body of work is typically aligned with this artistic style.
+- A painting (as a physical artefact) may be categorized under &quot;Portrait&quot; to denote the genre of the artwork.</rdfs:comment>
         <rdfs:label xml:lang="en">genre</rdfs:label>
     </owl:ObjectProperty>
     
@@ -92,11 +228,18 @@
 
     <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000018">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000023"/>
         <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000010"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-10T14:51:45Z</terms:date>
-        <rdfs:label xml:lang="en">movement</rdfs:label>
+        <rdfs:comment xml:lang="en">Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property associates an Entity with a specific Social Movement. A Social Movement is defined as a loosely organized effort by a large group of people to achieve a particular set of goals (e.g., political, cultural, or religious change). Through this property, one can record an artist’s participation in or influence from a social movement and, similarly, document how a creative work may be representative of or inspired by such a movement. 
+
+Examples:
+- An artist (E21 Person) who was actively involved in the Civil Rights Movement might be linked via the movement property to that Social Movement.
+- A poster or photograph (E22 Physical Artefact) produced during a protest could be associated with the relevant Social Movement that motivated its creation.</rdfs:comment>
+        <rdfs:label xml:lang="en">socialMovement</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -104,11 +247,128 @@
     <!-- https://reevaluate.eu/cacao/ns/CACAO_0000026 -->
 
     <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000026">
-        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000022"/>
         <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000028"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T10:40:25Z</terms:date>
+        <rdfs:comment xml:lang="en">Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property links an instance of an Actor (typically an instance of E21 Person) with a Field of Work, an element of the controlled vocabulary defined as a subclass of E55 Type. It is used to classify the professional or creative domain in which an Actor (especially an artist) is active. 
+
+Examples:
+- An artist (E21 Person) might have a fieldOfWork assignment indicating they work in “Painting” (an instance of Field of Work).
+- A creator could be linked to the fieldOfWork “Sculpture” as well as “Mixed Media,” reflecting multiple areas of engagement.</rdfs:comment>
         <rdfs:label xml:lang="en">fieldOfWork</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000030 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000030">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</terms:date>
+        <rdfs:label xml:lang="en">height</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000031 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000031">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</terms:date>
+        <rdfs:label xml:lang="en">width</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000032 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000032">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</terms:date>
+        <rdfs:label xml:lang="en">diameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000033 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000033">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</terms:date>
+        <rdfs:label xml:lang="en">thickness</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000034 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000034">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</terms:date>
+        <rdfs:label xml:lang="en">length</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000035 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000035">
+        <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000036"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:16:19Z</terms:date>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="en">Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property associates an entity,such as a person (e.g., an artist) or a physical artefact (e.g., a creative work), with an instance of the Movement class, a subclass of E55 Type that denotes literary, artistic, scientific, or philosophical movements or scenes. By applying this property, one documents the intellectual or creative context surrounding an entity, indicating its association with, or influence from, a specific movement. 
+
+Examples:
+- An artist might be associated with the movement Modernism.
+- A painting might be linked to the artistic movement Impressionism.
+- A literary work might be classified under the movement Romanticism.</rdfs:comment>
+        <rdfs:label xml:lang="en">movement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000038 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000038">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T10:00:52Z</terms:date>
+        <rdfs:label xml:lang="en">website</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000039 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000039">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T10:00:52Z</terms:date>
+        <rdfs:label xml:lang="en">europeana</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000040 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000040">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T10:13:16Z</terms:date>
+        <rdfs:comment>Scope note:
+The property partner denotes that an Actor has committed to a partnership with another Actor.</rdfs:comment>
+        <rdfs:label xml:lang="en">partner</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -456,6 +716,24 @@ Examples:
 - Engineering​
 - Performing Arts​</rdfs:comment>
         <rdfs:label xml:lang="en">Field Of Work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000036 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000036">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:17:34Z</terms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. 
+
+Examples:
+- Impressionism
+- Romanticism
+- Modernism
+- Existentialism</rdfs:comment>
+        <rdfs:label xml:lang="en">Movement</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

@@ -13,9 +13,9 @@
         "val" : "Cultural Artefact Contextual Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-04-11"
+        "val" : "2025-04-12"
       } ],
-      "version" : "https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-11/cacao.json"
+      "version" : "https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-12/cacao.json"
     },
     "nodes" : [ {
       "id" : "http://schema.org/Action",
@@ -2011,6 +2011,20 @@
         } ]
       }
     }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000036",
+      "lbl" : "Movement",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nThis class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. \n\nExamples:\n- Impressionism\n- Romanticism\n- Modernism\n- Existentialism" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:17:34Z"
+        } ]
+      }
+    }, {
       "id" : "https://schema.org/AdministrativeArea",
       "lbl" : "AdministrativeArea",
       "type" : "CLASS",
@@ -2525,6 +2539,138 @@
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "构成部分"
+        } ]
+      }
+    }, {
+      "id" : "http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member",
+      "lbl" : "P107 有当前或以往成员",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Quantification: many to many (0,n:0,n)\n\nScope note:\nThis property associates an instance of E74 Group with an instance of E39 Actor that is or has been a member thereof.\nInstances of E74 Group and E21 Person may all be members of instances of E74 Group. An instance of E74 Group may be founded initially without any member. \nThis property is a shortcut of the more fully developed path from E74 Group, P144i gained member by, E85 Joining, P143 joined to E39 Actor.\nThe property P107.1 kind of member can be used to specify the type of membership or the role the member has in the group.\n\nExamples:\n- László Moholy-Nagy (E21) is current or former member of Bauhaus (E74). (Moholy-Nagy, 2012)\n- National Museum of Science and Industry (E74) has current or former member The National Railway Museum (E74). (Rolt, 1971)\n- The married couple Queen Elisabeth and Prince Phillip (E74) has current or former member Prince Phillip (E21) kind of member husband (E55). (Brandreth, 2004)\n\nProperties:\n- P107.1 kind of member: E55 Type\n\nIn First Order Logic:\n- P107(x,y) ⇒ E74(x)\n- P107(x,y) ⇒ E39(y)\n- P107(x,y,z) ⇒ [P107(x,y) ∧ E55(z)]\n- P107(x,y) ⇐ (∃z) [E85(z) ˄ P144i(x,z) ˄ P143(z,y)]\n" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#notation",
+          "val" : "P107"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "a pour membre actuel ou antérieur"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "has current or former member"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "hat derzeitiges oder früheres Mitglied"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "tem ou teve membro"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "έχει ή είχε μέλος"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "имeeт дeйствующeго или бывшeго члeна"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "有当前或以往成员"
+        } ]
+      }
+    }, {
+      "id" : "http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of",
+      "lbl" : "P107i 是当前或以往成员",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Quantification of the inverse property: many to many (0,n:0,n)\n\nScope note of the inverse property:\nThis property associates an instance of E74 Group with an instance of E39 Actor that is or has been a member thereof.\nInstances of E74 Group and E21 Person may all be members of instances of E74 Group. An instance of E74 Group may be founded initially without any member. \nThis property is a shortcut of the more fully developed path from E74 Group, P144i gained member by, E85 Joining, P143 joined to E39 Actor.\nThe property P107.1 kind of member can be used to specify the type of membership or the role the member has in the group.\n\nExamples of the inverse property:\n- László Moholy-Nagy (E21) is current or former member of Bauhaus (E74). (Moholy-Nagy, 2012)\n- National Museum of Science and Industry (E74) has current or former member The National Railway Museum (E74). (Rolt, 1971)\n- The married couple Queen Elisabeth and Prince Phillip (E74) has current or former member Prince Phillip (E21) kind of member husband (E55). (Brandreth, 2004)\n\nIn First Order Logic of the inverse property:\n- P107(x,y) ⇒ E74(x)\n- P107(x,y) ⇒ E39(y)\n- P107(x,y,z) ⇒ [P107(x,y) ∧ E55(z)]\n- P107(x,y) ⇐ (∃z) [E85(z) ˄ P144i(x,z) ˄ P143(z,y)]\n" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#notation",
+          "val" : "P107i"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "est le membre actuel ou antérieur de"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "is current or former member of"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "ist derzeitiges oder früheres Mitglied von"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "é ou foi membro de"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "είναι ή ήταν μέλος του/της"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "являeтся дeйствующим или бывшим члeном"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "是当前或以往成员"
+        } ]
+      }
+    }, {
+      "id" : "http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator",
+      "lbl" : "P109 有当前或以往管理者",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Quantification: many to many, necessary (1,n:0,n)\n\nScope note:\nThis property identifies the instance of E39 Actor who assumed or has assumed overall curatorial responsibility for an instance of E78 Curated Holding.\nIt does not allow a history of curation to be recorded. This would require use of an event initiating a curator being responsible for a collection.\n\nExamples:\n- The Robert Opie Collection (E78) has current or former curator Robert Opie (E21). (https://www.robertopiecollection.com/)\n- The Mikael Heggelund Foslie’s coralline red algae Herbarium (E78) has current or former curator Mikael Heggelund Foslie (E21). (Woelkerling et al., 2005)\n\nIn First Order Logic:\n- P109(x,y) ⇒ E78(x)\n- P109(x,y) ⇒ E39(y) \n- P109(x,y) ⇒ P49(x,y)\n" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#notation",
+          "val" : "P109"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "a pour responsable actuel ou antérieur de la collection"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "has current or former curator"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "hat derzeitigen oder früheren Kurator"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "tem ou teve curador"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "έχει ή είχε επιμελητή"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "имeeт дeйствующeго или бывшeго хранитeля"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "有当前或以往管理者"
+        } ]
+      }
+    }, {
+      "id" : "http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of",
+      "lbl" : "P109i 是当前或以往管理者",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Quantification of the inverse property: many to many, necessary (1,n:0,n)\n\nScope note of the inverse property:\nThis property identifies the instance of E39 Actor who assumed or has assumed overall curatorial responsibility for an instance of E78 Curated Holding.\nIt does not allow a history of curation to be recorded. This would require use of an event initiating a curator being responsible for a collection.\n\nExamples of the inverse property:\n- The Robert Opie Collection (E78) has current or former curator Robert Opie (E21). (https://www.robertopiecollection.com/)\n- The Mikael Heggelund Foslie’s coralline red algae Herbarium (E78) has current or former curator Mikael Heggelund Foslie (E21). (Woelkerling et al., 2005)\n\nIn First Order Logic of the inverse property:\n- P109(x,y) ⇒ E78(x)\n- P109(x,y) ⇒ E39(y) \n- P109(x,y) ⇒ P49(x,y)\n" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#notation",
+          "val" : "P109i"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "est responsable actuel ou antérieur de la collection"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "is current or former curator of"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "ist derzeitiger oder früherer Kurator von"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "é ou foi curador de"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "είναι ή ήταν επιμελητής του/της"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "являeтся дeйствующим или бывшим хранитeлeм для"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "是当前或以往管理者"
         } ]
       }
     }, {
@@ -5346,6 +5492,7 @@
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
+        "comments" : [ "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an Entity with a particular Genre. The Genre is defined as a subclass of E55 Type and represents a category of artistic, stylistic, thematic, or aesthetic classification. Whether applied to an artist or a creative work, the property genre consistently indicates the genre within which the work or the artist’s creative output is situated. \n\nExamples:\n- An artist might be associated with the genre \"Impressionism\" to indicate that their body of work is typically aligned with this artistic style.\n- A painting (as a physical artefact) may be categorized under \"Portrait\" to denote the genre of the artwork." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-0905-7033"
@@ -5356,10 +5503,11 @@
       }
     }, {
       "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000018",
-      "lbl" : "movement",
+      "lbl" : "socialMovement",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
+        "comments" : [ "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an Entity with a specific Social Movement. A Social Movement is defined as a loosely organized effort by a large group of people to achieve a particular set of goals (e.g., political, cultural, or religious change). Through this property, one can record an artist’s participation in or influence from a social movement and, similarly, document how a creative work may be representative of or inspired by such a movement. \n\nExamples:\n- An artist (E21 Person) who was actively involved in the Civil Rights Movement might be linked via the movement property to that Social Movement.\n- A poster or photograph (E22 Physical Artefact) produced during a protest could be associated with the relevant Social Movement that motivated its creation." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-0905-7033"
@@ -5374,12 +5522,141 @@
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
+        "comments" : [ "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property links an instance of an Actor (typically an instance of E21 Person) with a Field of Work, an element of the controlled vocabulary defined as a subclass of E55 Type. It is used to classify the professional or creative domain in which an Actor (especially an artist) is active. \n\nExamples:\n- An artist (E21 Person) might have a fieldOfWork assignment indicating they work in “Painting” (an instance of Field of Work).\n- A creator could be linked to the fieldOfWork “Sculpture” as well as “Mixed Media,” reflecting multiple areas of engagement." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-0905-7033"
         }, {
           "pred" : "http://purl.org/dc/terms/date",
           "val" : "2025-04-11T10:40:25Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000030",
+      "lbl" : "height",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000031",
+      "lbl" : "width",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000032",
+      "lbl" : "diameter",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000033",
+      "lbl" : "thickness",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000034",
+      "lbl" : "length",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000035",
+      "lbl" : "movement",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "", "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an entity,such as a person (e.g., an artist) or a physical artefact (e.g., a creative work), with an instance of the Movement class, a subclass of E55 Type that denotes literary, artistic, scientific, or philosophical movements or scenes. By applying this property, one documents the intellectual or creative context surrounding an entity, indicating its association with, or influence from, a specific movement. \n\nExamples:\n- An artist might be associated with the movement Modernism.\n- A painting might be linked to the artistic movement Impressionism.\n- A literary work might be classified under the movement Romanticism." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:16:19Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000038",
+      "lbl" : "website",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T10:00:52Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000039",
+      "lbl" : "europeana",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T10:00:52Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000040",
+      "lbl" : "partner",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Scope note:\nThe property partner denotes that an Actor has committed to a partnership with another Actor." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T10:13:16Z"
         } ]
       }
     }, {
@@ -10996,6 +11273,10 @@
       "pred" : "is_a",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
     }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000036",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    }, {
       "sub" : "https://schema.org/AdministrativeArea",
       "pred" : "is_a",
       "obj" : "https://schema.org/Place"
@@ -13036,6 +13317,14 @@
       "pred" : "subPropertyOf",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/P1i_identifies"
     }, {
+      "sub" : "http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper"
+    }, {
+      "sub" : "http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of"
+    }, {
       "sub" : "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant",
       "pred" : "subPropertyOf",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of"
@@ -13244,6 +13533,42 @@
       "pred" : "subPropertyOf",
       "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
     }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000030",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000031",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000032",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000033",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000034",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000035",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000038",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000039",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000040",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    }, {
       "sub" : "http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of",
       "pred" : "inverseOf",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/P100i_died_in"
@@ -13263,6 +13588,14 @@
       "sub" : "http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of",
       "pred" : "inverseOf",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of"
+    }, {
+      "sub" : "http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member",
+      "pred" : "inverseOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of"
+    }, {
+      "sub" : "http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator",
+      "pred" : "inverseOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of"
     }, {
       "sub" : "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant",
       "pred" : "inverseOf",
@@ -13442,6 +13775,22 @@
       "predicateId" : "http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of",
       "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object" ],
       "rangeClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object" ]
+    }, {
+      "predicateId" : "http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E74_Group" ],
+      "rangeClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ]
+    }, {
+      "predicateId" : "http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ],
+      "rangeClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E74_Group" ]
+    }, {
+      "predicateId" : "http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding", "https://reevaluate.eu/cacao/ns/CACAO_0000020" ],
+      "rangeClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ]
+    }, {
+      "predicateId" : "http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ],
+      "rangeClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding" ]
     }, {
       "predicateId" : "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant",
       "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E5_Event" ],
@@ -13778,16 +14127,24 @@
       "domainClassIds" : [ "http://www.w3.org/ns/odrl/2/Constraint" ]
     }, {
       "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000017",
-      "domainClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000022", "https://reevaluate.eu/cacao/ns/CACAO_0000023" ],
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
       "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000027" ]
     }, {
       "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000018",
-      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E21_Person", "https://reevaluate.eu/cacao/ns/CACAO_0000023" ],
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
       "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000010" ]
     }, {
       "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000026",
-      "domainClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000022" ],
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ],
       "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000028" ]
+    }, {
+      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000035",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
+      "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000036" ]
+    }, {
+      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000040",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ],
+      "rangeClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ]
     }, {
       "predicateId" : "https://schema.org/description",
       "domainClassIds" : [ "https://schema.org/Thing" ]

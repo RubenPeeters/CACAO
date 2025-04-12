@@ -4,10 +4,10 @@
 
   
   
-  <uri name="https://reevaluate.eu/cacao/ns/imports/crm_import.owl" uri="imports/crm_import.owl"/>
-  <uri name="https://reevaluate.eu/cacao/ns/imports/schema_import.owl" uri="imports/schema_import.owl"/>
-  <uri name="https://reevaluate.eu/cacao/ns/imports/foaf_import.owl" uri="imports/foaf_import.owl"/>
-  <uri name="https://reevaluate.eu/cacao/ns/imports/odrl_import.owl" uri="imports/odrl_import.owl"/>
+  <uri name="https://reevaluate.eu/cacao/ns/cacao/imports/crm_import.owl" uri="imports/crm_import.owl"/>
+  <uri name="https://reevaluate.eu/cacao/ns/cacao/imports/schema_import.owl" uri="imports/schema_import.owl"/>
+  <uri name="https://reevaluate.eu/cacao/ns/cacao/imports/foaf_import.owl" uri="imports/foaf_import.owl"/>
+  <uri name="https://reevaluate.eu/cacao/ns/cacao/imports/odrl_import.owl" uri="imports/odrl_import.owl"/>
   
   
 

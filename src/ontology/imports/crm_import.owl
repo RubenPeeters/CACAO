@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://reevaluate.eu/cacao/ns/cacao/imports/crm_import.owl>
-<https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-11/imports/crm_import.owl>
-Annotation(owl:versionInfo "2025-04-11")
+<https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-12/imports/crm_import.owl>
+Annotation(owl:versionInfo "2025-04-12")
 
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E16_Measurement>))
@@ -63,6 +63,10 @@ Declaration(ObjectProperty(<http://www.cidoc-crm.org/cidoc-crm/P105_right_held_b
 Declaration(ObjectProperty(<http://www.cidoc-crm.org/cidoc-crm/P105i_has_right_on>))
 Declaration(ObjectProperty(<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of>))
 Declaration(ObjectProperty(<http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of>))
+Declaration(ObjectProperty(<http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member>))
+Declaration(ObjectProperty(<http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of>))
+Declaration(ObjectProperty(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator>))
+Declaration(ObjectProperty(<http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of>))
 Declaration(ObjectProperty(<http://www.cidoc-crm.org/cidoc-crm/P11_had_participant>))
 Declaration(ObjectProperty(<http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in>))
 Declaration(ObjectProperty(<http://www.cidoc-crm.org/cidoc-crm/P129_is_about>))
@@ -504,6 +508,161 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> "构成部分"@zh)
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>)
+
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> (P107 имeeт дeйствующeго или бывшeго члeна)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "Quantification: many to many (0,n:0,n)
+
+Scope note:
+This property associates an instance of E74 Group with an instance of E39 Actor that is or has been a member thereof.
+Instances of E74 Group and E21 Person may all be members of instances of E74 Group. An instance of E74 Group may be founded initially without any member. 
+This property is a shortcut of the more fully developed path from E74 Group, P144i gained member by, E85 Joining, P143 joined to E39 Actor.
+The property P107.1 kind of member can be used to specify the type of membership or the role the member has in the group.
+
+Examples:
+- László Moholy-Nagy (E21) is current or former member of Bauhaus (E74). (Moholy-Nagy, 2012)
+- National Museum of Science and Industry (E74) has current or former member The National Railway Museum (E74). (Rolt, 1971)
+- The married couple Queen Elisabeth and Prince Phillip (E74) has current or former member Prince Phillip (E21) kind of member husband (E55). (Brandreth, 2004)
+
+Properties:
+- P107.1 kind of member: E55 Type
+
+In First Order Logic:
+- P107(x,y) ⇒ E74(x)
+- P107(x,y) ⇒ E39(y)
+- P107(x,y,z) ⇒ [P107(x,y) ∧ E55(z)]
+- P107(x,y) ⇐ (∃z) [E85(z) ˄ P144i(x,z) ˄ P143(z,y)]
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "P107 a pour membre actuel ou antérieur"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "P107 has current or former member"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "P107 hat derzeitiges oder früheres Mitglied"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "P107 tem ou teve membro"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "P107 έχει ή είχε μέλος"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "P107 имeeт дeйствующeго или бывшeго члeна"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "P107 有当前或以往成员"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "P107"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "a pour membre actuel ou antérieur"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "has current or former member"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "hat derzeitiges oder früheres Mitglied"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "tem ou teve membro"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "έχει ή είχε μέλος"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "имeeт дeйствующeго или бывшeго члeна"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> "有当前或以往成员"@zh)
+InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of>)
+ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> <http://www.cidoc-crm.org/cidoc-crm/E74_Group>)
+ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> (P107i είναι ή ήταν μέλος του/της)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "Quantification of the inverse property: many to many (0,n:0,n)
+
+Scope note of the inverse property:
+This property associates an instance of E74 Group with an instance of E39 Actor that is or has been a member thereof.
+Instances of E74 Group and E21 Person may all be members of instances of E74 Group. An instance of E74 Group may be founded initially without any member. 
+This property is a shortcut of the more fully developed path from E74 Group, P144i gained member by, E85 Joining, P143 joined to E39 Actor.
+The property P107.1 kind of member can be used to specify the type of membership or the role the member has in the group.
+
+Examples of the inverse property:
+- László Moholy-Nagy (E21) is current or former member of Bauhaus (E74). (Moholy-Nagy, 2012)
+- National Museum of Science and Industry (E74) has current or former member The National Railway Museum (E74). (Rolt, 1971)
+- The married couple Queen Elisabeth and Prince Phillip (E74) has current or former member Prince Phillip (E21) kind of member husband (E55). (Brandreth, 2004)
+
+In First Order Logic of the inverse property:
+- P107(x,y) ⇒ E74(x)
+- P107(x,y) ⇒ E39(y)
+- P107(x,y,z) ⇒ [P107(x,y) ∧ E55(z)]
+- P107(x,y) ⇐ (∃z) [E85(z) ˄ P144i(x,z) ˄ P143(z,y)]
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "P107i est le membre actuel ou antérieur de"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "P107i is current or former member of"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "P107i ist derzeitiges oder früheres Mitglied von"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "P107i é ou foi membro de"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "P107i είναι ή ήταν μέλος του/της"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "P107i являeтся дeйствующим или бывшим члeном"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "P107i 是当前或以往成员"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "P107i"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "est le membre actuel ou antérieur de"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "is current or former member of"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "ist derzeitiges oder früheres Mitglied von"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "é ou foi membro de"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "είναι ή ήταν μέλος του/της"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "являeтся дeйствующим или бывшим члeном"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> "是当前或以往成员"@zh)
+ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> <http://www.cidoc-crm.org/cidoc-crm/E74_Group>)
+
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> (P109 έχει ή είχε επιμελητή)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "Quantification: many to many, necessary (1,n:0,n)
+
+Scope note:
+This property identifies the instance of E39 Actor who assumed or has assumed overall curatorial responsibility for an instance of E78 Curated Holding.
+It does not allow a history of curation to be recorded. This would require use of an event initiating a curator being responsible for a collection.
+
+Examples:
+- The Robert Opie Collection (E78) has current or former curator Robert Opie (E21). (https://www.robertopiecollection.com/)
+- The Mikael Heggelund Foslie’s coralline red algae Herbarium (E78) has current or former curator Mikael Heggelund Foslie (E21). (Woelkerling et al., 2005)
+
+In First Order Logic:
+- P109(x,y) ⇒ E78(x)
+- P109(x,y) ⇒ E39(y) 
+- P109(x,y) ⇒ P49(x,y)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "P109 a pour responsable actuel ou antérieur de la collection"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "P109 has current or former curator"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "P109 hat derzeitigen oder früheren Kurator"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "P109 tem ou teve curador"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "P109 έχει ή είχε επιμελητή"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "P109 имeeт дeйствующeго или бывшeго хранитeля"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "P109 有当前或以往管理者"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "P109"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "a pour responsable actuel ou antérieur de la collection"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "has current or former curator"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "hat derzeitigen oder früheren Kurator"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "tem ou teve curador"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "έχει ή είχε επιμελητή"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "имeeт дeйствующeго или бывшeго хранитeля"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> "有当前或以往管理者"@zh)
+SubObjectPropertyOf(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> <http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper>)
+InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of>)
+ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding>)
+ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> (P109i είναι ή ήταν επιμελητής του/της)
+
+AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "Quantification of the inverse property: many to many, necessary (1,n:0,n)
+
+Scope note of the inverse property:
+This property identifies the instance of E39 Actor who assumed or has assumed overall curatorial responsibility for an instance of E78 Curated Holding.
+It does not allow a history of curation to be recorded. This would require use of an event initiating a curator being responsible for a collection.
+
+Examples of the inverse property:
+- The Robert Opie Collection (E78) has current or former curator Robert Opie (E21). (https://www.robertopiecollection.com/)
+- The Mikael Heggelund Foslie’s coralline red algae Herbarium (E78) has current or former curator Mikael Heggelund Foslie (E21). (Woelkerling et al., 2005)
+
+In First Order Logic of the inverse property:
+- P109(x,y) ⇒ E78(x)
+- P109(x,y) ⇒ E39(y) 
+- P109(x,y) ⇒ P49(x,y)
+"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "P109i est responsable actuel ou antérieur de la collection"@fr)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "P109i is current or former curator of"@en)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "P109i ist derzeitiger oder früherer Kurator von"@de)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "P109i é ou foi curador de"@pt)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "P109i είναι ή ήταν επιμελητής του/της"@el)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "P109i являeтся дeйствующим или бывшим хранитeлeм для"@ru)
+AnnotationAssertion(rdfs:label <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "P109i 是当前或以往管理者"@zh)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#notation> <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "P109i"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "est responsable actuel ou antérieur de la collection"@fr)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "is current or former curator of"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "ist derzeitiger oder früherer Kurator von"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "é ou foi curador de"@pt)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "είναι ή ήταν επιμελητής του/της"@el)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "являeтся дeйствующим или бывшим хранитeлeм для"@ru)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> "是当前或以往管理者"@zh)
+SubObjectPropertyOf(<http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> <http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of>)
+ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of> <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding>)
 
 # Object Property: <http://www.cidoc-crm.org/cidoc-crm/P11_had_participant> (P11 είχε συμμέτοχο)
 
@@ -1020,7 +1179,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by> <http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> (P14 carried out by)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> (P14 wurde ausgeführt von)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> "Quantification: many to many, necessary (1,n:0,n)
 
@@ -2332,7 +2491,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P75i_is_possessed_by> <http://www.cidoc-crm.org/cidoc-crm/E30_Right>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P75i_is_possessed_by> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> (P7 took place at)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> (P7 a eu lieu dans)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at> "Quantification: many to many, necessary (1,n:0,n)
 
@@ -2796,7 +2955,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_lif
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <http://www.cidoc-crm.org/cidoc-crm/E67_Birth>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> (P98i veio à vida pelo)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> (P98i est né)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> "Quantification of the inverse property: one to many, dependent (0,n:1,1)
 
@@ -3136,7 +3295,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "物质对象"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> (E1 CRM实体)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> (E1 Οντότητα CIDOC CRM)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> "Scope note:
 This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model. 
@@ -3903,7 +4062,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit> "测量单位"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E5_Event> (E5 Συμβάν)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E5_Event> (E5 Ereignis)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "Scope note:
 This class comprises distinct, delimited and coherent processes and interactions of a material nature, in cultural, social or physical systems, involving and affecting instances of E77 Persistent Item in a way characteristic of the kind of process. Typical examples are meetings, births, deaths, actions of decision taking, making or inventing things, but also more complex and extended ones such as conferences, elections, building of a castle, or battles.
@@ -3942,7 +4101,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E5_Event> "事件"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E5_Event> <http://www.cidoc-crm.org/cidoc-crm/E4_Period>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence> (E63 Αρχή Ύπαρξης)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence> (E63 Начало Сущeствования)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence> "Scope note:
 This class comprises events that bring into existence any instance of E77 Persistent Item. 
@@ -3974,7 +4133,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence> "初始"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence> <http://www.cidoc-crm.org/cidoc-crm/E5_Event>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence> (E64 Fin d’existence)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence> (E64 Daseinsende)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence> "Scope note:
 This class comprises events that end the existence of any instance of E77 Persistent Item. 
