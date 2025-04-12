@@ -9,10 +9,10 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<https://reevaluate.eu/cacao/ns/cacao.owl>
-Import(<https://reevaluate.eu/cacao/ns/imports/crm_import.owl>)
-Import(<https://reevaluate.eu/cacao/ns/imports/foaf_import.owl>)
-Import(<https://reevaluate.eu/cacao/ns/imports/odrl_import.owl>)
-Import(<https://reevaluate.eu/cacao/ns/imports/schema_import.owl>)
+Import(<https://reevaluate.eu/cacao/ns/cacao/imports/crm_import.owl>)
+Import(<https://reevaluate.eu/cacao/ns/cacao/imports/foaf_import.owl>)
+Import(<https://reevaluate.eu/cacao/ns/cacao/imports/odrl_import.owl>)
+Import(<https://reevaluate.eu/cacao/ns/cacao/imports/schema_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Cultural Artefact Contextual Ontology")
@@ -45,10 +45,17 @@ Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000024>))
 Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000025>))
 Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000027>))
 Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000028>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000036>))
 Declaration(Class(<https://schema.org/Person>))
 Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000017>))
 Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000018>))
 Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000026>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000030>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000031>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000032>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000033>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000034>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000035>))
 Declaration(AnnotationProperty(dcterms:contributor))
 Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
@@ -80,18 +87,16 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000017> <https://orcid.org/0000-0002-0905-7033>)
 AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000017> "2025-04-10T14:50:30Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000017> "genre"@en)
-ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000017> <https://reevaluate.eu/cacao/ns/CACAO_0000022>)
-ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000017> <https://reevaluate.eu/cacao/ns/CACAO_0000023>)
+ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000017> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
 ObjectPropertyRange(<https://reevaluate.eu/cacao/ns/CACAO_0000017> <https://reevaluate.eu/cacao/ns/CACAO_0000027>)
 
-# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000018> (movement)
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000018> (socialMovement)
 
 AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000018> <https://orcid.org/0000-0002-0905-7033>)
 AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000018> "2025-04-10T14:51:45Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000018> "movement"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000018> "socialMovement"@en)
 IrreflexiveObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000018>)
-ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000018> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
-ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000018> <https://reevaluate.eu/cacao/ns/CACAO_0000023>)
+ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000018> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
 ObjectPropertyRange(<https://reevaluate.eu/cacao/ns/CACAO_0000018> <https://reevaluate.eu/cacao/ns/CACAO_0000010>)
 
 # Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000026> (fieldOfWork)
@@ -100,8 +105,52 @@ AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_00
 AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000026> "2025-04-11T10:40:25Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000026> "fieldOfWork"@en)
 SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000026> owl:topObjectProperty)
-ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000026> <https://reevaluate.eu/cacao/ns/CACAO_0000022>)
+ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000026> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 ObjectPropertyRange(<https://reevaluate.eu/cacao/ns/CACAO_0000026> <https://reevaluate.eu/cacao/ns/CACAO_0000028>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000030> (height)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000030> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000030> "2025-04-12T09:12:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000030> "height"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000030> <http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000031> (width)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000031> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000031> "2025-04-12T09:12:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000031> "width"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000031> <http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000032> (diameter)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000032> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000032> "2025-04-12T09:12:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000032> "diameter"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000032> <http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000033> (thickness)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000033> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000033> "2025-04-12T09:12:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000033> "thickness"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000033> <http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000034> (length)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000034> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000034> "2025-04-12T09:12:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000034> "length"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000034> <http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000035> (movement)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000035> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000035> "2025-04-12T09:16:19Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000035> "movement"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000035> owl:topObjectProperty)
+ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000035> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
+ObjectPropertyRange(<https://reevaluate.eu/cacao/ns/CACAO_0000035> <https://reevaluate.eu/cacao/ns/CACAO_0000036>)
 
 
 
@@ -400,6 +449,21 @@ Examples:
 - Performing Arts​"@en)
 AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000028> "Field Of Work"@en)
 SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000028> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000036> (Movement)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000036> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000036> "2025-04-12T09:17:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000036> "Scope note:
+This class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. 
+
+Examples:
+- Impressionism
+- Romanticism
+- Modernism
+- Existentialism"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000036> "Movement"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000036> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
 
 )
