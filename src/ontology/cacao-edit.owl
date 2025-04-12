@@ -109,6 +109,14 @@ ObjectPropertyRange(<https://reevaluate.eu/cacao/ns/CACAO_0000017> <https://reev
 
 AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000018> <https://orcid.org/0000-0002-0905-7033>)
 AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000018> "2025-04-10T14:51:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000018> "Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property associates an Entity with a specific Social Movement. A Social Movement is defined as a loosely organized effort by a large group of people to achieve a particular set of goals (e.g., political, cultural, or religious change). Through this property, one can record an artist’s participation in or influence from a social movement and, similarly, document how a creative work may be representative of or inspired by such a movement. 
+
+Examples:
+- An artist (E21 Person) who was actively involved in the Civil Rights Movement might be linked via the movement property to that Social Movement.
+- A poster or photograph (E22 Physical Artefact) produced during a protest could be associated with the relevant Social Movement that motivated its creation."@en)
 AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000018> "socialMovement"@en)
 IrreflexiveObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000018>)
 ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000018> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
@@ -170,14 +178,16 @@ SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000034> <http://www.c
 
 AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000035> <https://orcid.org/0000-0002-0905-7033>)
 AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000035> "2025-04-12T09:16:19Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000035> ""@en)
 AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000035> "Quantification: Many-to-many (0,n: 0,n)
 
 Scope note:
-This property associates an Entity with a specific Social Movement. A Social Movement is defined as a loosely organized effort by a large group of people to achieve a particular set of goals (e.g., political, cultural, or religious change). Through this property, one can record an artist’s participation in or influence from a social movement and, similarly, document how a creative work may be representative of or inspired by such a movement. 
+This property associates an entity,such as a person (e.g., an artist) or a physical artefact (e.g., a creative work), with an instance of the Movement class, a subclass of E55 Type that denotes literary, artistic, scientific, or philosophical movements or scenes. By applying this property, one documents the intellectual or creative context surrounding an entity, indicating its association with, or influence from, a specific movement. 
 
 Examples:
-- An artist (E21 Person) who was actively involved in the Civil Rights Movement might be linked via the movement property to that Social Movement.
-- A poster or photograph (E22 Physical Artefact) produced during a protest could be associated with the relevant Social Movement that motivated its creation."@en)
+- An artist might be associated with the movement Modernism.
+- A painting might be linked to the artistic movement Impressionism.
+- A literary work might be classified under the movement Romanticism."@en)
 AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000035> "movement"@en)
 SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000035> owl:topObjectProperty)
 ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000035> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
