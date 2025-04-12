@@ -9,12 +9,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://reevaluate.eu/cacao/ns/cacao/cacao-base.owl">
-        <owl:versionIRI rdf:resource="https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-11/cacao-base.owl"/>
+        <owl:versionIRI rdf:resource="https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-12/cacao-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Cultural Artefact Contextual Ontology</dcterms:title>
-        <owl:versionInfo>2025-04-11</owl:versionInfo>
+        <owl:versionInfo>2025-04-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -77,14 +77,33 @@
     
 
 
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+    
+
+
     <!-- https://reevaluate.eu/cacao/ns/CACAO_0000017 -->
 
     <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000017">
-        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000022"/>
-        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000023"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000027"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-10T14:50:30Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property associates an Entity with a particular Genre. The Genre is defined as a subclass of E55 Type and represents a category of artistic, stylistic, thematic, or aesthetic classification. Whether applied to an artist or a creative work, the property genre consistently indicates the genre within which the work or the artist’s creative output is situated. 
+
+Examples:
+- An artist might be associated with the genre &quot;Impressionism&quot; to indicate that their body of work is typically aligned with this artistic style.
+- A painting (as a physical artefact) may be categorized under &quot;Portrait&quot; to denote the genre of the artwork.</rdfs:comment>
         <rdfs:label xml:lang="en">genre</rdfs:label>
     </owl:ObjectProperty>
     
@@ -94,12 +113,19 @@
 
     <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000018">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
-        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000023"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000010"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-10T14:51:45Z</dcterms:date>
-        <rdfs:label xml:lang="en">movement</rdfs:label>
+        <rdfs:comment xml:lang="en">Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property associates an Entity with a specific Social Movement. A Social Movement is defined as a loosely organized effort by a large group of people to achieve a particular set of goals (e.g., political, cultural, or religious change). Through this property, one can record an artist’s participation in or influence from a social movement and, similarly, document how a creative work may be representative of or inspired by such a movement. 
+
+Examples:
+- An artist (E21 Person) who was actively involved in the Civil Rights Movement might be linked via the movement property to that Social Movement.
+- A poster or photograph (E22 Physical Artefact) produced during a protest could be associated with the relevant Social Movement that motivated its creation.</rdfs:comment>
+        <rdfs:label xml:lang="en">socialMovement</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -108,11 +134,134 @@
 
     <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000026">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000022"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
         <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000028"/>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
         <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T10:40:25Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property links an instance of an Actor (typically an instance of E21 Person) with a Field of Work, an element of the controlled vocabulary defined as a subclass of E55 Type. It is used to classify the professional or creative domain in which an Actor (especially an artist) is active. 
+
+Examples:
+- An artist (E21 Person) might have a fieldOfWork assignment indicating they work in “Painting” (an instance of Field of Work).
+- A creator could be linked to the fieldOfWork “Sculpture” as well as “Mixed Media,” reflecting multiple areas of engagement.</rdfs:comment>
         <rdfs:label xml:lang="en">fieldOfWork</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000030 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000030">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</dcterms:date>
+        <rdfs:label xml:lang="en">height</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000031 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000031">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</dcterms:date>
+        <rdfs:label xml:lang="en">width</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000032 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000032">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</dcterms:date>
+        <rdfs:label xml:lang="en">diameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000033 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000033">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</dcterms:date>
+        <rdfs:label xml:lang="en">thickness</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000034 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000034">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</dcterms:date>
+        <rdfs:label xml:lang="en">length</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000035 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000035">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000036"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:16:19Z</dcterms:date>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="en">Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property associates an entity,such as a person (e.g., an artist) or a physical artefact (e.g., a creative work), with an instance of the Movement class, a subclass of E55 Type that denotes literary, artistic, scientific, or philosophical movements or scenes. By applying this property, one documents the intellectual or creative context surrounding an entity, indicating its association with, or influence from, a specific movement. 
+
+Examples:
+- An artist might be associated with the movement Modernism.
+- A painting might be linked to the artistic movement Impressionism.
+- A literary work might be classified under the movement Romanticism.</rdfs:comment>
+        <rdfs:label xml:lang="en">movement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000038 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000038">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T10:00:52Z</dcterms:date>
+        <rdfs:label xml:lang="en">website</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000039 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000039">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T10:00:52Z</dcterms:date>
+        <rdfs:label xml:lang="en">europeana</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000040 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000040">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T10:13:16Z</dcterms:date>
+        <rdfs:comment>Scope note:
+The property partner denotes that an Actor has committed to a partnership with another Actor.</rdfs:comment>
+        <rdfs:label xml:lang="en">partner</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -125,6 +274,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
     
 
 
@@ -515,6 +670,25 @@ Examples:
 - Engineering​
 - Performing Arts​</rdfs:comment>
         <rdfs:label xml:lang="en">Field Of Work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000036 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000036">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:17:34Z</dcterms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. 
+
+Examples:
+- Impressionism
+- Romanticism
+- Modernism
+- Existentialism</rdfs:comment>
+        <rdfs:label xml:lang="en">Movement</rdfs:label>
     </owl:Class>
     
 

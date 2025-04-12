@@ -259,7 +259,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <htt
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <http://www.cidoc-crm.org/cidoc-crm/E35_Title>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> (P102i est le titre de)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> (P102i is title of)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -473,7 +473,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of>
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> (P106i faz parte de)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> (P106i fait partie de)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -1179,7 +1179,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by> <http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> (P14 carried out by)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> (P14 wurde ausgeführt von)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> "Quantification: many to many, necessary (1,n:0,n)
 
@@ -2318,7 +2318,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P55_has_current_loca
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P55_has_current_location> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P55_has_current_location> <http://www.cidoc-crm.org/cidoc-crm/E53_Place>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P55i_currently_holds> (P55i est actuellement la localisation de)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P55i_currently_holds> (P55i είναι θέση του)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P55i_currently_holds> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -3295,7 +3295,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "物质对象"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> (E1 CRM实体)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> (E1 Οντότητα CIDOC CRM)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> "Scope note:
 This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model. 
@@ -3991,7 +3991,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> "类型"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E55_Type> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E57_Material> (E57 Матeриал)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E57_Material> (E57 Material)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E57_Material> "Scope note:
 This class is a specialization of E55 Type and comprises the concepts of materials. 
@@ -4455,7 +4455,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> "持久项"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> (E78 Curated Holding)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> (E78 Отвeтствeнноe Хранeниe)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> "Scope note:
 This class comprises aggregations of instances of E18 Physical Thing that are assembled and maintained (“curated” and “preserved,” in museological terminology) by one or more instances of E39 Actor over time for a specific purpose and audience, and according to a particular collection development plan. Typical instances of curated holdings are museum collections, archives, library holdings and digital libraries. A digital library is regarded as an instance of E18 Physical Thing because it requires keeping physical carriers of the electronic content.

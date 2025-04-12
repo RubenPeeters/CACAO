@@ -16,11 +16,14 @@
         "val" : "Cultural Artefact Contextual Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-04-11"
+        "val" : "2025-04-12"
       } ],
-      "version" : "https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-11/cacao-base.json"
+      "version" : "https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-12/cacao-base.json"
     },
     "nodes" : [ {
+      "id" : "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity",
+      "type" : "CLASS"
+    }, {
       "id" : "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
       "type" : "CLASS"
     }, {
@@ -293,14 +296,37 @@
         } ]
       }
     }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000036",
+      "lbl" : "Movement",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nThis class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. \n\nExamples:\n- Impressionism\n- Romanticism\n- Modernism\n- Existentialism" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:17:34Z"
+        } ]
+      }
+    }, {
       "id" : "https://schema.org/Person",
       "type" : "CLASS"
+    }, {
+      "id" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
     }, {
       "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000017",
       "lbl" : "genre",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
+        "comments" : [ "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an Entity with a particular Genre. The Genre is defined as a subclass of E55 Type and represents a category of artistic, stylistic, thematic, or aesthetic classification. Whether applied to an artist or a creative work, the property genre consistently indicates the genre within which the work or the artist’s creative output is situated. \n\nExamples:\n- An artist might be associated with the genre \"Impressionism\" to indicate that their body of work is typically aligned with this artistic style.\n- A painting (as a physical artefact) may be categorized under \"Portrait\" to denote the genre of the artwork." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-0905-7033"
@@ -311,10 +337,11 @@
       }
     }, {
       "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000018",
-      "lbl" : "movement",
+      "lbl" : "socialMovement",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
+        "comments" : [ "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an Entity with a specific Social Movement. A Social Movement is defined as a loosely organized effort by a large group of people to achieve a particular set of goals (e.g., political, cultural, or religious change). Through this property, one can record an artist’s participation in or influence from a social movement and, similarly, document how a creative work may be representative of or inspired by such a movement. \n\nExamples:\n- An artist (E21 Person) who was actively involved in the Civil Rights Movement might be linked via the movement property to that Social Movement.\n- A poster or photograph (E22 Physical Artefact) produced during a protest could be associated with the relevant Social Movement that motivated its creation." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-0905-7033"
@@ -329,12 +356,141 @@
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
+        "comments" : [ "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property links an instance of an Actor (typically an instance of E21 Person) with a Field of Work, an element of the controlled vocabulary defined as a subclass of E55 Type. It is used to classify the professional or creative domain in which an Actor (especially an artist) is active. \n\nExamples:\n- An artist (E21 Person) might have a fieldOfWork assignment indicating they work in “Painting” (an instance of Field of Work).\n- A creator could be linked to the fieldOfWork “Sculpture” as well as “Mixed Media,” reflecting multiple areas of engagement." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-0905-7033"
         }, {
           "pred" : "http://purl.org/dc/terms/date",
           "val" : "2025-04-11T10:40:25Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000030",
+      "lbl" : "height",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000031",
+      "lbl" : "width",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000032",
+      "lbl" : "diameter",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000033",
+      "lbl" : "thickness",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000034",
+      "lbl" : "length",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000035",
+      "lbl" : "movement",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "", "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an entity,such as a person (e.g., an artist) or a physical artefact (e.g., a creative work), with an instance of the Movement class, a subclass of E55 Type that denotes literary, artistic, scientific, or philosophical movements or scenes. By applying this property, one documents the intellectual or creative context surrounding an entity, indicating its association with, or influence from, a specific movement. \n\nExamples:\n- An artist might be associated with the movement Modernism.\n- A painting might be linked to the artistic movement Impressionism.\n- A literary work might be classified under the movement Romanticism." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:16:19Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000038",
+      "lbl" : "website",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T10:00:52Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000039",
+      "lbl" : "europeana",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T10:00:52Z"
+        } ]
+      }
+    }, {
+      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000040",
+      "lbl" : "partner",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Scope note:\nThe property partner denotes that an Actor has committed to a partnership with another Actor." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T10:13:16Z"
         } ]
       }
     }, {
@@ -435,22 +591,70 @@
       "pred" : "is_a",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
     }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000036",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    }, {
       "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000026",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000030",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000031",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000032",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000033",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000034",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000035",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000038",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000039",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
+    }, {
+      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000040",
       "pred" : "subPropertyOf",
       "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
     } ],
     "domainRangeAxioms" : [ {
       "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000017",
-      "domainClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000022", "https://reevaluate.eu/cacao/ns/CACAO_0000023" ],
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
       "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000027" ]
     }, {
       "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000018",
-      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E21_Person", "https://reevaluate.eu/cacao/ns/CACAO_0000023" ],
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
       "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000010" ]
     }, {
       "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000026",
-      "domainClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000022" ],
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ],
       "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000028" ]
+    }, {
+      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000035",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
+      "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000036" ]
+    }, {
+      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000040",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ],
+      "rangeClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ]
     } ]
   } ]
 }
