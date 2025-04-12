@@ -56,6 +56,9 @@ Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000032>))
 Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000033>))
 Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000034>))
 Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000035>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000038>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000039>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000040>))
 Declaration(AnnotationProperty(dcterms:contributor))
 Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
@@ -81,6 +84,10 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 ############################
 #   Object Properties
 ############################
+
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> (P109 έχει ή είχε επιμελητή)
+
+ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> <https://reevaluate.eu/cacao/ns/CACAO_0000020>)
 
 # Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000017> (genre)
 
@@ -151,6 +158,29 @@ AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000035> "m
 SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000035> owl:topObjectProperty)
 ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000035> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
 ObjectPropertyRange(<https://reevaluate.eu/cacao/ns/CACAO_0000035> <https://reevaluate.eu/cacao/ns/CACAO_0000036>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000038> (website)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000038> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000038> "2025-04-12T10:00:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000038> "website"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000038> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000039> (europeana)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000039> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000039> "2025-04-12T10:00:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000039> "europeana"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000039> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000040> (partner)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000040> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000040> "2025-04-12T10:13:16Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000040> "partner"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000040> owl:topObjectProperty)
+ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000040> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+ObjectPropertyRange(<https://reevaluate.eu/cacao/ns/CACAO_0000040> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 
 
 

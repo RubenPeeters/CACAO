@@ -57,6 +57,8 @@ http://www.cidoc-crm.org/cidoc-crm/P102_has_title
 http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to
 http://www.cidoc-crm.org/cidoc-crm/P105_right_held_by
 http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of
+http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member
+http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator
 http://www.cidoc-crm.org/cidoc-crm/P129_is_about
 http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of
 http://www.cidoc-crm.org/cidoc-crm/P138_represents
