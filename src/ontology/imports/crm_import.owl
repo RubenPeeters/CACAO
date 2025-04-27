@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://reevaluate.eu/cacao/ns/cacao/imports/crm_import.owl>
-<https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-12/imports/crm_import.owl>
-Annotation(owl:versionInfo "2025-04-12")
+<https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-27/imports/crm_import.owl>
+Annotation(owl:versionInfo "2025-04-27")
 
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E16_Measurement>))
@@ -259,7 +259,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <htt
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P102_has_title> <http://www.cidoc-crm.org/cidoc-crm/E35_Title>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> (P102i is title of)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> (P102i est le titre de)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -2318,7 +2318,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P55_has_current_loca
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P55_has_current_location> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P55_has_current_location> <http://www.cidoc-crm.org/cidoc-crm/E53_Place>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P55i_currently_holds> (P55i είναι θέση του)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P55i_currently_holds> (P55i est actuellement la localisation de)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P55i_currently_holds> "Quantification of the inverse property: many to many (0,n:0,n)
 
@@ -2955,7 +2955,7 @@ InverseObjectProperties(<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_lif
 ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <http://www.cidoc-crm.org/cidoc-crm/E67_Birth>)
 ObjectPropertyRange(<http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> (P98i est né)
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> (P98i veio à vida pelo)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/P98i_was_born> "Quantification of the inverse property: one to many, dependent (0,n:1,1)
 
@@ -3295,7 +3295,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> "物质对象"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> (E1 Οντότητα CIDOC CRM)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> (E1 Entité CRM)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> "Scope note:
 This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model. 
@@ -4455,7 +4455,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> "持久项"@zh)
 SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> (E78 Отвeтствeнноe Хранeниe)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> (E78 Curated Holding)
 
 AnnotationAssertion(rdfs:comment <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> "Scope note:
 This class comprises aggregations of instances of E18 Physical Thing that are assembled and maintained (“curated” and “preserved,” in museological terminology) by one or more instances of E39 Actor over time for a specific purpose and audience, and according to a particular collection development plan. Typical instances of curated holdings are museum collections, archives, library holdings and digital libraries. A digital library is regarded as an instance of E18 Physical Thing because it requires keeping physical carriers of the electronic content.
