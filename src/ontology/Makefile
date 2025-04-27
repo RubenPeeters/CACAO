@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                16496617b19ac488b4408c5966a1efa2c9f78fdc16ab1718992f94a36af3ad30
+CONFIG_HASH=                f8d02a0b9b3c19f39e33a6dbd5d6b5f61c95d23e9c2ba7cf1d7bbb20dfc1021d
 
 
 # ----------------------------------------
@@ -41,7 +41,7 @@ UPDATEREPODIR=              target
 SPARQLDIR =                 ../sparql
 COMPONENTSDIR =             components
 ROBOT_PROFILE =             profile.txt
-REPORT_FAIL_ON =            none
+REPORT_FAIL_ON =            None
 REPORT_LABEL =              -l true
 REPORT_PROFILE_OPTS =       --profile $(ROBOT_PROFILE)
 OBO_FORMAT_OPTIONS =        
