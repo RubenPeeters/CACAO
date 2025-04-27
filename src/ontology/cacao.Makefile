@@ -5,3 +5,5 @@
 
 
 
+documentation:
+  documentation_system: mkdocs

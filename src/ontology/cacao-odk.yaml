@@ -22,6 +22,10 @@ import_group:
       mirror_from: https://www.w3.org/ns/odrl/2/ODRL22.ttl
     - id: foaf
       mirror_from: http://xmlns.com/foaf/spec/index.rdf
+ci:
+  - github_actions
+documentation:
+  documentation_system: mkdocs
 robot_java_args: "-Xmx8G"
 robot_report:
   use_labels: TRUE
