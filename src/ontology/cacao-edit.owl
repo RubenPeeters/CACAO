@@ -232,7 +232,11 @@ EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <https://schem
 
 EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E30_Right> <http://www.w3.org/ns/odrl/2/Policy>)
 
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Объeкт Права)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> (E39 Дeйствующий Субъeкт)
+
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E39_Actor> <http://www.w3.org/ns/odrl/2/Party>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Νομικό Αντικείμενο)
 
 EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/ns/odrl/2/Asset>)
 
