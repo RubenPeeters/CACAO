@@ -1,10 +1,10 @@
 
-![Build Status](https://github.com/REEVALUATE/noname/actions/workflows/qc.yml/badge.svg)
+![Build Status](https://github.com/REEVALUATE/cacao/actions/workflows/qc.yml/badge.svg)
 # Cultural Artefact Contextual Ontology
 
 Description: None
 
-More information can be found at http://obofoundry.org/ontology/cacao
+More information can be found at !TO BE ADDED!
 
 ## Versions
 
@@ -12,9 +12,8 @@ More information can be found at http://obofoundry.org/ontology/cacao
 
 The latest version of the ontology can always be found at:
 
-http://purl.obolibrary.org/obo/cacao.owl
+http://w3id.org/cacao
 
-(note this will not show up until the request has been approved by obofoundry.org)
 
 ### Editors' version
 
@@ -22,7 +21,7 @@ Editors of this ontology should use the edit version, [src/ontology/cacao-edit.o
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/REEVALUATE/noname/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](https://github.com/REEVALUATE/cacao/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 

@@ -1,18 +1,19 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cacao/cacao-simple.owl#"
-     xml:base="http://purl.obolibrary.org/obo/cacao/cacao-simple.owl"
+<rdf:RDF xmlns="https://reevaluate.eu/cacao/ns/cacao/cacao-simple.owl#"
+     xml:base="https://reevaluate.eu/cacao/ns/cacao/cacao-simple.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cacao/cacao-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cacao/releases/2024-11-13/cacao-simple.owl"/>
+    <owl:Ontology rdf:about="https://reevaluate.eu/cacao/ns/cacao/cacao-simple.owl">
+        <owl:versionIRI rdf:resource="https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-12/cacao-simple.owl"/>
         <terms:description>None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>Cultural Artefact Contextual Ontology</terms:title>
-        <owl:versionInfo>2024-11-13</owl:versionInfo>
+        <owl:versionInfo>2025-04-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -25,6 +26,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
     
 
 
@@ -52,6 +65,314 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator">
+        <rdfs:domain rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000020"/>
+        <rdfs:comment xml:lang="en">Quantification: many to many, necessary (1,n:0,n)
+
+Scope note:
+This property identifies the instance of E39 Actor who assumed or has assumed overall curatorial responsibility for an instance of E78 Curated Holding.
+It does not allow a history of curation to be recorded. This would require use of an event initiating a curator being responsible for a collection.
+
+Examples:
+- The Robert Opie Collection (E78) has current or former curator Robert Opie (E21). (https://www.robertopiecollection.com/)
+- The Mikael Heggelund Foslie’s coralline red algae Herbarium (E78) has current or former curator Mikael Heggelund Foslie (E21). (Woelkerling et al., 2005)
+
+In First Order Logic:
+- P109(x,y) ⇒ E78(x)
+- P109(x,y) ⇒ E39(y) 
+- P109(x,y) ⇒ P49(x,y)
+</rdfs:comment>
+        <rdfs:label xml:lang="fr">P109 a pour responsable actuel ou antérieur de la collection</rdfs:label>
+        <rdfs:label xml:lang="en">P109 has current or former curator</rdfs:label>
+        <rdfs:label xml:lang="de">P109 hat derzeitigen oder früheren Kurator</rdfs:label>
+        <rdfs:label xml:lang="pt">P109 tem ou teve curador</rdfs:label>
+        <rdfs:label xml:lang="el">P109 έχει ή είχε επιμελητή</rdfs:label>
+        <rdfs:label xml:lang="ru">P109 имeeт дeйствующeго или бывшeго хранитeля</rdfs:label>
+        <rdfs:label xml:lang="zh">P109 有当前或以往管理者</rdfs:label>
+        <skos:notation xml:lang="en">P109</skos:notation>
+        <skos:prefLabel xml:lang="fr">a pour responsable actuel ou antérieur de la collection</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">has current or former curator</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat derzeitigen oder früheren Kurator</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">tem ou teve curador</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">έχει ή είχε επιμελητή</skos:prefLabel>
+        <skos:prefLabel xml:lang="ru">имeeт дeйствующeго или бывшeго хранитeля</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">有当前或以往管理者</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by">
+        <rdfs:comment xml:lang="en">Quantification: many to many (0,n:0,n)
+
+Scope note:
+This property describes the naming or identification of any real-world item by a name or any other identifier. 
+This property is intended for identifiers in general use, which form part of the world the model intends to describe, and not merely for internal database identifiers which are specific to a technical system, unless these latter also have a more general use outside the technical context. This property includes in particular identification by mathematical expressions such as coordinate systems used for the identification of instances of E53 Place. The property does not reveal anything about when, where and by whom this identifier was used. A more detailed representation can be made using the fully developed (i.e. indirect) path through E15 Identifier Assignment.
+This property is a shortcut for the path from E1 CRM Entity through P140i was attributed by, E15 Identifier Assignment, P37 assigned to E42 Identifier. 
+It is also a shortcut for the path from E1 CRM Entity through P1 is identified by, E41 Appellation, P139 has alternative form to E41 Appellation.
+
+Examples:
+- The capital of Italy (E53) is identified by “Rome” (E41). (Leach, 2017)
+- Text 25014–32 (E33) is identified by “The Decline and Fall of the Roman Empire” (E35). (Gibbon, 2013)
+
+In First Order Logic:
+- P1(x,y) ⇒ E1(x)
+- P1(x,y) ⇒ E41(y)
+- P1(x,y) ⇐ (∃z) [E15(z)˄ P140i(x,z) ˄ P37(z,y)]
+- P1(x,y) ⇐ (∃z) [E41(z)˄ P1(x,z) ˄ P139(z,y)]
+</rdfs:comment>
+        <rdfs:label xml:lang="fr">P1 est identifié par</rdfs:label>
+        <rdfs:label xml:lang="en">P1 is identified by</rdfs:label>
+        <rdfs:label xml:lang="de">P1 wird bezeichnet als</rdfs:label>
+        <rdfs:label xml:lang="pt">P1 é identificado por</rdfs:label>
+        <rdfs:label xml:lang="el">P1 αναγνωρίζεται ως</rdfs:label>
+        <rdfs:label xml:lang="ru">P1 идeнтифицируeтся</rdfs:label>
+        <rdfs:label xml:lang="zh">P1 被标识为</rdfs:label>
+        <skos:notation xml:lang="en">P1</skos:notation>
+        <skos:prefLabel xml:lang="fr">est identifié par</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">is identified by</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">wird bezeichnet als</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">é identificado por</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">αναγνωρίζεται ως</skos:prefLabel>
+        <skos:prefLabel xml:lang="ru">идeнтифицируeтся</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">被标识为</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension">
+        <rdfs:comment xml:lang="en">Quantification: many to many, necessary (1,n:0,n)
+
+Scope note:
+This property records the dimension that was observed in an E16 Measurement Event.
+E54 Dimension can be any quantifiable aspect of E70 Thing. Weight, image colour depth and monetary value are dimensions in this sense. One measurement activity may determine more than one dimension of one object.
+Dimensions may be determined either by direct observation or using recorded evidence. In the latter case the measured Thing does not need to be present or extant.
+Even though knowledge of the value of a dimension requires measurement, the dimension may be an object of discourse prior to, or even without, any measurement being made.
+
+Examples:
+- The measurement of the height of silver cup 232 on 31(st) August 1997 (E16) observed dimension silver cup 232 height (E54). [which has unit mm (E58), has value 224 (E60)] (fictitious)
+- The carbon 14 dating of the “Schoeninger Speer II” in 1996 (E16) observed dimension the carbon 14 based temporal distance from 1996 to the growth of the wood of the “Schoeninger Speer II” (E60). [The carbon 14 dating of an approximately 400.000 year old complete Old Palaeolithic wooden spear found in Schoeningen, Niederachsen, Germany, in 1995. See also: E16 Measurement.] (Kouwenhoven, 1997)
+
+In First Order Logic:
+- P40(x,y) ⇒ E16(x)
+- P40(x,y)⇒ E54(y)
+- P40(x,y) ⇒ P141(x,y)
+</rdfs:comment>
+        <rdfs:label xml:lang="fr">P40 a relevé comme dimension</rdfs:label>
+        <rdfs:label xml:lang="de">P40 beobachtete Dimension</rdfs:label>
+        <rdfs:label xml:lang="en">P40 observed dimension</rdfs:label>
+        <rdfs:label xml:lang="pt">P40 verificou a dimensão</rdfs:label>
+        <rdfs:label xml:lang="el">P40 παρατήρησε</rdfs:label>
+        <rdfs:label xml:lang="ru">P40 наблюдаeмый размeр</rdfs:label>
+        <rdfs:label xml:lang="zh">P40 观测度量规格</rdfs:label>
+        <skos:notation xml:lang="en">P40</skos:notation>
+        <skos:prefLabel xml:lang="fr">a relevé comme dimension</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">beobachtete Dimension</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">observed dimension</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">verificou a dimensão</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">παρατήρησε</skos:prefLabel>
+        <skos:prefLabel xml:lang="ru">наблюдаeмый размeр</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">观测度量规格</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000017 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000017">
+        <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000027"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-10T14:50:30Z</terms:date>
+        <rdfs:comment xml:lang="en">Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property associates an Entity with a particular Genre. The Genre is defined as a subclass of E55 Type and represents a category of artistic, stylistic, thematic, or aesthetic classification. Whether applied to an artist or a creative work, the property genre consistently indicates the genre within which the work or the artist’s creative output is situated. 
+
+Examples:
+- An artist might be associated with the genre &quot;Impressionism&quot; to indicate that their body of work is typically aligned with this artistic style.
+- A painting (as a physical artefact) may be categorized under &quot;Portrait&quot; to denote the genre of the artwork.</rdfs:comment>
+        <rdfs:label xml:lang="en">genre</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000018 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000018">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000010"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-10T14:51:45Z</terms:date>
+        <rdfs:comment xml:lang="en">Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property associates an Entity with a specific Social Movement. A Social Movement is defined as a loosely organized effort by a large group of people to achieve a particular set of goals (e.g., political, cultural, or religious change). Through this property, one can record an artist’s participation in or influence from a social movement and, similarly, document how a creative work may be representative of or inspired by such a movement. 
+
+Examples:
+- An artist (E21 Person) who was actively involved in the Civil Rights Movement might be linked via the movement property to that Social Movement.
+- A poster or photograph (E22 Physical Artefact) produced during a protest could be associated with the relevant Social Movement that motivated its creation.</rdfs:comment>
+        <rdfs:label xml:lang="en">socialMovement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000026 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000026">
+        <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000028"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T10:40:25Z</terms:date>
+        <rdfs:comment xml:lang="en">Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property links an instance of an Actor (typically an instance of E21 Person) with a Field of Work, an element of the controlled vocabulary defined as a subclass of E55 Type. It is used to classify the professional or creative domain in which an Actor (especially an artist) is active. 
+
+Examples:
+- An artist (E21 Person) might have a fieldOfWork assignment indicating they work in “Painting” (an instance of Field of Work).
+- A creator could be linked to the fieldOfWork “Sculpture” as well as “Mixed Media,” reflecting multiple areas of engagement.</rdfs:comment>
+        <rdfs:label xml:lang="en">fieldOfWork</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000030 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000030">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</terms:date>
+        <rdfs:label xml:lang="en">height</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000031 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000031">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</terms:date>
+        <rdfs:label xml:lang="en">width</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000032 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000032">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</terms:date>
+        <rdfs:label xml:lang="en">diameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000033 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000033">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</terms:date>
+        <rdfs:label xml:lang="en">thickness</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000034 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000034">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:12:56Z</terms:date>
+        <rdfs:label xml:lang="en">length</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000035 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000035">
+        <rdfs:range rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000036"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:16:19Z</terms:date>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment xml:lang="en">Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property associates an entity,such as a person (e.g., an artist) or a physical artefact (e.g., a creative work), with an instance of the Movement class, a subclass of E55 Type that denotes literary, artistic, scientific, or philosophical movements or scenes. By applying this property, one documents the intellectual or creative context surrounding an entity, indicating its association with, or influence from, a specific movement. 
+
+Examples:
+- An artist might be associated with the movement Modernism.
+- A painting might be linked to the artistic movement Impressionism.
+- A literary work might be classified under the movement Romanticism.</rdfs:comment>
+        <rdfs:label xml:lang="en">movement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000038 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000038">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T10:00:52Z</terms:date>
+        <rdfs:label xml:lang="en">website</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000039 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000039">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T10:00:52Z</terms:date>
+        <rdfs:label xml:lang="en">europeana</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000040 -->
+
+    <owl:ObjectProperty rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000040">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T10:13:16Z</terms:date>
+        <rdfs:comment>Scope note:
+The property partner denotes that an Actor has committed to a partnership with another Actor.</rdfs:comment>
+        <rdfs:label xml:lang="en">partner</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -63,10 +384,356 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CACAO_0000000 -->
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000002 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CACAO_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000002">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-13T16:18:33Z</terms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​
+
+Unlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​
+
+The classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity&apos;s functional role in interacting with digital systems in a manner that can be documented and attributed.​
+
+Examples:
+- A registered individual accessing an online museum catalog.​
+- An AI-driven recommendation engine suggesting artifacts to users.​
+- A software bot performing automated data curation tasks.​</rdfs:comment>
+        <rdfs:label xml:lang="en">User</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000003 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000003">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-13T16:20:05Z</terms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises identifiable immaterial items, such as digital images, texts, multimedia objects, computer program code, algorithms, or mathematical formulae, that are created, modified, or stored in digital formats. Digital Artefacts have an objectively recognizable structure and are documented as single units. They exist independently of specific physical carriers and can reside on multiple digital mediums simultaneously. While E73 Information Objects encompass a broad range of immaterial items, including those stored in human memory or on physical media, Digital Artefacts are specifically associated with digital technologies. This subclassification aids in distinguishing between general information entities and those uniquely tied to digital environments.​
+
+Examples:
+- A digital photograph of an ancient manuscript.​
+- A 3D model of an archaeological excavation site.​
+- The source code of a software application developed to catalog museum collections.​
+- A dataset containing measurements of physical artefacts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Digital Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000005 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000005">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:02:07Z</terms:date>
+        <terms:description>A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.</terms:description>
+        <rdfs:label xml:lang="en">Historical Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000010 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000010">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:50:33Z</terms:date>
+        <terms:description>From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals</terms:description>
+        <rdfs:comment xml:lang="en">From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals
+
+Scope note:
+A Social Movement is a loosely organized effort by a large group of people to achieve a particular set of goals, typically aiming to promote or resist changes in society&apos;s structure or values. These movements are characterized by collective action, where individuals unite based on shared beliefs or objectives, often seeking social, political, economic, or cultural transformations. ​
+
+Social movements differ from formal organizations in that they may lack a defined organizational structure or formal membership, relying instead on informal networks and shared commitments. They can vary widely in size and scope, ranging from localized grassroots initiatives to large-scale national or international campaigns. The methods employed can include protests, demonstrations, advocacy, and other forms of collective action aimed at influencing public opinion and policy. ​
+
+Examples:
+- The Civil Rights Movement in the United States,
+- The Environmental Movement
+- The Feminist Movement,
+- The LGBTQ+ Rights Movement</rdfs:comment>
+        <rdfs:label xml:lang="en">Social movement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000011 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000011">
+        <rdfs:subClassOf rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000010"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:51:24Z</terms:date>
+        <terms:description>Wikidata: Q1826286, social and ideological movement in the religious sphere</terms:description>
+        <rdfs:comment xml:lang="en">Wikidata: Q1826286, social and ideological movement in the religious sphere
+
+Scope note:
+A Religious Movement is a collective effort by a group of people aiming to promote, reform, or resist changes within religious beliefs, practices, or institutions.
+
+Examples:
+- The Protestant Reformation in the 16th century, which led to significant changes in Christian practices and beliefs.​
+- The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​
+- The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s.</rdfs:comment>
+        <rdfs:label xml:lang="en">Religious movement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000012 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000012">
+        <rdfs:subClassOf rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000010"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:51:32Z</terms:date>
+        <terms:description>Wikidata: Q2198855, period and movement in cultural history</terms:description>
+        <rdfs:comment xml:lang="en">Wikidata: Q2198855, period and movement in cultural history
+
+Scope note:
+A Cultural Movement is a collective effort by loosely affiliated individuals aiming to transform societal perspectives through the dissemination of ideas via various art forms and intentional lifestyle choices. These movements often overlap with social and political movements, making them integral to broader cultural transformations. ​
+
+Examples:
+- The Renaissance
+- The Romanticism movement
+- The Alté Movement in Nigeria</rdfs:comment>
+        <rdfs:label xml:lang="en">Cultural movement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000013 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000013">
+        <rdfs:subClassOf rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000010"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-19T12:51:42Z</terms:date>
+        <terms:description>Wikidata: Q2738074, movement to obtain a political goal</terms:description>
+        <rdfs:comment>Wikidata: Q2738074, movement to obtain a political goal
+
+Scope note:
+A Political Movement is a collective effort by a group of people aiming to influence government policy, social values, or achieve specific political objectives. These movements are typically organized around particular issues or ideologies and seek to bring about change within the political system. They differ from political parties, which aim to gain political office, by focusing on specific goals rather than seeking electoral power. ​
+
+Examples:
+- The Anti-Apartheid Movement, which campaigned against the system of racial segregation in South Africa.​
+- The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​
+- The Brexit Movement, which sought the United Kingdom&apos;s withdrawal from the European Union.</rdfs:comment>
+        <rdfs:label xml:lang="en">Political movement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000014 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000014">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-06T13:27:25Z</terms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​
+
+The Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of &quot;archaeology&quot; or &quot;art history&quot; helps in understanding its scholarly context and the methodologies applied to its study.​
+
+Examples:
+- Archaeology​
+- Art History​
+- Ethnomusicology​
+- Conservation Science</rdfs:comment>
+        <rdfs:label xml:lang="en">Domain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000015 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000015">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-06T13:30:25Z</terms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+Economic Relevance pertains to concepts that define the economic significance or impact of entities, events, or activities. This class encompasses terms and categories used to classify and assess the economic aspects of cultural heritage items, historical events, or societal practices.
+
+Examples:
+- The economic impact of the Silk Road trade routes on participating civilizations.​
+- The assessment of a museum&apos;s collection in terms of its monetary value and contribution to tourism revenue.​
+- Analysis of the financial significance of a historical event, such as the Industrial Revolution, on global markets.</rdfs:comment>
+        <rdfs:label xml:lang="en">Economic Relevance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000016 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000016">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-06T13:43:53Z</terms:date>
+        <rdfs:label xml:lang="en">Symbolism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000020 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000020">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:31:05Z</terms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises organizations that are established to collect, preserve, research, interpret, and exhibit tangible and intangible cultural heritage for the purposes of education, study, and enjoyment. Museums operate as collective entities, often encompassing various departments and professionals, and may be public or private institutions.​
+
+As instances of E74 Group, museums are characterized by their organizational structure and collective actions aimed at the stewardship of cultural artifacts and information. They may also engage in activities such as publishing, educational programming, and community outreach.​
+
+Museums can vary widely in scope and specialization, including but not limited to art museums, history museums, science museums, and ethnographic museums. Their defining feature is the systematic curation and presentation of collections to the public or specific audiences.​
+
+Examples:
+- The British Museum​
+- The Louvre​
+- The Metropolitan Museum of Art​
+- The National Museum of Denmark</rdfs:comment>
+        <rdfs:label xml:lang="en">Museum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000022 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000022">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:32:18Z</terms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).
+
+Artists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.
+
+In bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.
+
+Examples:
+- Leonardo da Vinci
+- Frida Kahlo
+- William Shakespeare
+- Maya Deren</rdfs:comment>
+        <rdfs:label xml:lang="en">Artist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000023 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000023">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:35:55Z</terms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises all persistent physical objects of any size that are purposely created by human activity and have physical boundaries that separate them completely in an objective way from other objects. The class also includes all aggregates of objects made for functional purposes of whatever kind, independent of physical coherence, such as a set of chessmen.​
+
+Physical Artefacts are distinguished by their tangible nature and intentional creation, serving various purposes such as utility, artistic expression, or cultural significance. They may range from individual items like tools and artworks to assembled collections designed to function as a whole.​
+
+Examples:
+- The Rosetta Stone
+- LNER Class A4 4468 Mallard [the World’s fastest steam locomotive, preserved at the National Railway Museum of York, UK]
+- The Portland Vase</rdfs:comment>
+        <rdfs:label xml:lang="en">Physical Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000024 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000024">
+        <rdfs:subClassOf rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000023"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:37:01Z</terms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises physical artefacts that are primarily created as expressions of aesthetic, conceptual, or symbolic intent. Artworks encompass a wide range of tangible objects produced through artistic practices, including but not limited to paintings, sculptures, installations, and mixed-media pieces.​
+
+Artworks are distinguished by their purpose of conveying artistic expression, emotion, or commentary, rather than serving utilitarian functions. They are often characterized by their unique form, style, and the creative processes involved in their production.​
+
+While all artworks are physical artefacts, not all physical artefacts qualify as artworks; the classification depends on the creator&apos;s intent and the cultural context attributing artistic value to the object.​
+CIDOC CRM
+
+Examples:
+- The Mona Lisa by Leonardo da Vinci​
+- The Thinker by Auguste Rodin​
+- The Starry Night by Vincent van Gogh​
+- Balloon Dog (Red) by Jeff Koons</rdfs:comment>
+        <rdfs:label xml:lang="en">Artwork</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000025 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000025">
+        <rdfs:subClassOf rdf:resource="https://reevaluate.eu/cacao/ns/CACAO_0000023"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T08:37:08Z</terms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises physical artefacts that are intentionally created and utilized by humans to produce, modify, or measure sound, music, or other forms of audio. Instruments are designed with specific acoustic properties or mechanisms to facilitate the creation or manipulation of auditory phenomena. This includes, but is not limited to, musical instruments such as string, wind, percussion, and electronic instruments.​
+
+Instruments are characterized by their functional design aimed at generating or controlling sound, distinguishing them from other physical artefacts. They may vary in complexity from simple objects like drums and flutes to intricate devices like synthesizers and orchestral instruments.​
+
+Examples:
+- A Stradivarius violin​
+- A Steinway grand piano​
+- A traditional African djembe drum​
+- A Moog synthesizer</rdfs:comment>
+        <rdfs:label xml:lang="en">Instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000027 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000027">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T11:18:31Z</terms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+The Genre class encompasses concepts that denote specific categories or styles of creative works, including but not limited to:​
+
+- Music Genres: Such as classical, jazz, rock, or electronic.​
+- Film Genres: Including drama, comedy, thriller, or documentary.​
+- Artistic Genres: Like impressionism, surrealism, or abstract expressionism.​
+- Literary Genres: Such as fiction, non-fiction, poetry, or drama.​
+
+Instances of the Genre class provide a means to classify and contextualize creative works within their respective domains, enhancing the discovery and analysis of cultural heritage materials based on their genre-specific characteristics.​
+
+Examples:
+- Jazz (music genre)​
+- Film Noir (film genre)​
+- Renaissance Art (artistic genre)​
+- Science Fiction (literary genre)</rdfs:comment>
+        <rdfs:label xml:lang="en">Genre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000028 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000028">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-11T11:18:41Z</terms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises concepts that denote areas of professional, academic, or creative activity in which individuals, groups, or organizations engage. Instances of Field of Work represent specific domains of expertise or practice, such as &quot;architecture,&quot; &quot;literature,&quot; or &quot;engineering,&quot; and are used to classify and contextualize the roles, contributions, or affiliations of persons within the CIDOC CRM framework.​
+
+By associating persons with a Field of Work, one can provide semantic context regarding the nature of their activities or specializations. 
+
+Examples:
+- Architecture​
+- Literature​
+- Engineering​
+- Performing Arts​</rdfs:comment>
+        <rdfs:label xml:lang="en">Field Of Work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://reevaluate.eu/cacao/ns/CACAO_0000036 -->
+
+    <owl:Class rdf:about="https://reevaluate.eu/cacao/ns/CACAO_0000036">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0905-7033"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-12T09:17:34Z</terms:date>
+        <rdfs:comment xml:lang="en">Scope note:
+This class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. 
+
+Examples:
+- Impressionism
+- Romanticism
+- Modernism
+- Existentialism</rdfs:comment>
+        <rdfs:label xml:lang="en">Movement</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

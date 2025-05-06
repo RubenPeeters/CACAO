@@ -11,12 +11,12 @@ Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Prefix: idrange: <http://purl.obolibrary.org/obo/ro/idrange/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 
-Ontology: <http://purl.obolibrary.org/obo/cacao/cacao-idranges.owl>
+Ontology: <https://reevaluate.eu/cacao/ns/cacao-idranges.owl>
 
 
 Annotations: 
     idsfor: "CACAO",
-    idprefix: "http://purl.obolibrary.org/obo/CACAO_",
+    idprefix: "https://reevaluate.eu/cacao/ns/CACAO_",
     iddigits: 7
 
 AnnotationProperty: idprefix:
@@ -50,4 +50,3 @@ Datatype: idrange:2
     
 Datatype: xsd:integer
 Datatype: rdf:PlainLiteral
-

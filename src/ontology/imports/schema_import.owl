@@ -1,0 +1,1213 @@
+Prefix(:=<https://reevaluate.eu/cacao/ns/cacao/imports/schema_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://reevaluate.eu/cacao/ns/cacao/imports/schema_import.owl>
+<https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-27/imports/schema_import.owl>
+Annotation(owl:versionInfo "2025-04-27")
+
+Declaration(Class(rdfs:Class))
+Declaration(Class(<https://schema.org/AdministrativeArea>))
+Declaration(Class(<https://schema.org/Class>))
+Declaration(Class(<https://schema.org/Country>))
+Declaration(Class(<https://schema.org/CreativeWork>))
+Declaration(Class(<https://schema.org/DataType>))
+Declaration(Class(<https://schema.org/Enumeration>))
+Declaration(Class(<https://schema.org/Intangible>))
+Declaration(Class(<https://schema.org/MediaObject>))
+Declaration(Class(<https://schema.org/Person>))
+Declaration(Class(<https://schema.org/Place>))
+Declaration(Class(<https://schema.org/Property>))
+Declaration(Class(<https://schema.org/Role>))
+Declaration(Class(<https://schema.org/Specialty>))
+Declaration(Class(<https://schema.org/Text>))
+Declaration(Class(<https://schema.org/TextObject>))
+Declaration(Class(<https://schema.org/Thing>))
+Declaration(Class(<https://schema.org/URL>))
+Declaration(ObjectProperty(<https://schema.org/description>))
+Declaration(ObjectProperty(<https://schema.org/nationality>))
+Declaration(ObjectProperty(<https://schema.org/supersededBy>))
+Declaration(NamedIndividual(<https://schema.org/actionApplication>))
+Declaration(NamedIndividual(<https://schema.org/actionOption>))
+Declaration(NamedIndividual(<https://schema.org/actor>))
+Declaration(NamedIndividual(<https://schema.org/actors>))
+Declaration(NamedIndividual(<https://schema.org/album>))
+Declaration(NamedIndividual(<https://schema.org/albums>))
+Declaration(NamedIndividual(<https://schema.org/application>))
+Declaration(NamedIndividual(<https://schema.org/area>))
+Declaration(NamedIndividual(<https://schema.org/areaServed>))
+Declaration(NamedIndividual(<https://schema.org/arterialBranch>))
+Declaration(NamedIndividual(<https://schema.org/artworkSurface>))
+Declaration(NamedIndividual(<https://schema.org/aspect>))
+Declaration(NamedIndividual(<https://schema.org/assembly>))
+Declaration(NamedIndividual(<https://schema.org/attendee>))
+Declaration(NamedIndividual(<https://schema.org/attendees>))
+Declaration(NamedIndividual(<https://schema.org/audience>))
+Declaration(NamedIndividual(<https://schema.org/availableOnDevice>))
+Declaration(NamedIndividual(<https://schema.org/award>))
+Declaration(NamedIndividual(<https://schema.org/awards>))
+Declaration(NamedIndividual(<https://schema.org/benefits>))
+Declaration(NamedIndividual(<https://schema.org/blogPost>))
+Declaration(NamedIndividual(<https://schema.org/blogPosts>))
+Declaration(NamedIndividual(<https://schema.org/bookingAgent>))
+Declaration(NamedIndividual(<https://schema.org/branch>))
+Declaration(NamedIndividual(<https://schema.org/branchOf>))
+Declaration(NamedIndividual(<https://schema.org/broker>))
+Declaration(NamedIndividual(<https://schema.org/carrier>))
+Declaration(NamedIndividual(<https://schema.org/catalog>))
+Declaration(NamedIndividual(<https://schema.org/clincalPharmacology>))
+Declaration(NamedIndividual(<https://schema.org/clinicalPharmacology>))
+Declaration(NamedIndividual(<https://schema.org/codeSampleType>))
+Declaration(NamedIndividual(<https://schema.org/colleague>))
+Declaration(NamedIndividual(<https://schema.org/colleagues>))
+Declaration(NamedIndividual(<https://schema.org/collection>))
+Declaration(NamedIndividual(<https://schema.org/contactPoint>))
+Declaration(NamedIndividual(<https://schema.org/contactPoints>))
+Declaration(NamedIndividual(<https://schema.org/containedIn>))
+Declaration(NamedIndividual(<https://schema.org/containedInPlace>))
+Declaration(NamedIndividual(<https://schema.org/containsSeason>))
+Declaration(NamedIndividual(<https://schema.org/course>))
+Declaration(NamedIndividual(<https://schema.org/datasetTimeInterval>))
+Declaration(NamedIndividual(<https://schema.org/device>))
+Declaration(NamedIndividual(<https://schema.org/director>))
+Declaration(NamedIndividual(<https://schema.org/directors>))
+Declaration(NamedIndividual(<https://schema.org/employee>))
+Declaration(NamedIndividual(<https://schema.org/employees>))
+Declaration(NamedIndividual(<https://schema.org/encoding>))
+Declaration(NamedIndividual(<https://schema.org/encodingFormat>))
+Declaration(NamedIndividual(<https://schema.org/encodings>))
+Declaration(NamedIndividual(<https://schema.org/episode>))
+Declaration(NamedIndividual(<https://schema.org/episodes>))
+Declaration(NamedIndividual(<https://schema.org/event>))
+Declaration(NamedIndividual(<https://schema.org/events>))
+Declaration(NamedIndividual(<https://schema.org/executableLibraryName>))
+Declaration(NamedIndividual(<https://schema.org/exerciseCourse>))
+Declaration(NamedIndividual(<https://schema.org/fileFormat>))
+Declaration(NamedIndividual(<https://schema.org/founder>))
+Declaration(NamedIndividual(<https://schema.org/founders>))
+Declaration(NamedIndividual(<https://schema.org/free>))
+Declaration(NamedIndividual(<https://schema.org/hasMap>))
+Declaration(NamedIndividual(<https://schema.org/hasMenu>))
+Declaration(NamedIndividual(<https://schema.org/hasMerchantReturnPolicy>))
+Declaration(NamedIndividual(<https://schema.org/hasProductReturnPolicy>))
+Declaration(NamedIndividual(<https://schema.org/inLanguage>))
+Declaration(NamedIndividual(<https://schema.org/incentiveCompensation>))
+Declaration(NamedIndividual(<https://schema.org/incentives>))
+Declaration(NamedIndividual(<https://schema.org/includedDataCatalog>))
+Declaration(NamedIndividual(<https://schema.org/includedInDataCatalog>))
+Declaration(NamedIndividual(<https://schema.org/ingredients>))
+Declaration(NamedIndividual(<https://schema.org/interactionCount>))
+Declaration(NamedIndividual(<https://schema.org/interactionStatistic>))
+Declaration(NamedIndividual(<https://schema.org/isAccessibleForFree>))
+Declaration(NamedIndividual(<https://schema.org/isBasedOn>))
+Declaration(NamedIndividual(<https://schema.org/isBasedOnUrl>))
+Declaration(NamedIndividual(<https://schema.org/jobBenefits>))
+Declaration(NamedIndividual(<https://schema.org/language>))
+Declaration(NamedIndividual(<https://schema.org/mainContentOfPage>))
+Declaration(NamedIndividual(<https://schema.org/map>))
+Declaration(NamedIndividual(<https://schema.org/maps>))
+Declaration(NamedIndividual(<https://schema.org/member>))
+Declaration(NamedIndividual(<https://schema.org/members>))
+Declaration(NamedIndividual(<https://schema.org/menu>))
+Declaration(NamedIndividual(<https://schema.org/merchant>))
+Declaration(NamedIndividual(<https://schema.org/merchantReturnDays>))
+Declaration(NamedIndividual(<https://schema.org/merchantReturnLink>))
+Declaration(NamedIndividual(<https://schema.org/musicGroupMember>))
+Declaration(NamedIndividual(<https://schema.org/namedPosition>))
+Declaration(NamedIndividual(<https://schema.org/option>))
+Declaration(NamedIndividual(<https://schema.org/parent>))
+Declaration(NamedIndividual(<https://schema.org/parentOrganization>))
+Declaration(NamedIndividual(<https://schema.org/parents>))
+Declaration(NamedIndividual(<https://schema.org/partOfSeries>))
+Declaration(NamedIndividual(<https://schema.org/partOfTVSeries>))
+Declaration(NamedIndividual(<https://schema.org/paymentDue>))
+Declaration(NamedIndividual(<https://schema.org/paymentDueDate>))
+Declaration(NamedIndividual(<https://schema.org/performer>))
+Declaration(NamedIndividual(<https://schema.org/performers>))
+Declaration(NamedIndividual(<https://schema.org/photo>))
+Declaration(NamedIndividual(<https://schema.org/photos>))
+Declaration(NamedIndividual(<https://schema.org/produces>))
+Declaration(NamedIndividual(<https://schema.org/productReturnDays>))
+Declaration(NamedIndividual(<https://schema.org/productReturnLink>))
+Declaration(NamedIndividual(<https://schema.org/provider>))
+Declaration(NamedIndividual(<https://schema.org/recipeIngredient>))
+Declaration(NamedIndividual(<https://schema.org/requirements>))
+Declaration(NamedIndividual(<https://schema.org/review>))
+Declaration(NamedIndividual(<https://schema.org/reviews>))
+Declaration(NamedIndividual(<https://schema.org/roleName>))
+Declaration(NamedIndividual(<https://schema.org/runtime>))
+Declaration(NamedIndividual(<https://schema.org/runtimePlatform>))
+Declaration(NamedIndividual(<https://schema.org/sampleType>))
+Declaration(NamedIndividual(<https://schema.org/season>))
+Declaration(NamedIndividual(<https://schema.org/seasons>))
+Declaration(NamedIndividual(<https://schema.org/seller>))
+Declaration(NamedIndividual(<https://schema.org/serviceArea>))
+Declaration(NamedIndividual(<https://schema.org/serviceAudience>))
+Declaration(NamedIndividual(<https://schema.org/serviceOutput>))
+Declaration(NamedIndividual(<https://schema.org/sibling>))
+Declaration(NamedIndividual(<https://schema.org/siblings>))
+Declaration(NamedIndividual(<https://schema.org/significantLink>))
+Declaration(NamedIndividual(<https://schema.org/significantLinks>))
+Declaration(NamedIndividual(<https://schema.org/softwareRequirements>))
+Declaration(NamedIndividual(<https://schema.org/step>))
+Declaration(NamedIndividual(<https://schema.org/steps>))
+Declaration(NamedIndividual(<https://schema.org/subEvent>))
+Declaration(NamedIndividual(<https://schema.org/subEvents>))
+Declaration(NamedIndividual(<https://schema.org/surface>))
+Declaration(NamedIndividual(<https://schema.org/targetCollection>))
+Declaration(NamedIndividual(<https://schema.org/temporalCoverage>))
+Declaration(NamedIndividual(<https://schema.org/track>))
+Declaration(NamedIndividual(<https://schema.org/tracks>))
+Declaration(NamedIndividual(<https://schema.org/vendor>))
+Declaration(NamedIndividual(<https://schema.org/warranty>))
+Declaration(NamedIndividual(<https://schema.org/warrantyPromise>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/modified>))
+Declaration(Datatype(xsd:date))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <https://schema.org/description> (description)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/description> "A description of the item."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/description> <https://schema.org/description>)
+AnnotationAssertion(rdfs:label <https://schema.org/description> "description"@en)
+ObjectPropertyDomain(<https://schema.org/description> <https://schema.org/Thing>)
+ObjectPropertyRange(<https://schema.org/description> ObjectUnionOf(<https://schema.org/Role> <https://schema.org/Text> <https://schema.org/TextObject> <https://schema.org/URL>))
+
+# Object Property: <https://schema.org/nationality> (nationality)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/nationality> "Nationality of the person."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/nationality> <https://schema.org/nationality>)
+AnnotationAssertion(rdfs:label <https://schema.org/nationality> "nationality"@en)
+ObjectPropertyDomain(<https://schema.org/nationality> <https://schema.org/Person>)
+ObjectPropertyRange(<https://schema.org/nationality> ObjectUnionOf(<https://schema.org/Country> <https://schema.org/Role> <https://schema.org/Text> <https://schema.org/URL>))
+
+# Object Property: <https://schema.org/supersededBy> (supersededBy)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/supersededBy> "Relates a term (i.e. a property, class or enumeration) to one that supersedes it."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/supersededBy> <https://meta.schema.org/supersededBy>)
+AnnotationAssertion(rdfs:label <https://schema.org/supersededBy> "supersededBy"@en)
+ObjectPropertyDomain(<https://schema.org/supersededBy> ObjectUnionOf(<https://schema.org/Class> <https://schema.org/Enumeration> <https://schema.org/Property>))
+ObjectPropertyRange(<https://schema.org/supersededBy> ObjectUnionOf(<https://schema.org/Class> <https://schema.org/Enumeration> <https://schema.org/Property> <https://schema.org/Role> <https://schema.org/Text> <https://schema.org/URL>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <https://schema.org/AdministrativeArea> (AdministrativeArea)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/AdministrativeArea> "A geographical region, typically under the jurisdiction of a particular government."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/AdministrativeArea> <https://schema.org/AdministrativeArea>)
+AnnotationAssertion(rdfs:label <https://schema.org/AdministrativeArea> "AdministrativeArea"@en)
+SubClassOf(<https://schema.org/AdministrativeArea> <https://schema.org/Place>)
+
+# Class: <https://schema.org/Class> (Class)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Class> "A class, also often called a 'Type'; equivalent to rdfs:Class."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Class> <https://meta.schema.org/Class>)
+AnnotationAssertion(rdfs:label <https://schema.org/Class> "Class"@en)
+SubClassOf(<https://schema.org/Class> <https://schema.org/Intangible>)
+
+# Class: <https://schema.org/Country> (Country)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Country> "A country."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Country> <https://schema.org/Country>)
+AnnotationAssertion(rdfs:label <https://schema.org/Country> "Country"@en)
+SubClassOf(<https://schema.org/Country> <https://schema.org/AdministrativeArea>)
+
+# Class: <https://schema.org/CreativeWork> (CreativeWork)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/CreativeWork> "The most generic kind of creative work, including books, movies, photographs, software programs, etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/CreativeWork> <https://schema.org/CreativeWork>)
+AnnotationAssertion(rdfs:label <https://schema.org/CreativeWork> "CreativeWork"@en)
+SubClassOf(<https://schema.org/CreativeWork> <https://schema.org/Thing>)
+
+# Class: <https://schema.org/DataType> (DataType)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/DataType> "The basic data types such as Integers, Strings, etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/DataType> <https://schema.org/DataType>)
+AnnotationAssertion(rdfs:label <https://schema.org/DataType> "DataType"@en)
+SubClassOf(<https://schema.org/DataType> rdfs:Class)
+
+# Class: <https://schema.org/Enumeration> (Enumeration)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Enumeration> "Lists or enumerations—for example, a list of cuisines or music genres, etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Enumeration> <https://schema.org/Enumeration>)
+AnnotationAssertion(rdfs:label <https://schema.org/Enumeration> "Enumeration"@en)
+SubClassOf(<https://schema.org/Enumeration> <https://schema.org/Intangible>)
+
+# Class: <https://schema.org/Intangible> (Intangible)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Intangible> "A utility class that serves as the umbrella for a number of 'intangible' things such as quantities, structured values, etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Intangible> <https://schema.org/Intangible>)
+AnnotationAssertion(rdfs:label <https://schema.org/Intangible> "Intangible"@en)
+SubClassOf(<https://schema.org/Intangible> <https://schema.org/Thing>)
+
+# Class: <https://schema.org/MediaObject> (MediaObject)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/MediaObject> "A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 AudioObject's)."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/MediaObject> <https://schema.org/MediaObject>)
+AnnotationAssertion(rdfs:label <https://schema.org/MediaObject> "MediaObject"@en)
+SubClassOf(<https://schema.org/MediaObject> <https://schema.org/CreativeWork>)
+
+# Class: <https://schema.org/Person> (Person)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Person> "A person (alive, dead, undead, or fictional)."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Person> <https://schema.org/Person>)
+AnnotationAssertion(rdfs:label <https://schema.org/Person> "Person"@en)
+SubClassOf(<https://schema.org/Person> <https://schema.org/Thing>)
+
+# Class: <https://schema.org/Place> (Place)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Place> "Entities that have a somewhat fixed, physical extension."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Place> <https://schema.org/Place>)
+AnnotationAssertion(rdfs:label <https://schema.org/Place> "Place"@en)
+SubClassOf(<https://schema.org/Place> <https://schema.org/Thing>)
+
+# Class: <https://schema.org/Property> (Property)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Property> "A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Property> <https://meta.schema.org/Property>)
+AnnotationAssertion(rdfs:label <https://schema.org/Property> "Property"@en)
+SubClassOf(<https://schema.org/Property> <https://schema.org/Intangible>)
+
+# Class: <https://schema.org/Role> (Role)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Role> "Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a particular time period. Or that a Person's 'actor' role in a Movie was for some particular characterName. Such properties can be attached to a Role entity, which is then associated with the main entities using ordinary properties like 'member' or 'actor'.<br/><br/>
+
+See also <a href=\"http://blog.schema.org/2014/06/introducing-role.html\">blog post</a>."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Role> <https://schema.org/Role>)
+AnnotationAssertion(rdfs:label <https://schema.org/Role> "Role"@en)
+SubClassOf(<https://schema.org/Role> <https://schema.org/Intangible>)
+
+# Class: <https://schema.org/Specialty> (Specialty)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Specialty> "Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Specialty> <https://schema.org/Specialty>)
+AnnotationAssertion(rdfs:label <https://schema.org/Specialty> "Specialty"@en)
+SubClassOf(<https://schema.org/Specialty> <https://schema.org/Enumeration>)
+
+# Class: <https://schema.org/Text> (Text)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Text> "Data type: Text."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Text> <https://schema.org/Text>)
+AnnotationAssertion(rdfs:label <https://schema.org/Text> "Text"@en)
+SubClassOf(<https://schema.org/Text> <https://schema.org/DataType>)
+
+# Class: <https://schema.org/TextObject> (TextObject)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/TextObject> "A text file. The text can be unformatted or contain markup, html, etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/TextObject> <https://schema.org/TextObject>)
+AnnotationAssertion(rdfs:label <https://schema.org/TextObject> "TextObject"@en)
+SubClassOf(<https://schema.org/TextObject> <https://schema.org/MediaObject>)
+
+# Class: <https://schema.org/Thing> (Thing)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/Thing> "The most generic type of item."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/Thing> <https://schema.org/Thing>)
+AnnotationAssertion(rdfs:label <https://schema.org/Thing> "Thing"@en)
+
+# Class: <https://schema.org/URL> (URL)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/URL> "Data type: URL."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/URL> <https://schema.org/URL>)
+AnnotationAssertion(rdfs:label <https://schema.org/URL> "URL"@en)
+SubClassOf(<https://schema.org/URL> <https://schema.org/Text>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://schema.org/actionApplication> (actionApplication)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/actionApplication> "An application that can complete the request."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/actionApplication> <https://schema.org/actionApplication>)
+AnnotationAssertion(rdfs:label <https://schema.org/actionApplication> "actionApplication"@en)
+
+# Individual: <https://schema.org/actionOption> (actionOption)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/actionOption> "A sub property of object. The options subject to this action."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/actionOption> <https://schema.org/actionOption>)
+AnnotationAssertion(rdfs:label <https://schema.org/actionOption> "actionOption"@en)
+
+# Individual: <https://schema.org/actor> (actor)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/actor> "An actor (individual or a group), e.g. in TV, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/actor> <https://schema.org/actor>)
+AnnotationAssertion(rdfs:label <https://schema.org/actor> "actor"@en)
+
+# Individual: <https://schema.org/actors> (actors)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/actors> "An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/actors> <https://schema.org/actors>)
+AnnotationAssertion(rdfs:label <https://schema.org/actors> "actors"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/actors> <https://schema.org/actor>)
+
+# Individual: <https://schema.org/album> (album)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/album> "A music album."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/album> <https://schema.org/album>)
+AnnotationAssertion(rdfs:label <https://schema.org/album> "album"@en)
+
+# Individual: <https://schema.org/albums> (albums)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/albums> "A collection of music albums."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/albums> <https://schema.org/albums>)
+AnnotationAssertion(rdfs:label <https://schema.org/albums> "albums"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/albums> <https://schema.org/album>)
+
+# Individual: <https://schema.org/application> (application)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/application> "An application that can complete the request."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/application> <https://schema.org/application>)
+AnnotationAssertion(rdfs:label <https://schema.org/application> "application"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/application> <https://schema.org/actionApplication>)
+
+# Individual: <https://schema.org/area> (area)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/area> "The area within which users can expect to reach the broadcast service."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/area> <https://schema.org/area>)
+AnnotationAssertion(rdfs:label <https://schema.org/area> "area"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/area> <https://schema.org/serviceArea>)
+
+# Individual: <https://schema.org/areaServed> (areaServed)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/areaServed> "The geographic area where a service or offered item is provided."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/areaServed> <https://schema.org/areaServed>)
+AnnotationAssertion(rdfs:label <https://schema.org/areaServed> "areaServed"@en)
+
+# Individual: <https://schema.org/arterialBranch> (arterialBranch)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/arterialBranch> "The branches that comprise the arterial structure."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/arterialBranch> <https://health-lifesci.schema.org/arterialBranch>)
+AnnotationAssertion(rdfs:label <https://schema.org/arterialBranch> "arterialBranch"@en)
+
+# Individual: <https://schema.org/artworkSurface> (artworkSurface)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/artworkSurface> "The supporting materials for the artwork, e.g. Canvas, Paper, Wood, Board, etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/artworkSurface> <https://schema.org/artworkSurface>)
+AnnotationAssertion(rdfs:label <https://schema.org/artworkSurface> "artworkSurface"@en)
+
+# Individual: <https://schema.org/aspect> (aspect)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/aspect> "An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/aspect> <https://health-lifesci.schema.org/aspect>)
+AnnotationAssertion(rdfs:label <https://schema.org/aspect> "aspect"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/aspect> <https://schema.org/mainContentOfPage>)
+
+# Individual: <https://schema.org/assembly> (assembly)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/assembly> "Library file name, e.g., mscorlib.dll, system.web.dll."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/assembly> <https://schema.org/assembly>)
+AnnotationAssertion(rdfs:label <https://schema.org/assembly> "assembly"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/assembly> <https://schema.org/executableLibraryName>)
+
+# Individual: <https://schema.org/attendee> (attendee)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/attendee> "A person or organization attending the event."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/attendee> <https://schema.org/attendee>)
+AnnotationAssertion(rdfs:label <https://schema.org/attendee> "attendee"@en)
+
+# Individual: <https://schema.org/attendees> (attendees)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/attendees> "A person attending the event."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/attendees> <https://schema.org/attendees>)
+AnnotationAssertion(rdfs:label <https://schema.org/attendees> "attendees"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/attendees> <https://schema.org/attendee>)
+
+# Individual: <https://schema.org/audience> (audience)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/audience> "An intended audience, i.e. a group for whom something was created."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/audience> <https://schema.org/audience>)
+AnnotationAssertion(rdfs:label <https://schema.org/audience> "audience"@en)
+
+# Individual: <https://schema.org/availableOnDevice> (availableOnDevice)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/availableOnDevice> "Device required to run the application. Used in cases where a specific make/model is required to run the application."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/availableOnDevice> <https://schema.org/availableOnDevice>)
+AnnotationAssertion(rdfs:label <https://schema.org/availableOnDevice> "availableOnDevice"@en)
+
+# Individual: <https://schema.org/award> (award)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/award> "An award won by or for this item."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/award> <https://schema.org/award>)
+AnnotationAssertion(rdfs:label <https://schema.org/award> "award"@en)
+
+# Individual: <https://schema.org/awards> (awards)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/awards> "Awards won by or for this item."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/awards> <https://schema.org/awards>)
+AnnotationAssertion(rdfs:label <https://schema.org/awards> "awards"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/awards> <https://schema.org/award>)
+
+# Individual: <https://schema.org/benefits> (benefits)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/benefits> "Description of benefits associated with the job."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/benefits> <https://schema.org/benefits>)
+AnnotationAssertion(rdfs:label <https://schema.org/benefits> "benefits"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/benefits> <https://schema.org/jobBenefits>)
+
+# Individual: <https://schema.org/blogPost> (blogPost)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/blogPost> "A posting that is part of this blog."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/blogPost> <https://schema.org/blogPost>)
+AnnotationAssertion(rdfs:label <https://schema.org/blogPost> "blogPost"@en)
+
+# Individual: <https://schema.org/blogPosts> (blogPosts)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/blogPosts> "Indicates a post that is part of a <a class=\"localLink\" href=\"/Blog\">Blog</a>. Note that historically, what we term a \"Blog\" was once known as a \"weblog\", and that what we term a \"BlogPosting\" is now often colloquially referred to as a \"blog\"."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/blogPosts> <https://schema.org/blogPosts>)
+AnnotationAssertion(rdfs:label <https://schema.org/blogPosts> "blogPosts"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/blogPosts> <https://schema.org/blogPost>)
+
+# Individual: <https://schema.org/bookingAgent> (bookingAgent)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/bookingAgent> "'bookingAgent' is an out-dated term indicating a 'broker' that serves as a booking agent."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/bookingAgent> <https://schema.org/bookingAgent>)
+AnnotationAssertion(rdfs:label <https://schema.org/bookingAgent> "bookingAgent"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/bookingAgent> <https://schema.org/broker>)
+
+# Individual: <https://schema.org/branch> (branch)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/branch> "The branches that delineate from the nerve bundle. Not to be confused with <a class=\"localLink\" href=\"/branchOf\">branchOf</a>."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/branch> <https://health-lifesci.schema.org/branch>)
+AnnotationAssertion(rdfs:label <https://schema.org/branch> "branch"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/branch> <https://schema.org/arterialBranch>)
+
+# Individual: <https://schema.org/branchOf> (branchOf)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/branchOf> "The larger organization that this local business is a branch of, if any. Not to be confused with (anatomical) <a class=\"localLink\" href=\"/branch\">branch</a>."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/branchOf> <https://schema.org/branchOf>)
+AnnotationAssertion(rdfs:label <https://schema.org/branchOf> "branchOf"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/branchOf> <https://schema.org/parentOrganization>)
+
+# Individual: <https://schema.org/broker> (broker)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/broker> "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/broker> <https://schema.org/broker>)
+AnnotationAssertion(rdfs:label <https://schema.org/broker> "broker"@en)
+
+# Individual: <https://schema.org/carrier> (carrier)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/carrier> "'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/carrier> <https://schema.org/carrier>)
+AnnotationAssertion(rdfs:label <https://schema.org/carrier> "carrier"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/carrier> <https://schema.org/provider>)
+
+# Individual: <https://schema.org/catalog> (catalog)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/catalog> "A data catalog which contains this dataset."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/catalog> <https://schema.org/catalog>)
+AnnotationAssertion(rdfs:label <https://schema.org/catalog> "catalog"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/catalog> <https://schema.org/includedInDataCatalog>)
+
+# Individual: <https://schema.org/clincalPharmacology> (clincalPharmacology)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/clincalPharmacology> "Description of the absorption and elimination of drugs, including their concentration (pharmacokinetics, pK) and biological effects (pharmacodynamics, pD)."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/clincalPharmacology> <https://health-lifesci.schema.org/clincalPharmacology>)
+AnnotationAssertion(rdfs:label <https://schema.org/clincalPharmacology> "clincalPharmacology"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/clincalPharmacology> <https://schema.org/clinicalPharmacology>)
+
+# Individual: <https://schema.org/clinicalPharmacology> (clinicalPharmacology)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/clinicalPharmacology> "Description of the absorption and elimination of drugs, including their concentration (pharmacokinetics, pK) and biological effects (pharmacodynamics, pD)."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/clinicalPharmacology> <https://health-lifesci.schema.org/clinicalPharmacology>)
+AnnotationAssertion(rdfs:label <https://schema.org/clinicalPharmacology> "clinicalPharmacology"@en)
+
+# Individual: <https://schema.org/codeSampleType> (codeSampleType)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/codeSampleType> "What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/codeSampleType> <https://schema.org/codeSampleType>)
+AnnotationAssertion(rdfs:label <https://schema.org/codeSampleType> "codeSampleType"@en)
+
+# Individual: <https://schema.org/colleague> (colleague)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/colleague> "A colleague of the person."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/colleague> <https://schema.org/colleague>)
+AnnotationAssertion(rdfs:label <https://schema.org/colleague> "colleague"@en)
+
+# Individual: <https://schema.org/colleagues> (colleagues)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/colleagues> "A colleague of the person."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/colleagues> <https://schema.org/colleagues>)
+AnnotationAssertion(rdfs:label <https://schema.org/colleagues> "colleagues"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/colleagues> <https://schema.org/colleague>)
+
+# Individual: <https://schema.org/collection> (collection)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/collection> "A sub property of object. The collection target of the action."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/collection> <https://schema.org/collection>)
+AnnotationAssertion(rdfs:label <https://schema.org/collection> "collection"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/collection> <https://schema.org/targetCollection>)
+
+# Individual: <https://schema.org/contactPoint> (contactPoint)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/contactPoint> "A contact point for a person or organization."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/contactPoint> <https://schema.org/contactPoint>)
+AnnotationAssertion(rdfs:label <https://schema.org/contactPoint> "contactPoint"@en)
+
+# Individual: <https://schema.org/contactPoints> (contactPoints)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/contactPoints> "A contact point for a person or organization."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/contactPoints> <https://schema.org/contactPoints>)
+AnnotationAssertion(rdfs:label <https://schema.org/contactPoints> "contactPoints"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/contactPoints> <https://schema.org/contactPoint>)
+
+# Individual: <https://schema.org/containedIn> (containedIn)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/containedIn> "The basic containment relation between a place and one that contains it."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/containedIn> <https://schema.org/containedIn>)
+AnnotationAssertion(rdfs:label <https://schema.org/containedIn> "containedIn"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/containedIn> <https://schema.org/containedInPlace>)
+
+# Individual: <https://schema.org/containedInPlace> (containedInPlace)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/containedInPlace> "The basic containment relation between a place and one that contains it."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/containedInPlace> <https://schema.org/containedInPlace>)
+AnnotationAssertion(rdfs:label <https://schema.org/containedInPlace> "containedInPlace"@en)
+
+# Individual: <https://schema.org/containsSeason> (containsSeason)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/containsSeason> "A season that is part of the media series."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/containsSeason> <https://schema.org/containsSeason>)
+AnnotationAssertion(rdfs:label <https://schema.org/containsSeason> "containsSeason"@en)
+
+# Individual: <https://schema.org/course> (course)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/course> "A sub property of location. The course where this action was taken."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/course> <https://schema.org/course>)
+AnnotationAssertion(rdfs:label <https://schema.org/course> "course"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/course> <https://schema.org/exerciseCourse>)
+
+# Individual: <https://schema.org/datasetTimeInterval> (datasetTimeInterval)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/datasetTimeInterval> "The range of temporal applicability of a dataset, e.g. for a 2011 census dataset, the year 2011 (in ISO 8601 time interval format)."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/datasetTimeInterval> <https://schema.org/datasetTimeInterval>)
+AnnotationAssertion(rdfs:label <https://schema.org/datasetTimeInterval> "datasetTimeInterval"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/datasetTimeInterval> <https://schema.org/temporalCoverage>)
+
+# Individual: <https://schema.org/device> (device)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/device> "Device required to run the application. Used in cases where a specific make/model is required to run the application."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/device> <https://schema.org/device>)
+AnnotationAssertion(rdfs:label <https://schema.org/device> "device"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/device> <https://schema.org/availableOnDevice>)
+
+# Individual: <https://schema.org/director> (director)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/director> "A director of e.g. TV, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/director> <https://schema.org/director>)
+AnnotationAssertion(rdfs:label <https://schema.org/director> "director"@en)
+
+# Individual: <https://schema.org/directors> (directors)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/directors> "A director of e.g. TV, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/directors> <https://schema.org/directors>)
+AnnotationAssertion(rdfs:label <https://schema.org/directors> "directors"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/directors> <https://schema.org/director>)
+
+# Individual: <https://schema.org/employee> (employee)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/employee> "Someone working for this organization."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/employee> <https://schema.org/employee>)
+AnnotationAssertion(rdfs:label <https://schema.org/employee> "employee"@en)
+
+# Individual: <https://schema.org/employees> (employees)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/employees> "People working for this organization."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/employees> <https://schema.org/employees>)
+AnnotationAssertion(rdfs:label <https://schema.org/employees> "employees"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/employees> <https://schema.org/employee>)
+
+# Individual: <https://schema.org/encoding> (encoding)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/encoding> "A media object that encodes this CreativeWork. This property is a synonym for associatedMedia."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/encoding> <https://schema.org/encoding>)
+AnnotationAssertion(rdfs:label <https://schema.org/encoding> "encoding"@en)
+
+# Individual: <https://schema.org/encodingFormat> (encodingFormat)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/encodingFormat> "Media type typically expressed using a MIME format (see <a href=\"http://www.iana.org/assignments/media-types/media-types.xhtml\">IANA site</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types\">MDN reference</a>), e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.<br/><br/>
+
+In cases where a <a class=\"localLink\" href=\"/CreativeWork\">CreativeWork</a> has several media type representations, <a class=\"localLink\" href=\"/encoding\">encoding</a> can be used to indicate each <a class=\"localLink\" href=\"/MediaObject\">MediaObject</a> alongside particular <a class=\"localLink\" href=\"/encodingFormat\">encodingFormat</a> information.<br/><br/>
+
+Unregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/encodingFormat> <https://schema.org/encodingFormat>)
+AnnotationAssertion(rdfs:label <https://schema.org/encodingFormat> "encodingFormat"@en)
+
+# Individual: <https://schema.org/encodings> (encodings)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/encodings> "A media object that encodes this CreativeWork."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/encodings> <https://schema.org/encodings>)
+AnnotationAssertion(rdfs:label <https://schema.org/encodings> "encodings"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/encodings> <https://schema.org/encoding>)
+
+# Individual: <https://schema.org/episode> (episode)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/episode> "An episode of a TV, radio or game media within a series or season."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/episode> <https://schema.org/episode>)
+AnnotationAssertion(rdfs:label <https://schema.org/episode> "episode"@en)
+
+# Individual: <https://schema.org/episodes> (episodes)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/episodes> "An episode of a TV/radio series or season."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/episodes> <https://schema.org/episodes>)
+AnnotationAssertion(rdfs:label <https://schema.org/episodes> "episodes"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/episodes> <https://schema.org/episode>)
+
+# Individual: <https://schema.org/event> (event)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/event> "Upcoming or past event associated with this place, organization, or action."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/event> <https://schema.org/event>)
+AnnotationAssertion(rdfs:label <https://schema.org/event> "event"@en)
+
+# Individual: <https://schema.org/events> (events)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/events> "Upcoming or past events associated with this place or organization."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/events> <https://schema.org/events>)
+AnnotationAssertion(rdfs:label <https://schema.org/events> "events"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/events> <https://schema.org/event>)
+
+# Individual: <https://schema.org/executableLibraryName> (executableLibraryName)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/executableLibraryName> "Library file name, e.g., mscorlib.dll, system.web.dll."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/executableLibraryName> <https://schema.org/executableLibraryName>)
+AnnotationAssertion(rdfs:label <https://schema.org/executableLibraryName> "executableLibraryName"@en)
+
+# Individual: <https://schema.org/exerciseCourse> (exerciseCourse)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/exerciseCourse> "A sub property of location. The course where this action was taken."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/exerciseCourse> <https://schema.org/exerciseCourse>)
+AnnotationAssertion(rdfs:label <https://schema.org/exerciseCourse> "exerciseCourse"@en)
+
+# Individual: <https://schema.org/fileFormat> (fileFormat)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/fileFormat> "Media type, typically MIME format (see <a href=\"http://www.iana.org/assignments/media-types/media-types.xhtml\">IANA site</a>) of the content, e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/fileFormat> <https://schema.org/fileFormat>)
+AnnotationAssertion(rdfs:label <https://schema.org/fileFormat> "fileFormat"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/fileFormat> <https://schema.org/encodingFormat>)
+
+# Individual: <https://schema.org/founder> (founder)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/founder> "A person or organization who founded this organization."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/founder> <https://schema.org/founder>)
+AnnotationAssertion(rdfs:label <https://schema.org/founder> "founder"@en)
+
+# Individual: <https://schema.org/founders> (founders)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/founders> "A person who founded this organization."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/founders> <https://schema.org/founders>)
+AnnotationAssertion(rdfs:label <https://schema.org/founders> "founders"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/founders> <https://schema.org/founder>)
+
+# Individual: <https://schema.org/free> (free)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/free> "A flag to signal that the item, event, or place is accessible for free."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/free> <https://schema.org/free>)
+AnnotationAssertion(rdfs:label <https://schema.org/free> "free"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/free> <https://schema.org/isAccessibleForFree>)
+
+# Individual: <https://schema.org/hasMap> (hasMap)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/hasMap> "A URL to a map of the place."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/hasMap> <https://schema.org/hasMap>)
+AnnotationAssertion(rdfs:label <https://schema.org/hasMap> "hasMap"@en)
+
+# Individual: <https://schema.org/hasMenu> (hasMenu)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/hasMenu> "Either the actual menu as a structured representation, as text, or a URL of the menu."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/hasMenu> <https://schema.org/hasMenu>)
+AnnotationAssertion(rdfs:label <https://schema.org/hasMenu> "hasMenu"@en)
+
+# Individual: <https://schema.org/hasMerchantReturnPolicy> (hasMerchantReturnPolicy)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/hasMerchantReturnPolicy> "Specifies a MerchantReturnPolicy that may be applicable."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/hasMerchantReturnPolicy> <https://pending.schema.org/hasMerchantReturnPolicy>)
+AnnotationAssertion(rdfs:label <https://schema.org/hasMerchantReturnPolicy> "hasMerchantReturnPolicy"@en)
+
+# Individual: <https://schema.org/hasProductReturnPolicy> (hasProductReturnPolicy)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/hasProductReturnPolicy> "Indicates a ProductReturnPolicy that may be applicable."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/hasProductReturnPolicy> <https://attic.schema.org/hasProductReturnPolicy>)
+AnnotationAssertion(rdfs:label <https://schema.org/hasProductReturnPolicy> "hasProductReturnPolicy"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/hasProductReturnPolicy> <https://schema.org/hasMerchantReturnPolicy>)
+
+# Individual: <https://schema.org/inLanguage> (inLanguage)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/inLanguage> "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"/availableLanguage\">availableLanguage</a>."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/inLanguage> <https://schema.org/inLanguage>)
+AnnotationAssertion(rdfs:label <https://schema.org/inLanguage> "inLanguage"@en)
+
+# Individual: <https://schema.org/incentiveCompensation> (incentiveCompensation)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/incentiveCompensation> "Description of bonus and commission compensation aspects of the job."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/incentiveCompensation> <https://schema.org/incentiveCompensation>)
+AnnotationAssertion(rdfs:label <https://schema.org/incentiveCompensation> "incentiveCompensation"@en)
+
+# Individual: <https://schema.org/incentives> (incentives)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/incentives> "Description of bonus and commission compensation aspects of the job."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/incentives> <https://schema.org/incentives>)
+AnnotationAssertion(rdfs:label <https://schema.org/incentives> "incentives"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/incentives> <https://schema.org/incentiveCompensation>)
+
+# Individual: <https://schema.org/includedDataCatalog> (includedDataCatalog)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/includedDataCatalog> "A data catalog which contains this dataset (this property was previously 'catalog', preferred name is now 'includedInDataCatalog')."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/includedDataCatalog> <https://schema.org/includedDataCatalog>)
+AnnotationAssertion(rdfs:label <https://schema.org/includedDataCatalog> "includedDataCatalog"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/includedDataCatalog> <https://schema.org/includedInDataCatalog>)
+
+# Individual: <https://schema.org/includedInDataCatalog> (includedInDataCatalog)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/includedInDataCatalog> "A data catalog which contains this dataset."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/includedInDataCatalog> <https://schema.org/includedInDataCatalog>)
+AnnotationAssertion(rdfs:label <https://schema.org/includedInDataCatalog> "includedInDataCatalog"@en)
+
+# Individual: <https://schema.org/ingredients> (ingredients)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/ingredients> "A single ingredient used in the recipe, e.g. sugar, flour or garlic."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/ingredients> <https://schema.org/ingredients>)
+AnnotationAssertion(rdfs:label <https://schema.org/ingredients> "ingredients"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/ingredients> <https://schema.org/recipeIngredient>)
+
+# Individual: <https://schema.org/interactionCount> (interactionCount)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/interactionCount> "This property is deprecated, alongside the UserInteraction types on which it depended."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/interactionCount> <https://schema.org/interactionCount>)
+AnnotationAssertion(rdfs:label <https://schema.org/interactionCount> "interactionCount"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/interactionCount> <https://schema.org/interactionStatistic>)
+
+# Individual: <https://schema.org/interactionStatistic> (interactionStatistic)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/interactionStatistic> "The number of interactions for the CreativeWork using the WebSite or SoftwareApplication. The most specific child type of InteractionCounter should be used."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/interactionStatistic> <https://schema.org/interactionStatistic>)
+AnnotationAssertion(rdfs:label <https://schema.org/interactionStatistic> "interactionStatistic"@en)
+
+# Individual: <https://schema.org/isAccessibleForFree> (isAccessibleForFree)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/isAccessibleForFree> "A flag to signal that the item, event, or place is accessible for free."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/isAccessibleForFree> <https://schema.org/isAccessibleForFree>)
+AnnotationAssertion(rdfs:label <https://schema.org/isAccessibleForFree> "isAccessibleForFree"@en)
+
+# Individual: <https://schema.org/isBasedOn> (isBasedOn)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/isBasedOn> "A resource from which this work is derived or from which it is a modification or adaptation."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/isBasedOn> <https://schema.org/isBasedOn>)
+AnnotationAssertion(rdfs:label <https://schema.org/isBasedOn> "isBasedOn"@en)
+
+# Individual: <https://schema.org/isBasedOnUrl> (isBasedOnUrl)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/isBasedOnUrl> "A resource that was used in the creation of this resource. This term can be repeated for multiple sources. For example, http://example.com/great-multiplication-intro.html."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/isBasedOnUrl> <https://schema.org/isBasedOnUrl>)
+AnnotationAssertion(rdfs:label <https://schema.org/isBasedOnUrl> "isBasedOnUrl"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/isBasedOnUrl> <https://schema.org/isBasedOn>)
+
+# Individual: <https://schema.org/jobBenefits> (jobBenefits)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/jobBenefits> "Description of benefits associated with the job."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/jobBenefits> <https://schema.org/jobBenefits>)
+AnnotationAssertion(rdfs:label <https://schema.org/jobBenefits> "jobBenefits"@en)
+
+# Individual: <https://schema.org/language> (language)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/language> "A sub property of instrument. The language used on this action."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/language> <https://schema.org/language>)
+AnnotationAssertion(rdfs:label <https://schema.org/language> "language"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/language> <https://schema.org/inLanguage>)
+
+# Individual: <https://schema.org/mainContentOfPage> (mainContentOfPage)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/mainContentOfPage> "Indicates if this web page element is the main subject of the page."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/mainContentOfPage> <https://schema.org/mainContentOfPage>)
+AnnotationAssertion(rdfs:label <https://schema.org/mainContentOfPage> "mainContentOfPage"@en)
+
+# Individual: <https://schema.org/map> (map)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/map> "A URL to a map of the place."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/map> <https://schema.org/map>)
+AnnotationAssertion(rdfs:label <https://schema.org/map> "map"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/map> <https://schema.org/hasMap>)
+
+# Individual: <https://schema.org/maps> (maps)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/maps> "A URL to a map of the place."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/maps> <https://schema.org/maps>)
+AnnotationAssertion(rdfs:label <https://schema.org/maps> "maps"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/maps> <https://schema.org/hasMap>)
+
+# Individual: <https://schema.org/member> (member)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/member> "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/member> <https://schema.org/member>)
+AnnotationAssertion(rdfs:label <https://schema.org/member> "member"@en)
+
+# Individual: <https://schema.org/members> (members)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/members> "A member of this organization."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/members> <https://schema.org/members>)
+AnnotationAssertion(rdfs:label <https://schema.org/members> "members"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/members> <https://schema.org/member>)
+
+# Individual: <https://schema.org/menu> (menu)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/menu> "Either the actual menu as a structured representation, as text, or a URL of the menu."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/menu> <https://schema.org/menu>)
+AnnotationAssertion(rdfs:label <https://schema.org/menu> "menu"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/menu> <https://schema.org/hasMenu>)
+
+# Individual: <https://schema.org/merchant> (merchant)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/merchant> "'merchant' is an out-dated term for 'seller'."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/merchant> <https://schema.org/merchant>)
+AnnotationAssertion(rdfs:label <https://schema.org/merchant> "merchant"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/merchant> <https://schema.org/seller>)
+
+# Individual: <https://schema.org/merchantReturnDays> (merchantReturnDays)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/merchantReturnDays> "Specifies either a fixed return date or the number of days (from the delivery date) that a product can be returned. Used when the <a class=\"localLink\" href=\"/returnPolicyCategory\">returnPolicyCategory</a> property is specified as <a class=\"localLink\" href=\"/MerchantReturnFiniteReturnWindow\">MerchantReturnFiniteReturnWindow</a>."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/merchantReturnDays> <https://pending.schema.org/merchantReturnDays>)
+AnnotationAssertion(rdfs:label <https://schema.org/merchantReturnDays> "merchantReturnDays"@en)
+
+# Individual: <https://schema.org/merchantReturnLink> (merchantReturnLink)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/merchantReturnLink> "Specifies a Web page or service by URL, for product returns."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/merchantReturnLink> <https://pending.schema.org/merchantReturnLink>)
+AnnotationAssertion(rdfs:label <https://schema.org/merchantReturnLink> "merchantReturnLink"@en)
+
+# Individual: <https://schema.org/musicGroupMember> (musicGroupMember)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/musicGroupMember> "A member of a music group&#x2014;for example, John, Paul, George, or Ringo."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/musicGroupMember> <https://schema.org/musicGroupMember>)
+AnnotationAssertion(rdfs:label <https://schema.org/musicGroupMember> "musicGroupMember"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/musicGroupMember> <https://schema.org/member>)
+
+# Individual: <https://schema.org/namedPosition> (namedPosition)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/namedPosition> "A position played, performed or filled by a person or organization, as part of an organization. For example, an athlete in a SportsTeam might play in the position named 'Quarterback'."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/namedPosition> <https://schema.org/namedPosition>)
+AnnotationAssertion(rdfs:label <https://schema.org/namedPosition> "namedPosition"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/namedPosition> <https://schema.org/roleName>)
+
+# Individual: <https://schema.org/option> (option)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/option> "A sub property of object. The options subject to this action."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/option> <https://schema.org/option>)
+AnnotationAssertion(rdfs:label <https://schema.org/option> "option"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/option> <https://schema.org/actionOption>)
+
+# Individual: <https://schema.org/parent> (parent)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/parent> "A parent of this person."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/parent> <https://schema.org/parent>)
+AnnotationAssertion(rdfs:label <https://schema.org/parent> "parent"@en)
+
+# Individual: <https://schema.org/parentOrganization> (parentOrganization)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/parentOrganization> "The larger organization that this organization is a <a class=\"localLink\" href=\"/subOrganization\">subOrganization</a> of, if any."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/parentOrganization> <https://schema.org/parentOrganization>)
+AnnotationAssertion(rdfs:label <https://schema.org/parentOrganization> "parentOrganization"@en)
+
+# Individual: <https://schema.org/parents> (parents)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/parents> "A parents of the person."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/parents> <https://schema.org/parents>)
+AnnotationAssertion(rdfs:label <https://schema.org/parents> "parents"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/parents> <https://schema.org/parent>)
+
+# Individual: <https://schema.org/partOfSeries> (partOfSeries)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/partOfSeries> "The series to which this episode or season belongs."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/partOfSeries> <https://schema.org/partOfSeries>)
+AnnotationAssertion(rdfs:label <https://schema.org/partOfSeries> "partOfSeries"@en)
+
+# Individual: <https://schema.org/partOfTVSeries> (partOfTVSeries)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/partOfTVSeries> "The TV series to which this episode or season belongs."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/partOfTVSeries> <https://schema.org/partOfTVSeries>)
+AnnotationAssertion(rdfs:label <https://schema.org/partOfTVSeries> "partOfTVSeries"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/partOfTVSeries> <https://schema.org/partOfSeries>)
+
+# Individual: <https://schema.org/paymentDue> (paymentDue)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/paymentDue> "The date that payment is due."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/paymentDue> <https://schema.org/paymentDue>)
+AnnotationAssertion(rdfs:label <https://schema.org/paymentDue> "paymentDue"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/paymentDue> <https://schema.org/paymentDueDate>)
+
+# Individual: <https://schema.org/paymentDueDate> (paymentDueDate)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/paymentDueDate> "The date that payment is due."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/paymentDueDate> <https://schema.org/paymentDueDate>)
+AnnotationAssertion(rdfs:label <https://schema.org/paymentDueDate> "paymentDueDate"@en)
+
+# Individual: <https://schema.org/performer> (performer)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/performer> "A performer at the event&#x2014;for example, a presenter, musician, musical group or actor."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/performer> <https://schema.org/performer>)
+AnnotationAssertion(rdfs:label <https://schema.org/performer> "performer"@en)
+
+# Individual: <https://schema.org/performers> (performers)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/performers> "The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/performers> <https://schema.org/performers>)
+AnnotationAssertion(rdfs:label <https://schema.org/performers> "performers"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/performers> <https://schema.org/performer>)
+
+# Individual: <https://schema.org/photo> (photo)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/photo> "A photograph of this place."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/photo> <https://schema.org/photo>)
+AnnotationAssertion(rdfs:label <https://schema.org/photo> "photo"@en)
+
+# Individual: <https://schema.org/photos> (photos)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/photos> "Photographs of this place."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/photos> <https://schema.org/photos>)
+AnnotationAssertion(rdfs:label <https://schema.org/photos> "photos"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/photos> <https://schema.org/photo>)
+
+# Individual: <https://schema.org/produces> (produces)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/produces> "The tangible thing generated by the service, e.g. a passport, permit, etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/produces> <https://schema.org/produces>)
+AnnotationAssertion(rdfs:label <https://schema.org/produces> "produces"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/produces> <https://schema.org/serviceOutput>)
+
+# Individual: <https://schema.org/productReturnDays> (productReturnDays)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/productReturnDays> "The productReturnDays property indicates the number of days (from purchase) within which relevant product return policy is applicable."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/productReturnDays> <https://attic.schema.org/productReturnDays>)
+AnnotationAssertion(rdfs:label <https://schema.org/productReturnDays> "productReturnDays"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/productReturnDays> <https://schema.org/merchantReturnDays>)
+
+# Individual: <https://schema.org/productReturnLink> (productReturnLink)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/productReturnLink> "Indicates a Web page or service by URL, for product return."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/productReturnLink> <https://attic.schema.org/productReturnLink>)
+AnnotationAssertion(rdfs:label <https://schema.org/productReturnLink> "productReturnLink"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/productReturnLink> <https://schema.org/merchantReturnLink>)
+
+# Individual: <https://schema.org/provider> (provider)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/provider> "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/provider> <https://pending.schema.org/provider>)
+AnnotationAssertion(rdfs:label <https://schema.org/provider> "provider"@en)
+
+# Individual: <https://schema.org/recipeIngredient> (recipeIngredient)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/recipeIngredient> "A single ingredient used in the recipe, e.g. sugar, flour or garlic."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/recipeIngredient> <https://schema.org/recipeIngredient>)
+AnnotationAssertion(rdfs:label <https://schema.org/recipeIngredient> "recipeIngredient"@en)
+
+# Individual: <https://schema.org/requirements> (requirements)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/requirements> "Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (examples: DirectX, Java or .NET runtime)."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/requirements> <https://schema.org/requirements>)
+AnnotationAssertion(rdfs:label <https://schema.org/requirements> "requirements"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/requirements> <https://schema.org/softwareRequirements>)
+
+# Individual: <https://schema.org/review> (review)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/review> "A review of the item."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/review> <https://schema.org/review>)
+AnnotationAssertion(rdfs:label <https://schema.org/review> "review"@en)
+
+# Individual: <https://schema.org/reviews> (reviews)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/reviews> "Review of the item."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/reviews> <https://schema.org/reviews>)
+AnnotationAssertion(rdfs:label <https://schema.org/reviews> "reviews"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/reviews> <https://schema.org/review>)
+
+# Individual: <https://schema.org/roleName> (roleName)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/roleName> "A role played, performed or filled by a person or organization. For example, the team of creators for a comic book might fill the roles named 'inker', 'penciller', and 'letterer'; or an athlete in a SportsTeam might play in the position named 'Quarterback'."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/roleName> <https://schema.org/roleName>)
+AnnotationAssertion(rdfs:label <https://schema.org/roleName> "roleName"@en)
+
+# Individual: <https://schema.org/runtime> (runtime)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/runtime> "Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0)."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/runtime> <https://schema.org/runtime>)
+AnnotationAssertion(rdfs:label <https://schema.org/runtime> "runtime"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/runtime> <https://schema.org/runtimePlatform>)
+
+# Individual: <https://schema.org/runtimePlatform> (runtimePlatform)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/runtimePlatform> "Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0)."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/runtimePlatform> <https://schema.org/runtimePlatform>)
+AnnotationAssertion(rdfs:label <https://schema.org/runtimePlatform> "runtimePlatform"@en)
+
+# Individual: <https://schema.org/sampleType> (sampleType)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/sampleType> "What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/sampleType> <https://schema.org/sampleType>)
+AnnotationAssertion(rdfs:label <https://schema.org/sampleType> "sampleType"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/sampleType> <https://schema.org/codeSampleType>)
+
+# Individual: <https://schema.org/season> (season)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/season> "A season in a media series."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/season> <https://schema.org/season>)
+AnnotationAssertion(rdfs:label <https://schema.org/season> "season"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/season> <https://schema.org/containsSeason>)
+
+# Individual: <https://schema.org/seasons> (seasons)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/seasons> "A season in a media series."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/seasons> <https://schema.org/seasons>)
+AnnotationAssertion(rdfs:label <https://schema.org/seasons> "seasons"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/seasons> <https://schema.org/season>)
+
+# Individual: <https://schema.org/seller> (seller)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/seller> "An entity which offers (sells / leases / lends / loans) the services / goods.  A seller may also be a provider."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/seller> <https://schema.org/seller>)
+AnnotationAssertion(rdfs:label <https://schema.org/seller> "seller"@en)
+
+# Individual: <https://schema.org/serviceArea> (serviceArea)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/serviceArea> "The geographic area where the service is provided."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/serviceArea> <https://schema.org/serviceArea>)
+AnnotationAssertion(rdfs:label <https://schema.org/serviceArea> "serviceArea"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/serviceArea> <https://schema.org/areaServed>)
+
+# Individual: <https://schema.org/serviceAudience> (serviceAudience)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/serviceAudience> "The audience eligible for this service."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/serviceAudience> <https://schema.org/serviceAudience>)
+AnnotationAssertion(rdfs:label <https://schema.org/serviceAudience> "serviceAudience"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/serviceAudience> <https://schema.org/audience>)
+
+# Individual: <https://schema.org/serviceOutput> (serviceOutput)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/serviceOutput> "The tangible thing generated by the service, e.g. a passport, permit, etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/serviceOutput> <https://schema.org/serviceOutput>)
+AnnotationAssertion(rdfs:label <https://schema.org/serviceOutput> "serviceOutput"@en)
+
+# Individual: <https://schema.org/sibling> (sibling)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/sibling> "A sibling of the person."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/sibling> <https://schema.org/sibling>)
+AnnotationAssertion(rdfs:label <https://schema.org/sibling> "sibling"@en)
+
+# Individual: <https://schema.org/siblings> (siblings)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/siblings> "A sibling of the person."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/siblings> <https://schema.org/siblings>)
+AnnotationAssertion(rdfs:label <https://schema.org/siblings> "siblings"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/siblings> <https://schema.org/sibling>)
+
+# Individual: <https://schema.org/significantLink> (significantLink)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/significantLink> "One of the more significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/significantLink> <https://schema.org/significantLink>)
+AnnotationAssertion(rdfs:label <https://schema.org/significantLink> "significantLink"@en)
+
+# Individual: <https://schema.org/significantLinks> (significantLinks)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/significantLinks> "The most significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/significantLinks> <https://schema.org/significantLinks>)
+AnnotationAssertion(rdfs:label <https://schema.org/significantLinks> "significantLinks"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/significantLinks> <https://schema.org/significantLink>)
+
+# Individual: <https://schema.org/softwareRequirements> (softwareRequirements)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/softwareRequirements> "Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (examples: DirectX, Java or .NET runtime)."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/softwareRequirements> <https://schema.org/softwareRequirements>)
+AnnotationAssertion(rdfs:label <https://schema.org/softwareRequirements> "softwareRequirements"@en)
+
+# Individual: <https://schema.org/step> (step)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/step> "A single step item (as HowToStep, text, document, video, etc.) or a HowToSection."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/step> <https://schema.org/step>)
+AnnotationAssertion(rdfs:label <https://schema.org/step> "step"@en)
+
+# Individual: <https://schema.org/steps> (steps)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/steps> "A single step item (as HowToStep, text, document, video, etc.) or a HowToSection (originally misnamed 'steps'; 'step' is preferred)."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/steps> <https://schema.org/steps>)
+AnnotationAssertion(rdfs:label <https://schema.org/steps> "steps"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/steps> <https://schema.org/step>)
+
+# Individual: <https://schema.org/subEvent> (subEvent)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/subEvent> "An Event that is part of this event. For example, a conference event includes many presentations, each of which is a subEvent of the conference."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/subEvent> <https://schema.org/subEvent>)
+AnnotationAssertion(rdfs:label <https://schema.org/subEvent> "subEvent"@en)
+
+# Individual: <https://schema.org/subEvents> (subEvents)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/subEvents> "Events that are a part of this event. For example, a conference event includes many presentations, each subEvents of the conference."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/subEvents> <https://schema.org/subEvents>)
+AnnotationAssertion(rdfs:label <https://schema.org/subEvents> "subEvents"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/subEvents> <https://schema.org/subEvent>)
+
+# Individual: <https://schema.org/surface> (surface)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/surface> "A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/surface> <https://schema.org/surface>)
+AnnotationAssertion(rdfs:label <https://schema.org/surface> "surface"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/surface> <https://schema.org/artworkSurface>)
+
+# Individual: <https://schema.org/targetCollection> (targetCollection)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/targetCollection> "A sub property of object. The collection target of the action."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/targetCollection> <https://schema.org/targetCollection>)
+AnnotationAssertion(rdfs:label <https://schema.org/targetCollection> "targetCollection"@en)
+
+# Individual: <https://schema.org/temporalCoverage> (temporalCoverage)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/temporalCoverage> "The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in <a href=\"https://en.wikipedia.org/wiki/ISO_8601#Time_intervals\">ISO 8601 time interval format</a>. In
+      the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written \"2011/2012\"). Other forms of content, e.g. ScholarlyArticle, Book, TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms - textually or via well-known URL.
+      Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via \"1939/1945\".<br/><br/>
+
+Open-ended date ranges can be written with \"..\" in place of the end date. For example, \"2015-11/..\" indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/temporalCoverage> <https://schema.org/temporalCoverage>)
+AnnotationAssertion(rdfs:label <https://schema.org/temporalCoverage> "temporalCoverage"@en)
+
+# Individual: <https://schema.org/track> (track)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/track> "A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/track> <https://schema.org/track>)
+AnnotationAssertion(rdfs:label <https://schema.org/track> "track"@en)
+
+# Individual: <https://schema.org/tracks> (tracks)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/tracks> "A music recording (track)&#x2014;usually a single song."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/tracks> <https://schema.org/tracks>)
+AnnotationAssertion(rdfs:label <https://schema.org/tracks> "tracks"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/tracks> <https://schema.org/track>)
+
+# Individual: <https://schema.org/vendor> (vendor)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/vendor> "'vendor' is an earlier term for 'seller'."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/vendor> <https://schema.org/vendor>)
+AnnotationAssertion(rdfs:label <https://schema.org/vendor> "vendor"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/vendor> <https://schema.org/seller>)
+
+# Individual: <https://schema.org/warranty> (warranty)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/warranty> "The warranty promise(s) included in the offer."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/warranty> <https://schema.org/warranty>)
+AnnotationAssertion(rdfs:label <https://schema.org/warranty> "warranty"@en)
+
+# Individual: <https://schema.org/warrantyPromise> (warrantyPromise)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/warrantyPromise> "The warranty promise(s) included in the offer."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/warrantyPromise> <https://schema.org/warrantyPromise>)
+AnnotationAssertion(rdfs:label <https://schema.org/warrantyPromise> "warrantyPromise"@en)
+ObjectPropertyAssertion(<https://schema.org/supersededBy> <https://schema.org/warrantyPromise> <https://schema.org/warranty>)
+
+
+)

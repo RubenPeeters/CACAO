@@ -1,5 +1,4 @@
-
-Prefix(:=<http://purl.obolibrary.org/obo/cacao.owl#>)
+Prefix(:=<https://reevaluate.eu/cacao/ns/cacao.owl#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -9,39 +8,528 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/cacao.owl>
-
-
-Import(<http://purl.obolibrary.org/obo/cacao/imports/crm_import.owl>)
-
-
-
+Ontology(<https://reevaluate.eu/cacao/ns/cacao.owl>
+Import(<https://reevaluate.eu/cacao/ns/cacao/imports/crm_import.owl>)
+Import(<https://reevaluate.eu/cacao/ns/cacao/imports/foaf_import.owl>)
+Import(<https://reevaluate.eu/cacao/ns/cacao/imports/odrl_import.owl>)
+Import(<https://reevaluate.eu/cacao/ns/cacao/imports/schema_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Cultural Artefact Contextual Ontology")
 
-
-Declaration(Class(<http://purl.obolibrary.org/obo/CACAO_0000000>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E21_Person>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E30_Right>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E39_Actor>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E55_Type>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E5_Event>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>))
+Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E74_Group>))
+Declaration(Class(<http://www.w3.org/ns/odrl/2/Asset>))
+Declaration(Class(<http://www.w3.org/ns/odrl/2/Policy>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000002>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000003>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000005>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000010>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000011>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000012>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000013>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000014>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000015>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000016>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000020>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000022>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000023>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000024>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000025>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000027>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000028>))
+Declaration(Class(<https://reevaluate.eu/cacao/ns/CACAO_0000036>))
+Declaration(Class(<https://schema.org/Person>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000017>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000018>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000026>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000030>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000031>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000032>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000033>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000034>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000035>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000038>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000039>))
+Declaration(ObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000040>))
+Declaration(AnnotationProperty(dcterms:contributor))
+Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-
 ############################
 #   Annotation Properties
 ############################
 
+# Annotation Property: dcterms:description (description)
+
 AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
 AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> (P109 έχει ή είχε επιμελητή)
+
+ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> <https://reevaluate.eu/cacao/ns/CACAO_0000020>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000017> (genre)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000017> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000017> "2025-04-10T14:50:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000017> "Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property associates an Entity with a particular Genre. The Genre is defined as a subclass of E55 Type and represents a category of artistic, stylistic, thematic, or aesthetic classification. Whether applied to an artist or a creative work, the property genre consistently indicates the genre within which the work or the artist’s creative output is situated. 
+
+Examples:
+- An artist might be associated with the genre \"Impressionism\" to indicate that their body of work is typically aligned with this artistic style.
+- A painting (as a physical artefact) may be categorized under \"Portrait\" to denote the genre of the artwork."@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000017> "genre"@en)
+ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000017> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
+ObjectPropertyRange(<https://reevaluate.eu/cacao/ns/CACAO_0000017> <https://reevaluate.eu/cacao/ns/CACAO_0000027>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000018> (socialMovement)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000018> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000018> "2025-04-10T14:51:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000018> "Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property associates an Entity with a specific Social Movement. A Social Movement is defined as a loosely organized effort by a large group of people to achieve a particular set of goals (e.g., political, cultural, or religious change). Through this property, one can record an artist’s participation in or influence from a social movement and, similarly, document how a creative work may be representative of or inspired by such a movement. 
+
+Examples:
+- An artist (E21 Person) who was actively involved in the Civil Rights Movement might be linked via the movement property to that Social Movement.
+- A poster or photograph (E22 Physical Artefact) produced during a protest could be associated with the relevant Social Movement that motivated its creation."@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000018> "socialMovement"@en)
+IrreflexiveObjectProperty(<https://reevaluate.eu/cacao/ns/CACAO_0000018>)
+ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000018> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
+ObjectPropertyRange(<https://reevaluate.eu/cacao/ns/CACAO_0000018> <https://reevaluate.eu/cacao/ns/CACAO_0000010>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000026> (fieldOfWork)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000026> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000026> "2025-04-11T10:40:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000026> "Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property links an instance of an Actor (typically an instance of E21 Person) with a Field of Work, an element of the controlled vocabulary defined as a subclass of E55 Type. It is used to classify the professional or creative domain in which an Actor (especially an artist) is active. 
+
+Examples:
+- An artist (E21 Person) might have a fieldOfWork assignment indicating they work in “Painting” (an instance of Field of Work).
+- A creator could be linked to the fieldOfWork “Sculpture” as well as “Mixed Media,” reflecting multiple areas of engagement."@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000026> "fieldOfWork"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000026> owl:topObjectProperty)
+ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000026> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+ObjectPropertyRange(<https://reevaluate.eu/cacao/ns/CACAO_0000026> <https://reevaluate.eu/cacao/ns/CACAO_0000028>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000030> (height)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000030> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000030> "2025-04-12T09:12:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000030> "height"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000030> <http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000031> (width)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000031> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000031> "2025-04-12T09:12:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000031> "width"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000031> <http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000032> (diameter)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000032> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000032> "2025-04-12T09:12:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000032> "diameter"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000032> <http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000033> (thickness)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000033> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000033> "2025-04-12T09:12:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000033> "thickness"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000033> <http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000034> (length)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000034> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000034> "2025-04-12T09:12:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000034> "length"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000034> <http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000035> (movement)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000035> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000035> "2025-04-12T09:16:19Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000035> ""@en)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000035> "Quantification: Many-to-many (0,n: 0,n)
+
+Scope note:
+This property associates an entity,such as a person (e.g., an artist) or a physical artefact (e.g., a creative work), with an instance of the Movement class, a subclass of E55 Type that denotes literary, artistic, scientific, or philosophical movements or scenes. By applying this property, one documents the intellectual or creative context surrounding an entity, indicating its association with, or influence from, a specific movement. 
+
+Examples:
+- An artist might be associated with the movement Modernism.
+- A painting might be linked to the artistic movement Impressionism.
+- A literary work might be classified under the movement Romanticism."@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000035> "movement"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000035> owl:topObjectProperty)
+ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000035> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
+ObjectPropertyRange(<https://reevaluate.eu/cacao/ns/CACAO_0000035> <https://reevaluate.eu/cacao/ns/CACAO_0000036>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000038> (website)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000038> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000038> "2025-04-12T10:00:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000038> "website"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000038> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000039> (europeana)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000039> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000039> "2025-04-12T10:00:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000039> "europeana"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000039> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by>)
+
+# Object Property: <https://reevaluate.eu/cacao/ns/CACAO_0000040> (partner)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000040> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000040> "2025-04-12T10:13:16Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000040> "Scope note:
+The property partner denotes that an Actor has committed to a partnership with another Actor.")
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000040> "partner"@en)
+SubObjectPropertyOf(<https://reevaluate.eu/cacao/ns/CACAO_0000040> owl:topObjectProperty)
+ObjectPropertyDomain(<https://reevaluate.eu/cacao/ns/CACAO_0000040> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+ObjectPropertyRange(<https://reevaluate.eu/cacao/ns/CACAO_0000040> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
+
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/CACAO_0000000> (root node)
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E21_Person> (E21 Person)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CACAO_0000000> "root node"@en)
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <https://schema.org/Person>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E30_Right> (E30 权限)
+
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E30_Right> <http://www.w3.org/ns/odrl/2/Policy>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Объeкт Права)
+
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/ns/odrl/2/Asset>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000002> (User)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000002> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000002> "2024-11-13T16:18:33Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000002> "Scope note:
+This class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​
+
+Unlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​
+
+The classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity's functional role in interacting with digital systems in a manner that can be documented and attributed.​
+
+Examples:
+- A registered individual accessing an online museum catalog.​
+- An AI-driven recommendation engine suggesting artifacts to users.​
+- A software bot performing automated data curation tasks.​"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000002> "User"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000002> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000003> (Digital Artefact)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000003> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000003> "2024-11-13T16:20:05Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000003> "Scope note:
+This class comprises identifiable immaterial items, such as digital images, texts, multimedia objects, computer program code, algorithms, or mathematical formulae, that are created, modified, or stored in digital formats. Digital Artefacts have an objectively recognizable structure and are documented as single units. They exist independently of specific physical carriers and can reside on multiple digital mediums simultaneously. While E73 Information Objects encompass a broad range of immaterial items, including those stored in human memory or on physical media, Digital Artefacts are specifically associated with digital technologies. This subclassification aids in distinguishing between general information entities and those uniquely tied to digital environments.​
+
+Examples:
+- A digital photograph of an ancient manuscript.​
+- A 3D model of an archaeological excavation site.​
+- The source code of a software application developed to catalog museum collections.​
+- A dataset containing measurements of physical artefacts."@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000003> "Digital Artefact"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000003> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000005> (Historical Event)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000005> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000005> "2024-11-19T12:02:07Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:description <https://reevaluate.eu/cacao/ns/CACAO_0000005> "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.")
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000005> "Historical Event"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000005> <http://www.cidoc-crm.org/cidoc-crm/E5_Event>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000010> (Social movement)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000010> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000010> "2024-11-19T12:50:33Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:description <https://reevaluate.eu/cacao/ns/CACAO_0000010> "From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals")
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000010> "From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals
+
+Scope note:
+A Social Movement is a loosely organized effort by a large group of people to achieve a particular set of goals, typically aiming to promote or resist changes in society's structure or values. These movements are characterized by collective action, where individuals unite based on shared beliefs or objectives, often seeking social, political, economic, or cultural transformations. ​
+
+Social movements differ from formal organizations in that they may lack a defined organizational structure or formal membership, relying instead on informal networks and shared commitments. They can vary widely in size and scope, ranging from localized grassroots initiatives to large-scale national or international campaigns. The methods employed can include protests, demonstrations, advocacy, and other forms of collective action aimed at influencing public opinion and policy. ​
+
+Examples:
+- The Civil Rights Movement in the United States,
+- The Environmental Movement
+- The Feminist Movement,
+- The LGBTQ+ Rights Movement"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000010> "Social movement"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000010> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000011> (Religious movement)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000011> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000011> "2024-11-19T12:51:24Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:description <https://reevaluate.eu/cacao/ns/CACAO_0000011> "Wikidata: Q1826286, social and ideological movement in the religious sphere")
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000011> "Wikidata: Q1826286, social and ideological movement in the religious sphere
+
+Scope note:
+A Religious Movement is a collective effort by a group of people aiming to promote, reform, or resist changes within religious beliefs, practices, or institutions.
+
+Examples:
+- The Protestant Reformation in the 16th century, which led to significant changes in Christian practices and beliefs.​
+- The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​
+- The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s."@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000011> "Religious movement"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000011> <https://reevaluate.eu/cacao/ns/CACAO_0000010>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000012> (Cultural movement)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000012> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000012> "2024-11-19T12:51:32Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:description <https://reevaluate.eu/cacao/ns/CACAO_0000012> "Wikidata: Q2198855, period and movement in cultural history")
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000012> "Wikidata: Q2198855, period and movement in cultural history
+
+Scope note:
+A Cultural Movement is a collective effort by loosely affiliated individuals aiming to transform societal perspectives through the dissemination of ideas via various art forms and intentional lifestyle choices. These movements often overlap with social and political movements, making them integral to broader cultural transformations. ​
+
+Examples:
+- The Renaissance
+- The Romanticism movement
+- The Alté Movement in Nigeria"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000012> "Cultural movement"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000012> <https://reevaluate.eu/cacao/ns/CACAO_0000010>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000013> (Political movement)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000013> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000013> "2024-11-19T12:51:42Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:description <https://reevaluate.eu/cacao/ns/CACAO_0000013> "Wikidata: Q2738074, movement to obtain a political goal")
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000013> "Wikidata: Q2738074, movement to obtain a political goal
+
+Scope note:
+A Political Movement is a collective effort by a group of people aiming to influence government policy, social values, or achieve specific political objectives. These movements are typically organized around particular issues or ideologies and seek to bring about change within the political system. They differ from political parties, which aim to gain political office, by focusing on specific goals rather than seeking electoral power. ​
+
+Examples:
+- The Anti-Apartheid Movement, which campaigned against the system of racial segregation in South Africa.​
+- The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​
+- The Brexit Movement, which sought the United Kingdom's withdrawal from the European Union.")
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000013> "Political movement"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000013> <https://reevaluate.eu/cacao/ns/CACAO_0000010>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000014> (Domain)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000014> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000014> "2024-12-06T13:27:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000014> "Scope note:
+This class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​
+
+The Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \"archaeology\" or \"art history\" helps in understanding its scholarly context and the methodologies applied to its study.​
+
+Examples:
+- Archaeology​
+- Art History​
+- Ethnomusicology​
+- Conservation Science"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000014> "Domain"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000014> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000015> (Economic Relevance)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000015> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000015> "2024-12-06T13:30:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000015> "Scope note:
+Economic Relevance pertains to concepts that define the economic significance or impact of entities, events, or activities. This class encompasses terms and categories used to classify and assess the economic aspects of cultural heritage items, historical events, or societal practices.
+
+Examples:
+- The economic impact of the Silk Road trade routes on participating civilizations.​
+- The assessment of a museum's collection in terms of its monetary value and contribution to tourism revenue.​
+- Analysis of the financial significance of a historical event, such as the Industrial Revolution, on global markets."@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000015> "Economic Relevance"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000015> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000016> (Symbolism)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000016> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000016> "2024-12-06T13:43:53Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000016> "Symbolism"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000016> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000020> (Museum)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000020> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000020> "2025-04-11T08:31:05Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000020> "Scope note:
+This class comprises organizations that are established to collect, preserve, research, interpret, and exhibit tangible and intangible cultural heritage for the purposes of education, study, and enjoyment. Museums operate as collective entities, often encompassing various departments and professionals, and may be public or private institutions.​
+
+As instances of E74 Group, museums are characterized by their organizational structure and collective actions aimed at the stewardship of cultural artifacts and information. They may also engage in activities such as publishing, educational programming, and community outreach.​
+
+Museums can vary widely in scope and specialization, including but not limited to art museums, history museums, science museums, and ethnographic museums. Their defining feature is the systematic curation and presentation of collections to the public or specific audiences.​
+
+Examples:
+- The British Museum​
+- The Louvre​
+- The Metropolitan Museum of Art​
+- The National Museum of Denmark"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000020> "Museum"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000020> <http://www.cidoc-crm.org/cidoc-crm/E74_Group>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000022> (Artist)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000022> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000022> "2025-04-11T08:32:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000022> "Scope note:
+This class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).
+
+Artists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.
+
+In bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.
+
+Examples:
+- Leonardo da Vinci
+- Frida Kahlo
+- William Shakespeare
+- Maya Deren"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000022> "Artist"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000022> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000023> (Physical Artefact)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000023> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000023> "2025-04-11T08:35:55Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000023> "Scope note:
+This class comprises all persistent physical objects of any size that are purposely created by human activity and have physical boundaries that separate them completely in an objective way from other objects. The class also includes all aggregates of objects made for functional purposes of whatever kind, independent of physical coherence, such as a set of chessmen.​
+
+Physical Artefacts are distinguished by their tangible nature and intentional creation, serving various purposes such as utility, artistic expression, or cultural significance. They may range from individual items like tools and artworks to assembled collections designed to function as a whole.​
+
+Examples:
+- The Rosetta Stone
+- LNER Class A4 4468 Mallard [the World’s fastest steam locomotive, preserved at the National Railway Museum of York, UK]
+- The Portland Vase"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000023> "Physical Artefact"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000023> <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000024> (Artwork)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000024> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000024> "2025-04-11T08:37:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000024> "Scope note:
+This class comprises physical artefacts that are primarily created as expressions of aesthetic, conceptual, or symbolic intent. Artworks encompass a wide range of tangible objects produced through artistic practices, including but not limited to paintings, sculptures, installations, and mixed-media pieces.​
+
+Artworks are distinguished by their purpose of conveying artistic expression, emotion, or commentary, rather than serving utilitarian functions. They are often characterized by their unique form, style, and the creative processes involved in their production.​
+
+While all artworks are physical artefacts, not all physical artefacts qualify as artworks; the classification depends on the creator's intent and the cultural context attributing artistic value to the object.​
+CIDOC CRM
+
+Examples:
+- The Mona Lisa by Leonardo da Vinci​
+- The Thinker by Auguste Rodin​
+- The Starry Night by Vincent van Gogh​
+- Balloon Dog (Red) by Jeff Koons"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000024> "Artwork"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000024> <https://reevaluate.eu/cacao/ns/CACAO_0000023>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000025> (Instrument)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000025> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000025> "2025-04-11T08:37:08Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000025> "Scope note:
+This class comprises physical artefacts that are intentionally created and utilized by humans to produce, modify, or measure sound, music, or other forms of audio. Instruments are designed with specific acoustic properties or mechanisms to facilitate the creation or manipulation of auditory phenomena. This includes, but is not limited to, musical instruments such as string, wind, percussion, and electronic instruments.​
+
+Instruments are characterized by their functional design aimed at generating or controlling sound, distinguishing them from other physical artefacts. They may vary in complexity from simple objects like drums and flutes to intricate devices like synthesizers and orchestral instruments.​
+
+Examples:
+- A Stradivarius violin​
+- A Steinway grand piano​
+- A traditional African djembe drum​
+- A Moog synthesizer"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000025> "Instrument"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000025> <https://reevaluate.eu/cacao/ns/CACAO_0000023>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000027> (Genre)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000027> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000027> "2025-04-11T11:18:31Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000027> "Scope note:
+The Genre class encompasses concepts that denote specific categories or styles of creative works, including but not limited to:​
+
+- Music Genres: Such as classical, jazz, rock, or electronic.​
+- Film Genres: Including drama, comedy, thriller, or documentary.​
+- Artistic Genres: Like impressionism, surrealism, or abstract expressionism.​
+- Literary Genres: Such as fiction, non-fiction, poetry, or drama.​
+
+Instances of the Genre class provide a means to classify and contextualize creative works within their respective domains, enhancing the discovery and analysis of cultural heritage materials based on their genre-specific characteristics.​
+
+Examples:
+- Jazz (music genre)​
+- Film Noir (film genre)​
+- Renaissance Art (artistic genre)​
+- Science Fiction (literary genre)"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000027> "Genre"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000027> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000028> (Field Of Work)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000028> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000028> "2025-04-11T11:18:41Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000028> "Scope note:
+This class comprises concepts that denote areas of professional, academic, or creative activity in which individuals, groups, or organizations engage. Instances of Field of Work represent specific domains of expertise or practice, such as \"architecture,\" \"literature,\" or \"engineering,\" and are used to classify and contextualize the roles, contributions, or affiliations of persons within the CIDOC CRM framework.​
+
+By associating persons with a Field of Work, one can provide semantic context regarding the nature of their activities or specializations. 
+
+Examples:
+- Architecture​
+- Literature​
+- Engineering​
+- Performing Arts​"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000028> "Field Of Work"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000028> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <https://reevaluate.eu/cacao/ns/CACAO_0000036> (Movement)
+
+AnnotationAssertion(dcterms:contributor <https://reevaluate.eu/cacao/ns/CACAO_0000036> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <https://reevaluate.eu/cacao/ns/CACAO_0000036> "2025-04-12T09:17:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <https://reevaluate.eu/cacao/ns/CACAO_0000036> "Scope note:
+This class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. 
+
+Examples:
+- Impressionism
+- Romanticism
+- Modernism
+- Existentialism"@en)
+AnnotationAssertion(rdfs:label <https://reevaluate.eu/cacao/ns/CACAO_0000036> "Movement"@en)
+SubClassOf(<https://reevaluate.eu/cacao/ns/CACAO_0000036> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
 
 
 )
-
