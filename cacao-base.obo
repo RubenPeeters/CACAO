@@ -1,19 +1,20 @@
 format-version: 1.2
-data-version: https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-12/cacao-base.owl
+data-version: http://w3id.org/cacao/cacao/releases/2025-05-08/cacao-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
-ontology: https://reevaluate.eu/cacao/ns/cacao/cacao-base.owl
+ontology: http://w3id.org/cacao/cacao/cacao-base.owl
 property_value: dce:type IAO:8000001
 property_value: dcterms:description "None" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
 property_value: dcterms:title "Cultural Artefact Contextual Ontology" xsd:string
-property_value: owl:versionInfo "2025-04-12" xsd:string
+property_value: owl:versionInfo "2025-05-08" xsd:string
 
 [Term]
 id: CACAO:0000002
 name: User
 comment: Scope note:\nThis class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​\n\nUnlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​\n\nThe classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity's functional role in interacting with digital systems in a manner that can be documented and attributed.​\n\nExamples:\n- A registered individual accessing an online museum catalog.​\n- An AI-driven recommendation engine suggesting artifacts to users.​\n- A software bot performing automated data curation tasks.​
 is_a: E39:Actor
+is_a: http://www.w3.org/ns/odrl/2/Party
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2024-11-13T16:18:33Z" xsd:dateTime
 

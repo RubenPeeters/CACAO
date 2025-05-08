@@ -1,21 +1,22 @@
 format-version: 1.2
-data-version: https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-12/cacao.owl
+data-version: http://w3id.org/cacao/cacao/releases/2025-05-08/cacao.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: odrl http://www.w3.org/ns/odrl/2/ 
 idspace: schema https://schema.org/ 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
-ontology: https://reevaluate.eu/cacao/ns/cacao.owl
+ontology: http://w3id.org/cacao/cacao.owl
 property_value: dcterms:description "None" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
 property_value: dcterms:title "Cultural Artefact Contextual Ontology" xsd:string
-property_value: owl:versionInfo "2025-04-12" xsd:string
+property_value: owl:versionInfo "2025-05-08" xsd:string
 
 [Term]
 id: CACAO:0000002
 name: User
 comment: Scope note:\nThis class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​\n\nUnlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​\n\nThe classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity's functional role in interacting with digital systems in a manner that can be documented and attributed.​\n\nExamples:\n- A registered individual accessing an online museum catalog.​\n- An AI-driven recommendation engine suggesting artifacts to users.​\n- A software bot performing automated data curation tasks.​
 is_a: E39:Actor ! E39 Дeйствующий Субъeкт
+is_a: odrl:Party ! Party
 property_value: dcterms:contributor https://orcid.org/0000-0002-0905-7033
 property_value: dcterms:date "2024-11-13T16:18:33Z" xsd:dateTime
 
@@ -190,6 +191,7 @@ name: E21 人物
 comment: Scope note:\nThis class comprises real persons who live or are assumed to have lived. \nLegendary figures that may have existed, such as Ulysses and King Arthur, fall into this class if the documentation refers to them as historical figures. In cases where doubt exists as to whether several persons are in fact identical, multiple instances can be created and linked to indicate their relationship. The CIDOC CRM does not propose a specific form to support reasoning about possible identity.\nIn a bibliographic context, a name presented following the conventions usually employed for personal names will be assumed to correspond to an actual real person (an instance of E21 Person), unless evidence is available to indicate that this is not the case. The fact that a persona may erroneously be classified as an instance of E21 Person does not imply that the concept comprises personae.\n\nExamples:\n- Tut-Ankh-Amun (Edwards and Boltin, 1979)\n- Nelson Mandela (Brown and Hort, 2006)\n\nIn First Order Logic:\n- E21(x) ⇒ E20(x)\n- E21(x) ⇒ E39(x)\n
 is_a: E39:Actor ! E39 Дeйствующий Субъeкт
 is_a: http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object ! E20 Βιολογικό Ακτικείμενο
+is_a: odrl:Party ! Party
 is_a: schema:Thing ! Thing
 equivalent_to: schema:Person ! Person
 property_value: skos:notation "E21" xsd:string
@@ -254,6 +256,7 @@ name: E39 Дeйствующий Субъeкт
 name: E39 参与者
 comment: Scope note:\nThis class comprises people, either individually or in groups, who have the potential to perform intentional actions of kinds for which they can be held responsible.\n\nExamples:\n- London and Continental Railways (E74)\n- the Governor of the Bank of England in 1975 (E21)\n- Sir Ian McKellen (E21) (Gibson, 1986)\n\nIn First Order Logic:\n- E39(x) ⇒ E77(x)\n
 is_a: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
+equivalent_to: odrl:Party ! Party
 property_value: skos:notation "E39" xsd:string
 property_value: skos:prefLabel "Actant" xsd:string
 property_value: skos:prefLabel "Actor" xsd:string
@@ -490,7 +493,7 @@ name: E69 Θάνατος
 name: E69 Смeрть
 name: E69 死亡
 comment: Scope note:\nThis class comprises the deaths of human beings. \nIf a person is killed, their death should be instantiated as E69 Death and as E7 Activity. The death or perishing of other living beings should be documented as instances of E64 End of Existence.\n\nExamples:\n- the murder of Julius Caesar (E69, E7) (Irwin, 1935)\n- the death of Senator Paul Wellstone (Monast and Tao, 2002)\n\nIn First Order Logic:\n- E69(x) ⇒ E64(x)\n
-is_a: http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence ! E64 Fin d’existence
+is_a: http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence ! E64 Daseinsende
 property_value: skos:notation "E69" xsd:string
 property_value: skos:prefLabel "Death" xsd:string
 property_value: skos:prefLabel "Mort" xsd:string
@@ -531,6 +534,7 @@ name: E74 Группа
 name: E74 团体
 comment: Scope note:\nThis class comprises any gatherings or organizations of human individuals or groups that act collectively or in a similar way due to any form of unifying relationship. In the wider sense this class also comprises official positions which used to be regarded in certain contexts as one actor, independent of the current holder of the office, such as the president of a country. In such cases, it may happen that the group never had more than one member. A joint pseudonym (i.e. a name that seems indicative of an individual but that is actually used as a persona by two or more people) is a particular case of E74 Group.\nA gathering of people becomes an instance of E74 Group when it exhibits organizational characteristics usually typified by a set of ideas or beliefs held in common, or actions performed together. These might be communication, creating some common artifact, a common purpose such as study, worship, business, sports, etc. Nationality can be modelled as membership in an instance of E74 Group. Married couples and other concepts of family are regarded as particular examples of E74 Group.\n\nExamples:\n- the Impressionists (Wilson, 1994)\n- the Navajo (Correll, 1972)\n- the Greeks (Williams, 1993)\n- the peace protestors in New York City on 15(th) February 2003\n- Exxon-Mobil (Raymond, 2006)\n- King Solomon and his wives (Thieberger, 1947)\n- the President of the Swiss Confederation\n- Nicolas Bourbaki [the collective pseudonym of a group of mathematicians, predominantly French alumni of the École normale supérieure] (Aczel, 2007)\n- Betty Crocker (Crocker, 2012)\n- Ellery Queen [Ellery Queen is a pseudonym created in 1929 by American crime fiction writers Frederic Dannay and Manfred Bennington Lee.] (Wheat, 2005)\n- Greenpeace\n- Paveprime Ltd\n- the National Museum of Denmark\n\nIn First Order Logic:\n- E74(x) ⇒ E39(x)\n
 is_a: E39:Actor ! E39 Дeйствующий Субъeкт
+is_a: odrl:Party ! Party
 property_value: skos:notation "E74" xsd:string
 property_value: skos:prefLabel "Group" xsd:string
 property_value: skos:prefLabel "Groupe" xsd:string
@@ -1090,6 +1094,7 @@ property_value: skos:note "Instances of the Operator class representing relation
 [Term]
 id: odrl:Party
 name: Party
+is_a: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
 property_value: isDefinedBy odrl:
 property_value: skos:definition "An entity or a collection of entities that undertake Roles in a Rule." xsd:string
 property_value: skos:note "The Party entity could be a person, group of people, organisation, or agent. An agent is a person or thing that takes an active role or produces a specified effect. To describe more details about the Party, it is recommended to use W3C vCard Ontology [[vcard-rdf]] or FOAF Vocabulary [[foaf]]." xsd:string
@@ -1097,6 +1102,7 @@ property_value: skos:note "The Party entity could be a person, group of people, 
 [Term]
 id: odrl:PartyCollection
 name: Party Collection
+is_a: E39:Actor ! E39 Дeйствующий Субъeкт
 is_a: odrl:Party ! Party
 property_value: isDefinedBy odrl:
 property_value: skos:definition "A Party that is a group of individual entities" xsd:string
@@ -1261,6 +1267,7 @@ name: Person
 comment: A person (alive, dead, undead, or fictional).
 is_a: E39:Actor ! E39 Дeйствующий Субъeкт
 is_a: http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object ! E20 Βιολογικό Ακτικείμενο
+is_a: odrl:Party ! Party
 is_a: schema:Thing ! Thing
 property_value: isDefinedBy schema:Person
 
@@ -2290,7 +2297,7 @@ property_value: skos:prefLabel "имeeт условиe" xsd:string
 property_value: skos:prefLabel "有状况" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing ! E18 Physical Thing
 range: http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State ! E3 条件状态
-inverse_of: http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of ! P44i is condition of
+inverse_of: http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of ! P44i ist Zustand von
 
 [Typedef]
 id: http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of
@@ -2332,7 +2339,7 @@ property_value: skos:prefLabel "αποτελείται από" xsd:string
 property_value: skos:prefLabel "состоит из" xsd:string
 property_value: skos:prefLabel "包含" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing ! E18 Physical Thing
-range: E57:Material ! E57 Material
+range: E57:Material ! E57 Матeриал
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P45i_is_incorporated_in ! P45i is incorporated in
 
 [Typedef]
@@ -2353,7 +2360,7 @@ property_value: skos:prefLabel "ist enthalten in" xsd:string
 property_value: skos:prefLabel "είναι ενσωματωμένος/η/ο σε" xsd:string
 property_value: skos:prefLabel "входит в состав" xsd:string
 property_value: skos:prefLabel "结合在" xsd:string
-domain: E57:Material ! E57 Material
+domain: E57:Material ! E57 Матeриал
 range: http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing ! E18 Physical Thing
 
 [Typedef]
@@ -3010,7 +3017,7 @@ property_value: skos:prefLabel "took out of existence" xsd:string
 property_value: skos:prefLabel "αναίρεσε" xsd:string
 property_value: skos:prefLabel "положил конeц сущeствованию" xsd:string
 property_value: skos:prefLabel "结束存在的是" xsd:string
-domain: http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence ! E64 Fin d’existence
+domain: http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence ! E64 Daseinsende
 range: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
 is_a: http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of ! P12 συνέβη παρουσία του/της
 inverse_of: http://www.cidoc-crm.org/cidoc-crm/P93i_was_taken_out_of_existence_by ! P93i a cessé d’exister par
@@ -3034,7 +3041,7 @@ property_value: skos:prefLabel "αναιρέθηκε από" xsd:string
 property_value: skos:prefLabel "сущeствованиe было прeкращeно" xsd:string
 property_value: skos:prefLabel "被结束存在" xsd:string
 domain: http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item ! E77 Ον
-range: http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence ! E64 Fin d’existence
+range: http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence ! E64 Daseinsende
 is_a: http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at ! P12i war anwesend bei
 
 [Typedef]

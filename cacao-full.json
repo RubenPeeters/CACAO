@@ -1,6 +1,6 @@
 {
   "graphs" : [ {
-    "id" : "https://reevaluate.eu/cacao/ns/cacao/cacao-full.json",
+    "id" : "http://w3id.org/cacao/cacao/cacao-full.json",
     "meta" : {
       "basicPropertyValues" : [ {
         "pred" : "http://purl.org/dc/terms/description",
@@ -13,9 +13,9 @@
         "val" : "Cultural Artefact Contextual Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-04-12"
+        "val" : "2025-05-08"
       } ],
-      "version" : "https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-12/cacao-full.json"
+      "version" : "http://w3id.org/cacao/cacao/releases/2025-05-08/cacao-full.json"
     },
     "nodes" : [ {
       "id" : "http://schema.org/Action",
@@ -26,6 +26,271 @@
     }, {
       "id" : "http://schema.org/Person",
       "type" : "CLASS"
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000002",
+      "lbl" : "User",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nThis class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​\n\nUnlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​\n\nThe classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity's functional role in interacting with digital systems in a manner that can be documented and attributed.​\n\nExamples:\n- A registered individual accessing an online museum catalog.​\n- An AI-driven recommendation engine suggesting artifacts to users.​\n- A software bot performing automated data curation tasks.​" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-13T16:18:33Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000003",
+      "lbl" : "Digital Artefact",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nThis class comprises identifiable immaterial items, such as digital images, texts, multimedia objects, computer program code, algorithms, or mathematical formulae, that are created, modified, or stored in digital formats. Digital Artefacts have an objectively recognizable structure and are documented as single units. They exist independently of specific physical carriers and can reside on multiple digital mediums simultaneously. While E73 Information Objects encompass a broad range of immaterial items, including those stored in human memory or on physical media, Digital Artefacts are specifically associated with digital technologies. This subclassification aids in distinguishing between general information entities and those uniquely tied to digital environments.​\n\nExamples:\n- A digital photograph of an ancient manuscript.​\n- A 3D model of an archaeological excavation site.​\n- The source code of a software application developed to catalog museum collections.​\n- A dataset containing measurements of physical artefacts." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-13T16:20:05Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000005",
+      "lbl" : "Historical Event",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-19T12:02:07Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods."
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000010",
+      "lbl" : "Social movement",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals\n\nScope note:\nA Social Movement is a loosely organized effort by a large group of people to achieve a particular set of goals, typically aiming to promote or resist changes in society's structure or values. These movements are characterized by collective action, where individuals unite based on shared beliefs or objectives, often seeking social, political, economic, or cultural transformations. ​\n\nSocial movements differ from formal organizations in that they may lack a defined organizational structure or formal membership, relying instead on informal networks and shared commitments. They can vary widely in size and scope, ranging from localized grassroots initiatives to large-scale national or international campaigns. The methods employed can include protests, demonstrations, advocacy, and other forms of collective action aimed at influencing public opinion and policy. ​\n\nExamples:\n- The Civil Rights Movement in the United States,\n- The Environmental Movement\n- The Feminist Movement,\n- The LGBTQ+ Rights Movement" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-19T12:50:33Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000011",
+      "lbl" : "Religious movement",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Wikidata: Q1826286, social and ideological movement in the religious sphere\n\nScope note:\nA Religious Movement is a collective effort by a group of people aiming to promote, reform, or resist changes within religious beliefs, practices, or institutions.\n\nExamples:\n- The Protestant Reformation in the 16th century, which led to significant changes in Christian practices and beliefs.​\n- The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​\n- The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-19T12:51:24Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Wikidata: Q1826286, social and ideological movement in the religious sphere"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000012",
+      "lbl" : "Cultural movement",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Wikidata: Q2198855, period and movement in cultural history\n\nScope note:\nA Cultural Movement is a collective effort by loosely affiliated individuals aiming to transform societal perspectives through the dissemination of ideas via various art forms and intentional lifestyle choices. These movements often overlap with social and political movements, making them integral to broader cultural transformations. ​\n\nExamples:\n- The Renaissance\n- The Romanticism movement\n- The Alté Movement in Nigeria" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-19T12:51:32Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Wikidata: Q2198855, period and movement in cultural history"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000013",
+      "lbl" : "Political movement",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Wikidata: Q2738074, movement to obtain a political goal\n\nScope note:\nA Political Movement is a collective effort by a group of people aiming to influence government policy, social values, or achieve specific political objectives. These movements are typically organized around particular issues or ideologies and seek to bring about change within the political system. They differ from political parties, which aim to gain political office, by focusing on specific goals rather than seeking electoral power. ​\n\nExamples:\n- The Anti-Apartheid Movement, which campaigned against the system of racial segregation in South Africa.​\n- The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​\n- The Brexit Movement, which sought the United Kingdom's withdrawal from the European Union." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-11-19T12:51:42Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Wikidata: Q2738074, movement to obtain a political goal"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000014",
+      "lbl" : "Domain",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nThis class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​\n\nThe Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \"archaeology\" or \"art history\" helps in understanding its scholarly context and the methodologies applied to its study.​\n\nExamples:\n- Archaeology​\n- Art History​\n- Ethnomusicology​\n- Conservation Science" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-12-06T13:27:25Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000015",
+      "lbl" : "Economic Relevance",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nEconomic Relevance pertains to concepts that define the economic significance or impact of entities, events, or activities. This class encompasses terms and categories used to classify and assess the economic aspects of cultural heritage items, historical events, or societal practices.\n\nExamples:\n- The economic impact of the Silk Road trade routes on participating civilizations.​\n- The assessment of a museum's collection in terms of its monetary value and contribution to tourism revenue.​\n- Analysis of the financial significance of a historical event, such as the Industrial Revolution, on global markets." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-12-06T13:30:25Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000016",
+      "lbl" : "Symbolism",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-12-06T13:43:53Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000020",
+      "lbl" : "Museum",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nThis class comprises organizations that are established to collect, preserve, research, interpret, and exhibit tangible and intangible cultural heritage for the purposes of education, study, and enjoyment. Museums operate as collective entities, often encompassing various departments and professionals, and may be public or private institutions.​\n\nAs instances of E74 Group, museums are characterized by their organizational structure and collective actions aimed at the stewardship of cultural artifacts and information. They may also engage in activities such as publishing, educational programming, and community outreach.​\n\nMuseums can vary widely in scope and specialization, including but not limited to art museums, history museums, science museums, and ethnographic museums. Their defining feature is the systematic curation and presentation of collections to the public or specific audiences.​\n\nExamples:\n- The British Museum​\n- The Louvre​\n- The Metropolitan Museum of Art​\n- The National Museum of Denmark" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:31:05Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000022",
+      "lbl" : "Artist",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nThis class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).\n\nArtists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.\n\nIn bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.\n\nExamples:\n- Leonardo da Vinci\n- Frida Kahlo\n- William Shakespeare\n- Maya Deren" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:32:18Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000023",
+      "lbl" : "Physical Artefact",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nThis class comprises all persistent physical objects of any size that are purposely created by human activity and have physical boundaries that separate them completely in an objective way from other objects. The class also includes all aggregates of objects made for functional purposes of whatever kind, independent of physical coherence, such as a set of chessmen.​\n\nPhysical Artefacts are distinguished by their tangible nature and intentional creation, serving various purposes such as utility, artistic expression, or cultural significance. They may range from individual items like tools and artworks to assembled collections designed to function as a whole.​\n\nExamples:\n- The Rosetta Stone\n- LNER Class A4 4468 Mallard [the World’s fastest steam locomotive, preserved at the National Railway Museum of York, UK]\n- The Portland Vase" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:35:55Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000024",
+      "lbl" : "Artwork",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nThis class comprises physical artefacts that are primarily created as expressions of aesthetic, conceptual, or symbolic intent. Artworks encompass a wide range of tangible objects produced through artistic practices, including but not limited to paintings, sculptures, installations, and mixed-media pieces.​\n\nArtworks are distinguished by their purpose of conveying artistic expression, emotion, or commentary, rather than serving utilitarian functions. They are often characterized by their unique form, style, and the creative processes involved in their production.​\n\nWhile all artworks are physical artefacts, not all physical artefacts qualify as artworks; the classification depends on the creator's intent and the cultural context attributing artistic value to the object.​\nCIDOC CRM\n\nExamples:\n- The Mona Lisa by Leonardo da Vinci​\n- The Thinker by Auguste Rodin​\n- The Starry Night by Vincent van Gogh​\n- Balloon Dog (Red) by Jeff Koons" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:37:01Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000025",
+      "lbl" : "Instrument",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nThis class comprises physical artefacts that are intentionally created and utilized by humans to produce, modify, or measure sound, music, or other forms of audio. Instruments are designed with specific acoustic properties or mechanisms to facilitate the creation or manipulation of auditory phenomena. This includes, but is not limited to, musical instruments such as string, wind, percussion, and electronic instruments.​\n\nInstruments are characterized by their functional design aimed at generating or controlling sound, distinguishing them from other physical artefacts. They may vary in complexity from simple objects like drums and flutes to intricate devices like synthesizers and orchestral instruments.​\n\nExamples:\n- A Stradivarius violin​\n- A Steinway grand piano​\n- A traditional African djembe drum​\n- A Moog synthesizer" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T08:37:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000027",
+      "lbl" : "Genre",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nThe Genre class encompasses concepts that denote specific categories or styles of creative works, including but not limited to:​\n\n- Music Genres: Such as classical, jazz, rock, or electronic.​\n- Film Genres: Including drama, comedy, thriller, or documentary.​\n- Artistic Genres: Like impressionism, surrealism, or abstract expressionism.​\n- Literary Genres: Such as fiction, non-fiction, poetry, or drama.​\n\nInstances of the Genre class provide a means to classify and contextualize creative works within their respective domains, enhancing the discovery and analysis of cultural heritage materials based on their genre-specific characteristics.​\n\nExamples:\n- Jazz (music genre)​\n- Film Noir (film genre)​\n- Renaissance Art (artistic genre)​\n- Science Fiction (literary genre)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T11:18:31Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000028",
+      "lbl" : "Field Of Work",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nThis class comprises concepts that denote areas of professional, academic, or creative activity in which individuals, groups, or organizations engage. Instances of Field of Work represent specific domains of expertise or practice, such as \"architecture,\" \"literature,\" or \"engineering,\" and are used to classify and contextualize the roles, contributions, or affiliations of persons within the CIDOC CRM framework.​\n\nBy associating persons with a Field of Work, one can provide semantic context regarding the nature of their activities or specializations. \n\nExamples:\n- Architecture​\n- Literature​\n- Engineering​\n- Performing Arts​" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T11:18:41Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000036",
+      "lbl" : "Movement",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Scope note:\nThis class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. \n\nExamples:\n- Impressionism\n- Romanticism\n- Modernism\n- Existentialism" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:17:34Z"
+        } ]
+      }
     }, {
       "id" : "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment",
       "lbl" : "E13 属性赋值",
@@ -1760,271 +2025,6 @@
       "id" : "http://xmlns.com/foaf/0.1/Person",
       "type" : "CLASS"
     }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000002",
-      "lbl" : "User",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Scope note:\nThis class comprises agents, whether human individuals, groups, or non-human entities such as software applications, algorithms, or automated processes, that interact with digital systems or services by initiating actions, consuming resources, or producing outputs. Users are characterized by their capacity to perform intentional actions within a digital environment, for which they can be held responsible.​\n\nUnlike E21 Person, which is limited to real or assumed human individuals, the class User encompasses a broader range of agents, including non-human actors that operate autonomously or semi-autonomously within digital contexts. This includes, but is not limited to, artificial intelligence models, automated scripts, and other algorithmic entities that engage with web services or digital platforms.​\n\nThe classification of an entity as a User does not necessitate legal personhood or consciousness; rather, it is based on the entity's functional role in interacting with digital systems in a manner that can be documented and attributed.​\n\nExamples:\n- A registered individual accessing an online museum catalog.​\n- An AI-driven recommendation engine suggesting artifacts to users.​\n- A software bot performing automated data curation tasks.​" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-13T16:18:33Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000003",
-      "lbl" : "Digital Artefact",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Scope note:\nThis class comprises identifiable immaterial items, such as digital images, texts, multimedia objects, computer program code, algorithms, or mathematical formulae, that are created, modified, or stored in digital formats. Digital Artefacts have an objectively recognizable structure and are documented as single units. They exist independently of specific physical carriers and can reside on multiple digital mediums simultaneously. While E73 Information Objects encompass a broad range of immaterial items, including those stored in human memory or on physical media, Digital Artefacts are specifically associated with digital technologies. This subclassification aids in distinguishing between general information entities and those uniquely tied to digital environments.​\n\nExamples:\n- A digital photograph of an ancient manuscript.​\n- A 3D model of an archaeological excavation site.​\n- The source code of a software application developed to catalog museum collections.​\n- A dataset containing measurements of physical artefacts." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-13T16:20:05Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000005",
-      "lbl" : "Historical Event",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-19T12:02:07Z"
-        }, {
-          "pred" : "http://purl.org/dc/terms/description",
-          "val" : "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods."
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000010",
-      "lbl" : "Social movement",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals\n\nScope note:\nA Social Movement is a loosely organized effort by a large group of people to achieve a particular set of goals, typically aiming to promote or resist changes in society's structure or values. These movements are characterized by collective action, where individuals unite based on shared beliefs or objectives, often seeking social, political, economic, or cultural transformations. ​\n\nSocial movements differ from formal organizations in that they may lack a defined organizational structure or formal membership, relying instead on informal networks and shared commitments. They can vary widely in size and scope, ranging from localized grassroots initiatives to large-scale national or international campaigns. The methods employed can include protests, demonstrations, advocacy, and other forms of collective action aimed at influencing public opinion and policy. ​\n\nExamples:\n- The Civil Rights Movement in the United States,\n- The Environmental Movement\n- The Feminist Movement,\n- The LGBTQ+ Rights Movement" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-19T12:50:33Z"
-        }, {
-          "pred" : "http://purl.org/dc/terms/description",
-          "val" : "From wikidata (Q49773): loosely organized effort by a large group of people to achieve a particular set of goals"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000011",
-      "lbl" : "Religious movement",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Wikidata: Q1826286, social and ideological movement in the religious sphere\n\nScope note:\nA Religious Movement is a collective effort by a group of people aiming to promote, reform, or resist changes within religious beliefs, practices, or institutions.\n\nExamples:\n- The Protestant Reformation in the 16th century, which led to significant changes in Christian practices and beliefs.​\n- The Charismatic Movement, emphasizing direct personal experience of God through baptism with the Holy Spirit.​\n- The New Age Movement, a broad range of spiritual or religious beliefs and practices that developed in the Western world during the 1970s." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-19T12:51:24Z"
-        }, {
-          "pred" : "http://purl.org/dc/terms/description",
-          "val" : "Wikidata: Q1826286, social and ideological movement in the religious sphere"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000012",
-      "lbl" : "Cultural movement",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Wikidata: Q2198855, period and movement in cultural history\n\nScope note:\nA Cultural Movement is a collective effort by loosely affiliated individuals aiming to transform societal perspectives through the dissemination of ideas via various art forms and intentional lifestyle choices. These movements often overlap with social and political movements, making them integral to broader cultural transformations. ​\n\nExamples:\n- The Renaissance\n- The Romanticism movement\n- The Alté Movement in Nigeria" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-19T12:51:32Z"
-        }, {
-          "pred" : "http://purl.org/dc/terms/description",
-          "val" : "Wikidata: Q2198855, period and movement in cultural history"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000013",
-      "lbl" : "Political movement",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Wikidata: Q2738074, movement to obtain a political goal\n\nScope note:\nA Political Movement is a collective effort by a group of people aiming to influence government policy, social values, or achieve specific political objectives. These movements are typically organized around particular issues or ideologies and seek to bring about change within the political system. They differ from political parties, which aim to gain political office, by focusing on specific goals rather than seeking electoral power. ​\n\nExamples:\n- The Anti-Apartheid Movement, which campaigned against the system of racial segregation in South Africa.​\n- The Tea Party Movement in the United States, advocating for reduced government spending and taxation.​\n- The Brexit Movement, which sought the United Kingdom's withdrawal from the European Union." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-11-19T12:51:42Z"
-        }, {
-          "pred" : "http://purl.org/dc/terms/description",
-          "val" : "Wikidata: Q2738074, movement to obtain a political goal"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000014",
-      "lbl" : "Domain",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Scope note:\nThis class comprises categories or fields of specialized knowledge, disciplines, or areas of expertise that are used to classify and contextualize instances of CIDOC CRM classes. Instances of Domain represent specific spheres of human thought or activity, providing a framework for understanding the context, provenance, or thematic classification of cultural heritage information.​\n\nThe Domain class serves as a means to associate cultural heritage entities with particular areas of study or professional practice, facilitating interdisciplinary research and knowledge organization. For example, associating an artifact with the domain of \"archaeology\" or \"art history\" helps in understanding its scholarly context and the methodologies applied to its study.​\n\nExamples:\n- Archaeology​\n- Art History​\n- Ethnomusicology​\n- Conservation Science" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-12-06T13:27:25Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000015",
-      "lbl" : "Economic Relevance",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Scope note:\nEconomic Relevance pertains to concepts that define the economic significance or impact of entities, events, or activities. This class encompasses terms and categories used to classify and assess the economic aspects of cultural heritage items, historical events, or societal practices.\n\nExamples:\n- The economic impact of the Silk Road trade routes on participating civilizations.​\n- The assessment of a museum's collection in terms of its monetary value and contribution to tourism revenue.​\n- Analysis of the financial significance of a historical event, such as the Industrial Revolution, on global markets." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-12-06T13:30:25Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000016",
-      "lbl" : "Symbolism",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2024-12-06T13:43:53Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000020",
-      "lbl" : "Museum",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Scope note:\nThis class comprises organizations that are established to collect, preserve, research, interpret, and exhibit tangible and intangible cultural heritage for the purposes of education, study, and enjoyment. Museums operate as collective entities, often encompassing various departments and professionals, and may be public or private institutions.​\n\nAs instances of E74 Group, museums are characterized by their organizational structure and collective actions aimed at the stewardship of cultural artifacts and information. They may also engage in activities such as publishing, educational programming, and community outreach.​\n\nMuseums can vary widely in scope and specialization, including but not limited to art museums, history museums, science museums, and ethnographic museums. Their defining feature is the systematic curation and presentation of collections to the public or specific audiences.​\n\nExamples:\n- The British Museum​\n- The Louvre​\n- The Metropolitan Museum of Art​\n- The National Museum of Denmark" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-11T08:31:05Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000022",
-      "lbl" : "Artist",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Scope note:\nThis class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).\n\nArtists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.\n\nIn bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.\n\nExamples:\n- Leonardo da Vinci\n- Frida Kahlo\n- William Shakespeare\n- Maya Deren" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-11T08:32:18Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000023",
-      "lbl" : "Physical Artefact",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Scope note:\nThis class comprises all persistent physical objects of any size that are purposely created by human activity and have physical boundaries that separate them completely in an objective way from other objects. The class also includes all aggregates of objects made for functional purposes of whatever kind, independent of physical coherence, such as a set of chessmen.​\n\nPhysical Artefacts are distinguished by their tangible nature and intentional creation, serving various purposes such as utility, artistic expression, or cultural significance. They may range from individual items like tools and artworks to assembled collections designed to function as a whole.​\n\nExamples:\n- The Rosetta Stone\n- LNER Class A4 4468 Mallard [the World’s fastest steam locomotive, preserved at the National Railway Museum of York, UK]\n- The Portland Vase" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-11T08:35:55Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000024",
-      "lbl" : "Artwork",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Scope note:\nThis class comprises physical artefacts that are primarily created as expressions of aesthetic, conceptual, or symbolic intent. Artworks encompass a wide range of tangible objects produced through artistic practices, including but not limited to paintings, sculptures, installations, and mixed-media pieces.​\n\nArtworks are distinguished by their purpose of conveying artistic expression, emotion, or commentary, rather than serving utilitarian functions. They are often characterized by their unique form, style, and the creative processes involved in their production.​\n\nWhile all artworks are physical artefacts, not all physical artefacts qualify as artworks; the classification depends on the creator's intent and the cultural context attributing artistic value to the object.​\nCIDOC CRM\n\nExamples:\n- The Mona Lisa by Leonardo da Vinci​\n- The Thinker by Auguste Rodin​\n- The Starry Night by Vincent van Gogh​\n- Balloon Dog (Red) by Jeff Koons" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-11T08:37:01Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000025",
-      "lbl" : "Instrument",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Scope note:\nThis class comprises physical artefacts that are intentionally created and utilized by humans to produce, modify, or measure sound, music, or other forms of audio. Instruments are designed with specific acoustic properties or mechanisms to facilitate the creation or manipulation of auditory phenomena. This includes, but is not limited to, musical instruments such as string, wind, percussion, and electronic instruments.​\n\nInstruments are characterized by their functional design aimed at generating or controlling sound, distinguishing them from other physical artefacts. They may vary in complexity from simple objects like drums and flutes to intricate devices like synthesizers and orchestral instruments.​\n\nExamples:\n- A Stradivarius violin​\n- A Steinway grand piano​\n- A traditional African djembe drum​\n- A Moog synthesizer" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-11T08:37:08Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000027",
-      "lbl" : "Genre",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Scope note:\nThe Genre class encompasses concepts that denote specific categories or styles of creative works, including but not limited to:​\n\n- Music Genres: Such as classical, jazz, rock, or electronic.​\n- Film Genres: Including drama, comedy, thriller, or documentary.​\n- Artistic Genres: Like impressionism, surrealism, or abstract expressionism.​\n- Literary Genres: Such as fiction, non-fiction, poetry, or drama.​\n\nInstances of the Genre class provide a means to classify and contextualize creative works within their respective domains, enhancing the discovery and analysis of cultural heritage materials based on their genre-specific characteristics.​\n\nExamples:\n- Jazz (music genre)​\n- Film Noir (film genre)​\n- Renaissance Art (artistic genre)​\n- Science Fiction (literary genre)" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-11T11:18:31Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000028",
-      "lbl" : "Field Of Work",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Scope note:\nThis class comprises concepts that denote areas of professional, academic, or creative activity in which individuals, groups, or organizations engage. Instances of Field of Work represent specific domains of expertise or practice, such as \"architecture,\" \"literature,\" or \"engineering,\" and are used to classify and contextualize the roles, contributions, or affiliations of persons within the CIDOC CRM framework.​\n\nBy associating persons with a Field of Work, one can provide semantic context regarding the nature of their activities or specializations. \n\nExamples:\n- Architecture​\n- Literature​\n- Engineering​\n- Performing Arts​" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-11T11:18:41Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000036",
-      "lbl" : "Movement",
-      "type" : "CLASS",
-      "meta" : {
-        "comments" : [ "Scope note:\nThis class comprises concepts that denote distinct movements or scenes in the realms of literature, art, science, or philosophy. It is used to classify and contextualize creative and intellectual currents by grouping together works or individuals according to shared aesthetics, ideologies, methodologies, or historical trends. \n\nExamples:\n- Impressionism\n- Romanticism\n- Modernism\n- Existentialism" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-12T09:17:34Z"
-        } ]
-      }
-    }, {
       "id" : "https://schema.org/AdministrativeArea",
       "lbl" : "AdministrativeArea",
       "type" : "CLASS",
@@ -2209,6 +2209,179 @@
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "https://schema.org/URL"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000017",
+      "lbl" : "genre",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an Entity with a particular Genre. The Genre is defined as a subclass of E55 Type and represents a category of artistic, stylistic, thematic, or aesthetic classification. Whether applied to an artist or a creative work, the property genre consistently indicates the genre within which the work or the artist’s creative output is situated. \n\nExamples:\n- An artist might be associated with the genre \"Impressionism\" to indicate that their body of work is typically aligned with this artistic style.\n- A painting (as a physical artefact) may be categorized under \"Portrait\" to denote the genre of the artwork." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-10T14:50:30Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000018",
+      "lbl" : "socialMovement",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an Entity with a specific Social Movement. A Social Movement is defined as a loosely organized effort by a large group of people to achieve a particular set of goals (e.g., political, cultural, or religious change). Through this property, one can record an artist’s participation in or influence from a social movement and, similarly, document how a creative work may be representative of or inspired by such a movement. \n\nExamples:\n- An artist (E21 Person) who was actively involved in the Civil Rights Movement might be linked via the movement property to that Social Movement.\n- A poster or photograph (E22 Physical Artefact) produced during a protest could be associated with the relevant Social Movement that motivated its creation." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-10T14:51:45Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000026",
+      "lbl" : "fieldOfWork",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property links an instance of an Actor (typically an instance of E21 Person) with a Field of Work, an element of the controlled vocabulary defined as a subclass of E55 Type. It is used to classify the professional or creative domain in which an Actor (especially an artist) is active. \n\nExamples:\n- An artist (E21 Person) might have a fieldOfWork assignment indicating they work in “Painting” (an instance of Field of Work).\n- A creator could be linked to the fieldOfWork “Sculpture” as well as “Mixed Media,” reflecting multiple areas of engagement." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-11T10:40:25Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000030",
+      "lbl" : "height",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000031",
+      "lbl" : "width",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000032",
+      "lbl" : "diameter",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000033",
+      "lbl" : "thickness",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000034",
+      "lbl" : "length",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:12:56Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000035",
+      "lbl" : "movement",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "", "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an entity,such as a person (e.g., an artist) or a physical artefact (e.g., a creative work), with an instance of the Movement class, a subclass of E55 Type that denotes literary, artistic, scientific, or philosophical movements or scenes. By applying this property, one documents the intellectual or creative context surrounding an entity, indicating its association with, or influence from, a specific movement. \n\nExamples:\n- An artist might be associated with the movement Modernism.\n- A painting might be linked to the artistic movement Impressionism.\n- A literary work might be classified under the movement Romanticism." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T09:16:19Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000038",
+      "lbl" : "website",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T10:00:52Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000039",
+      "lbl" : "europeana",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T10:00:52Z"
+        } ]
+      }
+    }, {
+      "id" : "http://w3id.org/cacao/CACAO_0000040",
+      "lbl" : "partner",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Scope note:\nThe property partner denotes that an Actor has committed to a partnership with another Actor." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-0905-7033"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2025-04-12T10:13:16Z"
         } ]
       }
     }, {
@@ -5484,179 +5657,6 @@
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#note",
           "val" : "This property MUST only be used for Logical Constraints, and the list of operand values MUST be Constraint instances."
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000017",
-      "lbl" : "genre",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "comments" : [ "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an Entity with a particular Genre. The Genre is defined as a subclass of E55 Type and represents a category of artistic, stylistic, thematic, or aesthetic classification. Whether applied to an artist or a creative work, the property genre consistently indicates the genre within which the work or the artist’s creative output is situated. \n\nExamples:\n- An artist might be associated with the genre \"Impressionism\" to indicate that their body of work is typically aligned with this artistic style.\n- A painting (as a physical artefact) may be categorized under \"Portrait\" to denote the genre of the artwork." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-10T14:50:30Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000018",
-      "lbl" : "socialMovement",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "comments" : [ "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an Entity with a specific Social Movement. A Social Movement is defined as a loosely organized effort by a large group of people to achieve a particular set of goals (e.g., political, cultural, or religious change). Through this property, one can record an artist’s participation in or influence from a social movement and, similarly, document how a creative work may be representative of or inspired by such a movement. \n\nExamples:\n- An artist (E21 Person) who was actively involved in the Civil Rights Movement might be linked via the movement property to that Social Movement.\n- A poster or photograph (E22 Physical Artefact) produced during a protest could be associated with the relevant Social Movement that motivated its creation." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-10T14:51:45Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000026",
-      "lbl" : "fieldOfWork",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "comments" : [ "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property links an instance of an Actor (typically an instance of E21 Person) with a Field of Work, an element of the controlled vocabulary defined as a subclass of E55 Type. It is used to classify the professional or creative domain in which an Actor (especially an artist) is active. \n\nExamples:\n- An artist (E21 Person) might have a fieldOfWork assignment indicating they work in “Painting” (an instance of Field of Work).\n- A creator could be linked to the fieldOfWork “Sculpture” as well as “Mixed Media,” reflecting multiple areas of engagement." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-11T10:40:25Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000030",
-      "lbl" : "height",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-12T09:12:56Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000031",
-      "lbl" : "width",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-12T09:12:56Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000032",
-      "lbl" : "diameter",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-12T09:12:56Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000033",
-      "lbl" : "thickness",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-12T09:12:56Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000034",
-      "lbl" : "length",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-12T09:12:56Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000035",
-      "lbl" : "movement",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "comments" : [ "", "Quantification: Many-to-many (0,n: 0,n)\n\nScope note:\nThis property associates an entity,such as a person (e.g., an artist) or a physical artefact (e.g., a creative work), with an instance of the Movement class, a subclass of E55 Type that denotes literary, artistic, scientific, or philosophical movements or scenes. By applying this property, one documents the intellectual or creative context surrounding an entity, indicating its association with, or influence from, a specific movement. \n\nExamples:\n- An artist might be associated with the movement Modernism.\n- A painting might be linked to the artistic movement Impressionism.\n- A literary work might be classified under the movement Romanticism." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-12T09:16:19Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000038",
-      "lbl" : "website",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-12T10:00:52Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000039",
-      "lbl" : "europeana",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-12T10:00:52Z"
-        } ]
-      }
-    }, {
-      "id" : "https://reevaluate.eu/cacao/ns/CACAO_0000040",
-      "lbl" : "partner",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "comments" : [ "Scope note:\nThe property partner denotes that an Actor has committed to a partnership with another Actor." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-0905-7033"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2025-04-12T10:13:16Z"
         } ]
       }
     }, {
@@ -10829,6 +10829,10 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
+      "id" : "http://purl.org/dc/elements/1.1/source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.org/dc/elements/1.1/title",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -10897,6 +10901,86 @@
       "propertyType" : "ANNOTATION"
     } ],
     "edges" : [ {
+      "sub" : "http://w3id.org/cacao/CACAO_0000002",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000002",
+      "pred" : "is_a",
+      "obj" : "http://www.w3.org/ns/odrl/2/Party"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000003",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000005",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000010",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000011",
+      "pred" : "is_a",
+      "obj" : "http://w3id.org/cacao/CACAO_0000010"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000012",
+      "pred" : "is_a",
+      "obj" : "http://w3id.org/cacao/CACAO_0000010"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000013",
+      "pred" : "is_a",
+      "obj" : "http://w3id.org/cacao/CACAO_0000010"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000014",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000015",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000016",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000020",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E74_Group"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000022",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000022",
+      "pred" : "is_a",
+      "obj" : "https://schema.org/Person"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000023",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000024",
+      "pred" : "is_a",
+      "obj" : "http://w3id.org/cacao/CACAO_0000023"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000025",
+      "pred" : "is_a",
+      "obj" : "http://w3id.org/cacao/CACAO_0000023"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000027",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000028",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000036",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    }, {
       "sub" : "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment",
       "pred" : "is_a",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
@@ -10928,6 +11012,10 @@
       "sub" : "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
       "pred" : "is_a",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    }, {
+      "sub" : "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
+      "pred" : "is_a",
+      "obj" : "http://www.w3.org/ns/odrl/2/Party"
     }, {
       "sub" : "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
       "pred" : "is_a",
@@ -11077,6 +11165,10 @@
       "pred" : "is_a",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
     }, {
+      "sub" : "http://www.cidoc-crm.org/cidoc-crm/E74_Group",
+      "pred" : "is_a",
+      "obj" : "http://www.w3.org/ns/odrl/2/Party"
+    }, {
       "sub" : "http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item",
       "pred" : "is_a",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
@@ -11153,6 +11245,14 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/ns/odrl/2/Policy"
     }, {
+      "sub" : "http://www.w3.org/ns/odrl/2/Party",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item"
+    }, {
+      "sub" : "http://www.w3.org/ns/odrl/2/PartyCollection",
+      "pred" : "is_a",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    }, {
       "sub" : "http://www.w3.org/ns/odrl/2/PartyCollection",
       "pred" : "is_a",
       "obj" : "http://www.w3.org/ns/odrl/2/Party"
@@ -11201,82 +11301,6 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/ns/odrl/2/Policy"
     }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000002",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000003",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000005",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000010",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000011",
-      "pred" : "is_a",
-      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000010"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000012",
-      "pred" : "is_a",
-      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000010"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000013",
-      "pred" : "is_a",
-      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000010"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000014",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000015",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000016",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000020",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E74_Group"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000022",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000022",
-      "pred" : "is_a",
-      "obj" : "https://schema.org/Person"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000023",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000024",
-      "pred" : "is_a",
-      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000023"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000025",
-      "pred" : "is_a",
-      "obj" : "https://reevaluate.eu/cacao/ns/CACAO_0000023"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000027",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000028",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000036",
-      "pred" : "is_a",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
-    }, {
       "sub" : "https://schema.org/AdministrativeArea",
       "pred" : "is_a",
       "obj" : "https://schema.org/Place"
@@ -11316,6 +11340,10 @@
       "sub" : "https://schema.org/Person",
       "pred" : "is_a",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    }, {
+      "sub" : "https://schema.org/Person",
+      "pred" : "is_a",
+      "obj" : "http://www.w3.org/ns/odrl/2/Party"
     }, {
       "sub" : "https://schema.org/Person",
       "pred" : "is_a",
@@ -13301,6 +13329,46 @@
       "pred" : "https://schema.org/supersededBy",
       "obj" : "https://schema.org/warranty"
     }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000026",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000030",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000031",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000032",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000033",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000034",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000035",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000038",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000039",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
+    }, {
+      "sub" : "http://w3id.org/cacao/CACAO_0000040",
+      "pred" : "subPropertyOf",
+      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    }, {
       "sub" : "http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of",
       "pred" : "subPropertyOf",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/P93_took_out_of_existence"
@@ -13529,46 +13597,6 @@
       "pred" : "subPropertyOf",
       "obj" : "http://www.w3.org/ns/odrl/2/operand"
     }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000026",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000030",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000031",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000032",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000033",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000034",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000035",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000038",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000039",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
-    }, {
-      "sub" : "https://reevaluate.eu/cacao/ns/CACAO_0000040",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-    }, {
       "sub" : "http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of",
       "pred" : "inverseOf",
       "obj" : "http://www.cidoc-crm.org/cidoc-crm/P100i_died_in"
@@ -13732,10 +13760,33 @@
       "representativeNodeId" : "http://www.cidoc-crm.org/cidoc-crm/E30_Right",
       "nodeIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E30_Right", "http://www.w3.org/ns/odrl/2/Policy" ]
     }, {
+      "representativeNodeId" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
+      "nodeIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor", "http://www.w3.org/ns/odrl/2/Party" ]
+    }, {
       "representativeNodeId" : "http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object",
       "nodeIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object", "http://www.w3.org/ns/odrl/2/Asset" ]
     } ],
     "domainRangeAxioms" : [ {
+      "predicateId" : "http://w3id.org/cacao/CACAO_0000017",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
+      "rangeClassIds" : [ "http://w3id.org/cacao/CACAO_0000027" ]
+    }, {
+      "predicateId" : "http://w3id.org/cacao/CACAO_0000018",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
+      "rangeClassIds" : [ "http://w3id.org/cacao/CACAO_0000010" ]
+    }, {
+      "predicateId" : "http://w3id.org/cacao/CACAO_0000026",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ],
+      "rangeClassIds" : [ "http://w3id.org/cacao/CACAO_0000028" ]
+    }, {
+      "predicateId" : "http://w3id.org/cacao/CACAO_0000035",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
+      "rangeClassIds" : [ "http://w3id.org/cacao/CACAO_0000036" ]
+    }, {
+      "predicateId" : "http://w3id.org/cacao/CACAO_0000040",
+      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ],
+      "rangeClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ]
+    }, {
       "predicateId" : "http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of",
       "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E69_Death" ],
       "rangeClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E21_Person" ]
@@ -13785,7 +13836,7 @@
       "rangeClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E74_Group" ]
     }, {
       "predicateId" : "http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator",
-      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding", "https://reevaluate.eu/cacao/ns/CACAO_0000020" ],
+      "domainClassIds" : [ "http://w3id.org/cacao/CACAO_0000020", "http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding" ],
       "rangeClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ]
     }, {
       "predicateId" : "http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of",
@@ -14125,26 +14176,6 @@
     }, {
       "predicateId" : "http://www.w3.org/ns/odrl/2/rightOperand",
       "domainClassIds" : [ "http://www.w3.org/ns/odrl/2/Constraint" ]
-    }, {
-      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000017",
-      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
-      "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000027" ]
-    }, {
-      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000018",
-      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
-      "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000010" ]
-    }, {
-      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000026",
-      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ],
-      "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000028" ]
-    }, {
-      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000035",
-      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity" ],
-      "rangeClassIds" : [ "https://reevaluate.eu/cacao/ns/CACAO_0000036" ]
-    }, {
-      "predicateId" : "https://reevaluate.eu/cacao/ns/CACAO_0000040",
-      "domainClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ],
-      "rangeClassIds" : [ "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" ]
     }, {
       "predicateId" : "https://schema.org/description",
       "domainClassIds" : [ "https://schema.org/Thing" ]

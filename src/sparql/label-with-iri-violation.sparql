@@ -4,6 +4,6 @@ SELECT ?term ?value
 WHERE {
   ?term rdfs:label ?value .
   FILTER (REGEX(?value, "http[s]?[:]"))
-  FILTER(isIRI(?term) && (STRSTARTS(str(?term), "https://reevaluate.eu/cacao/ns/CACAO_")))
+  FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://w3id.org/cacao/CACAO_")))
 }
 

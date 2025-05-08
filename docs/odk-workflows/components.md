@@ -17,20 +17,20 @@ components:
 3) Add the component to your catalog file (src/ontology/catalog-v001.xml)
 
 ```
-  <uri name="https://reevaluate.eu/cacao/ns/cacao/components/your-component-name.owl" uri="components/your-component-name.owl"/>
+  <uri name="http://w3id.org/cacao/cacao/components/your-component-name.owl" uri="components/your-component-name.owl"/>
 ```
 
 4) Add the component to the edit file (src/ontology/cacao-edit.obo)
 for .obo formats: 
 
 ```
-import: https://reevaluate.eu/cacao/ns/cacao/components/your-component-name.owl
+import: http://w3id.org/cacao/cacao/components/your-component-name.owl
 ```
 
 for .owl formats: 
 
 ```
-Import(<https://reevaluate.eu/cacao/ns/cacao/components/your-component-name.owl>)
+Import(<http://w3id.org/cacao/cacao/components/your-component-name.owl>)
 ```
 
 5) Refresh your repo by running `sh run.sh make update_repo` - this should create a new file in src/ontology/components.
