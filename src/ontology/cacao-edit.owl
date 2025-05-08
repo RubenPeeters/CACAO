@@ -18,8 +18,23 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Cultural Artefact Contextual Ontology")
 
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000002>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000003>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000005>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000010>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000011>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000012>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000013>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000014>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000015>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000016>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000020>))
 Declaration(Class(<http://w3id.org/cacao/CACAO_0000022>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000023>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000024>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000025>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000027>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000028>))
+Declaration(Class(<http://w3id.org/cacao/CACAO_0000036>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E21_Person>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E30_Right>))
@@ -31,22 +46,10 @@ Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>))
 Declaration(Class(<http://www.cidoc-crm.org/cidoc-crm/E74_Group>))
 Declaration(Class(<http://www.w3.org/ns/odrl/2/Asset>))
 Declaration(Class(<http://www.w3.org/ns/odrl/2/Policy>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000003>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000010>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000011>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000012>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000013>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000014>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000015>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000016>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000020>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000023>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000024>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000025>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000027>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000028>))
-Declaration(Class(<http://w3id.org/cacao/CACAO_0000036>))
 Declaration(Class(<https://schema.org/Person>))
+Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000000>))
+Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000001>))
+Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000004>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000017>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000018>))
 Declaration(ObjectProperty(<http://w3id.org/cacao/CACAO_0000026>))
@@ -85,9 +88,26 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Object Properties
 ############################
 
-# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> (P109 έχει ή είχε επιμελητή)
+# Object Property: <http://w3id.org/cacao/CACAO_0000000> (hasDomain)
 
-ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> <http://w3id.org/cacao/CACAO_0000020>)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000000> "hasDomain"@en)
+SubObjectPropertyOf(<http://w3id.org/cacao/CACAO_0000000> owl:topObjectProperty)
+ObjectPropertyDomain(<http://w3id.org/cacao/CACAO_0000000> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
+ObjectPropertyRange(<http://w3id.org/cacao/CACAO_0000000> <http://w3id.org/cacao/CACAO_0000014>)
+
+# Object Property: <http://w3id.org/cacao/CACAO_0000001> (hasEconomicRelevance)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000001> "hasEconomicRelevance"@en)
+SubObjectPropertyOf(<http://w3id.org/cacao/CACAO_0000001> owl:topObjectProperty)
+ObjectPropertyDomain(<http://w3id.org/cacao/CACAO_0000001> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity>)
+ObjectPropertyRange(<http://w3id.org/cacao/CACAO_0000001> <http://w3id.org/cacao/CACAO_0000015>)
+
+# Object Property: <http://w3id.org/cacao/CACAO_0000004> (hasSymbolism)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000004> "hasSymbolism"@en)
+SubObjectPropertyOf(<http://w3id.org/cacao/CACAO_0000004> owl:topObjectProperty)
+ObjectPropertyDomain(<http://w3id.org/cacao/CACAO_0000004> <http://www.cidoc-crm.org/cidoc-crm/E70_Thing>)
+ObjectPropertyRange(<http://w3id.org/cacao/CACAO_0000004> <http://w3id.org/cacao/CACAO_0000016>)
 
 # Object Property: <http://w3id.org/cacao/CACAO_0000017> (genre)
 
@@ -218,6 +238,10 @@ SubObjectPropertyOf(<http://w3id.org/cacao/CACAO_0000040> owl:topObjectProperty)
 ObjectPropertyDomain(<http://w3id.org/cacao/CACAO_0000040> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 ObjectPropertyRange(<http://w3id.org/cacao/CACAO_0000040> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 
+# Object Property: <http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> (P109 έχει ή είχε επιμελητή)
+
+ObjectPropertyDomain(<http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator> <http://w3id.org/cacao/CACAO_0000020>)
+
 
 
 ############################
@@ -242,49 +266,6 @@ Examples:
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000002> "User"@en)
 SubClassOf(<http://w3id.org/cacao/CACAO_0000002> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor>)
 
-# Class: <http://w3id.org/cacao/CACAO_0000005> (Historical Event)
-
-AnnotationAssertion(dcterms:contributor <http://w3id.org/cacao/CACAO_0000005> <https://orcid.org/0000-0002-0905-7033>)
-AnnotationAssertion(dcterms:date <http://w3id.org/cacao/CACAO_0000005> "2024-11-19T12:02:07Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:description <http://w3id.org/cacao/CACAO_0000005> "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.")
-AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000005> "Historical Event"@en)
-SubClassOf(<http://w3id.org/cacao/CACAO_0000005> <http://www.cidoc-crm.org/cidoc-crm/E5_Event>)
-
-# Class: <http://w3id.org/cacao/CACAO_0000022> (Artist)
-
-AnnotationAssertion(dcterms:contributor <http://w3id.org/cacao/CACAO_0000022> <https://orcid.org/0000-0002-0905-7033>)
-AnnotationAssertion(dcterms:date <http://w3id.org/cacao/CACAO_0000022> "2025-04-11T08:32:18Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:comment <http://w3id.org/cacao/CACAO_0000022> "Scope note:
-This class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).
-
-Artists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.
-
-In bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.
-
-Examples:
-- Leonardo da Vinci
-- Frida Kahlo
-- William Shakespeare
-- Maya Deren"@en)
-AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000022> "Artist"@en)
-SubClassOf(<http://w3id.org/cacao/CACAO_0000022> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
-
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E21_Person> (E21 Person)
-
-EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <https://schema.org/Person>)
-
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E30_Right> (E30 权限)
-
-EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E30_Right> <http://www.w3.org/ns/odrl/2/Policy>)
-
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> (E39 Дeйствующий Субъeкт)
-
-EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E39_Actor> <http://www.w3.org/ns/odrl/2/Party>)
-
-# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Объeкт Права)
-
-EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/ns/odrl/2/Asset>)
-
 # Class: <http://w3id.org/cacao/CACAO_0000003> (Digital Artefact)
 
 AnnotationAssertion(dcterms:contributor <http://w3id.org/cacao/CACAO_0000003> <https://orcid.org/0000-0002-0905-7033>)
@@ -299,6 +280,14 @@ Examples:
 - A dataset containing measurements of physical artefacts."@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000003> "Digital Artefact"@en)
 SubClassOf(<http://w3id.org/cacao/CACAO_0000003> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object>)
+
+# Class: <http://w3id.org/cacao/CACAO_0000005> (Historical Event)
+
+AnnotationAssertion(dcterms:contributor <http://w3id.org/cacao/CACAO_0000005> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://w3id.org/cacao/CACAO_0000005> "2024-11-19T12:02:07Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:description <http://w3id.org/cacao/CACAO_0000005> "A specialized version of E5_Event, where we only refer to events with historical value. Historical value reflects the role that the heritage item has played in a broader historical narrative, offering insights into cultural, political, social, or technological contexts of specific periods.")
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000005> "Historical Event"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000005> <http://www.cidoc-crm.org/cidoc-crm/E5_Event>)
 
 # Class: <http://w3id.org/cacao/CACAO_0000010> (Social movement)
 
@@ -428,6 +417,25 @@ Examples:
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000020> "Museum"@en)
 SubClassOf(<http://w3id.org/cacao/CACAO_0000020> <http://www.cidoc-crm.org/cidoc-crm/E74_Group>)
 
+# Class: <http://w3id.org/cacao/CACAO_0000022> (Artist)
+
+AnnotationAssertion(dcterms:contributor <http://w3id.org/cacao/CACAO_0000022> <https://orcid.org/0000-0002-0905-7033>)
+AnnotationAssertion(dcterms:date <http://w3id.org/cacao/CACAO_0000022> "2025-04-11T08:32:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://w3id.org/cacao/CACAO_0000022> "Scope note:
+This class comprises persons who are recognized for engaging in the creation or performance of works in the visual, performing, literary, or applied arts. This includes, but is not limited to, painters, sculptors, musicians, composers, writers, poets, actors, dancers, designers, and multimedia artists. An individual is regarded as an instance of Artist when there exists documented evidence of their engagement in artistic practices or when they are attributed with the authorship, performance, or conceptualization of artistic works, either by themselves or by third parties (such as curators, critics, or historical sources).
+
+Artists may be associated with specific cultural movements, artistic periods, or creative practices. The classification of a Person as an Artist does not require professional status or formal recognition; amateur and self-taught individuals are also included when their artistic activity is documented and contextually significant.
+
+In bibliographic or curatorial contexts, attribution of a creative work to an individual is sufficient to regard them as an Artist, even if the attribution is anonymous, pseudonymous, or contested.
+
+Examples:
+- Leonardo da Vinci
+- Frida Kahlo
+- William Shakespeare
+- Maya Deren"@en)
+AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000022> "Artist"@en)
+SubClassOf(<http://w3id.org/cacao/CACAO_0000022> <http://www.cidoc-crm.org/cidoc-crm/E21_Person>)
+
 # Class: <http://w3id.org/cacao/CACAO_0000023> (Physical Artefact)
 
 AnnotationAssertion(dcterms:contributor <http://w3id.org/cacao/CACAO_0000023> <https://orcid.org/0000-0002-0905-7033>)
@@ -534,6 +542,22 @@ Examples:
 - Existentialism"@en)
 AnnotationAssertion(rdfs:label <http://w3id.org/cacao/CACAO_0000036> "Movement"@en)
 SubClassOf(<http://w3id.org/cacao/CACAO_0000036> <http://www.cidoc-crm.org/cidoc-crm/E55_Type>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E21_Person> (E21 Person)
+
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <https://schema.org/Person>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E30_Right> (E30 权限)
+
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E30_Right> <http://www.w3.org/ns/odrl/2/Policy>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> (E39 Дeйствующий Субъeкт)
+
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E39_Actor> <http://www.w3.org/ns/odrl/2/Party>)
+
+# Class: <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> (E72 Νομικό Αντικείμενο)
+
+EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/ns/odrl/2/Asset>)
 
 
 )
