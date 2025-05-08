@@ -1,4 +1,4 @@
-Prefix(:=<https://reevaluate.eu/cacao/ns/cacao/imports/schema_import.owl#>)
+Prefix(:=<http://w3id.org/cacao/cacao/imports/schema_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,9 +6,9 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<https://reevaluate.eu/cacao/ns/cacao/imports/schema_import.owl>
-<https://reevaluate.eu/cacao/ns/cacao/releases/2025-04-27/imports/schema_import.owl>
-Annotation(owl:versionInfo "2025-04-27")
+Ontology(<http://w3id.org/cacao/cacao/imports/schema_import.owl>
+<http://w3id.org/cacao/cacao/releases/2025-05-08/imports/schema_import.owl>
+Annotation(owl:versionInfo "2025-05-08")
 
 Declaration(Class(rdfs:Class))
 Declaration(Class(<https://schema.org/AdministrativeArea>))

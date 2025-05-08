@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                f8d02a0b9b3c19f39e33a6dbd5d6b5f61c95d23e9c2ba7cf1d7bbb20dfc1021d
+CONFIG_HASH=                bef2f74d013b62248ab88df9a66901225b9b54f3d9abfb040c6ee3033dc735cb
 
 
 # ----------------------------------------
@@ -19,9 +19,9 @@ CONFIG_HASH=                f8d02a0b9b3c19f39e33a6dbd5d6b5f61c95d23e9c2ba7cf1d7b
 # these can be overwritten on the command line
 
 OBOBASE=                    http://purl.obolibrary.org/obo
-URIBASE=                    https://reevaluate.eu/cacao/ns
+URIBASE=                    http://w3id.org/cacao
 ONT=                        cacao
-ONTBASE=                    https://reevaluate.eu/cacao/ns/cacao
+ONTBASE=                    http://w3id.org/cacao/cacao
 EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
 MAKE_FAST=                  $(MAKE) IMP=false PAT=false COMP=false MIR=false
