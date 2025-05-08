@@ -18,7 +18,7 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
 
-site_url: https://REEVALUATE.github.io/CACAO/
+site_url: http://w3id.org/cacao
 repo_url: https://github.com/REEVALUATE/CACAO/
 
 nav:
