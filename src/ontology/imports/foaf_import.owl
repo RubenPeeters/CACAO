@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://w3id.org/cacao/cacao/imports/foaf_import.owl>
-<http://w3id.org/cacao/cacao/releases/2025-05-08/imports/foaf_import.owl>
-Annotation(owl:versionInfo "2025-05-08")
+<http://w3id.org/cacao/cacao/releases/2025-05-11/imports/foaf_import.owl>
+Annotation(owl:versionInfo "2025-05-11")
 
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
