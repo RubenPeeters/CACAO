@@ -1,0 +1,26 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://www.cidoc-crm.org/cidoc-crm/E55_Type" "http://w3id.org/cacao/CACAO_0000023" "http://www.cidoc-crm.org/cidoc-crm/E21_Person" "http://www.cidoc-crm.org/cidoc-crm/E74_Group" "http://w3id.org/cacao/CACAO_0000011" "http://w3id.org/cacao/CACAO_0000016" "http://w3id.org/cacao/CACAO_0000003" "https://schema.org/Person" "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object" "http://w3id.org/cacao/CACAO_0000028" "http://w3id.org/cacao/CACAO_0000013" "http://w3id.org/cacao/CACAO_0000010" "http://w3id.org/cacao/CACAO_0000022" "http://w3id.org/cacao/CACAO_0000005" "http://w3id.org/cacao/CACAO_0000014" "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" "http://w3id.org/cacao/CACAO_0000027" "http://w3id.org/cacao/CACAO_0000020" "http://w3id.org/cacao/CACAO_0000002" "http://w3id.org/cacao/CACAO_0000012" "http://w3id.org/cacao/CACAO_0000015" "http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object" "http://w3id.org/cacao/CACAO_0000024" "http://www.cidoc-crm.org/cidoc-crm/E5_Event" "http://w3id.org/cacao/CACAO_0000025" "http://w3id.org/cacao/CACAO_0000036" "http://www.w3.org/ns/odrl/2/Party" ; /*classes style*/
+	"http://w3id.org/cacao/CACAO_0000020" -> "http://www.cidoc-crm.org/cidoc-crm/E74_Group" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000010" -> "http://www.cidoc-crm.org/cidoc-crm/E55_Type" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000016" -> "http://www.cidoc-crm.org/cidoc-crm/E55_Type" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000025" -> "http://w3id.org/cacao/CACAO_0000023" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000015" -> "http://www.cidoc-crm.org/cidoc-crm/E55_Type" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000024" -> "http://w3id.org/cacao/CACAO_0000023" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000005" -> "http://www.cidoc-crm.org/cidoc-crm/E5_Event" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000014" -> "http://www.cidoc-crm.org/cidoc-crm/E55_Type" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000023" -> "http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000013" -> "http://w3id.org/cacao/CACAO_0000010" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000022" -> "https://schema.org/Person" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000022" -> "http://www.cidoc-crm.org/cidoc-crm/E21_Person" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000028" -> "http://www.cidoc-crm.org/cidoc-crm/E55_Type" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000003" -> "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000012" -> "http://w3id.org/cacao/CACAO_0000010" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000027" -> "http://www.cidoc-crm.org/cidoc-crm/E55_Type" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000002" -> "http://www.w3.org/ns/odrl/2/Party" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000002" -> "http://www.cidoc-crm.org/cidoc-crm/E39_Actor" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000036" -> "http://www.cidoc-crm.org/cidoc-crm/E55_Type" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000011" -> "http://w3id.org/cacao/CACAO_0000010" [ label = "rdfs:subClassOf" ];
+
+}

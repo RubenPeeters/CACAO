@@ -1,0 +1,963 @@
+{
+  "@context" : {
+    "P94i_was_created_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P94i_was_created_by",
+      "@type" : "@id"
+    },
+    "trackingParty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/trackingParty",
+      "@type" : "@id"
+    },
+    "RightOperand" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/RightOperand"
+    },
+    "P50i_is_current_keeper_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P50i_is_current_keeper_of",
+      "@type" : "@id"
+    },
+    "P109_has_current_or_former_curator" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator",
+      "@type" : "@id"
+    },
+    "P44i_is_condition_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P44i_is_condition_of",
+      "@type" : "@id"
+    },
+    "P11i_participated_in" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in",
+      "@type" : "@id"
+    },
+    "URL" : {
+      "@id" : "https://schema.org/URL"
+    },
+    "E63_Beginning_of_Existence" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E63_Beginning_of_Existence"
+    },
+    "leftOperand" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/leftOperand",
+      "@type" : "@id"
+    },
+    "P49_has_former_or_current_keeper" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P49_has_former_or_current_keeper",
+      "@type" : "@id"
+    },
+    "P141i_was_assigned_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by",
+      "@type" : "@id"
+    },
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "CACAO_0000017" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000017",
+      "@type" : "@id"
+    },
+    "implies" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/implies",
+      "@type" : "@id"
+    },
+    "Privacy" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Privacy"
+    },
+    "P100i_died_in" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P100i_died_in",
+      "@type" : "@id"
+    },
+    "P94_has_created" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P94_has_created",
+      "@type" : "@id"
+    },
+    "E72_Legal_Object" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"
+    },
+    "P89i_contains" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+      "@type" : "@id"
+    },
+    "member" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#member"
+    },
+    "P11_had_participant" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant",
+      "@type" : "@id"
+    },
+    "DataType" : {
+      "@id" : "https://schema.org/DataType"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "CACAO_0000022" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000022"
+    },
+    "attributingParty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/attributingParty",
+      "@type" : "@id"
+    },
+    "P46_is_composed_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of",
+      "@type" : "@id"
+    },
+    "Duty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Duty"
+    },
+    "Request" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Request"
+    },
+    "P48i_is_preferred_identifier_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P48i_is_preferred_identifier_of",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "P52_has_current_owner" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner",
+      "@type" : "@id"
+    },
+    "Country" : {
+      "@id" : "https://schema.org/Country"
+    },
+    "Asset" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Asset"
+    },
+    "output" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/output",
+      "@type" : "@id"
+    },
+    "P107_has_current_or_former_member" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member",
+      "@type" : "@id"
+    },
+    "P129i_is_subject_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of",
+      "@type" : "@id"
+    },
+    "E39_Actor" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+    },
+    "P52i_is_current_owner_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P52i_is_current_owner_of",
+      "@type" : "@id"
+    },
+    "Organization" : {
+      "@id" : "http://schema.org/Organization"
+    },
+    "P92_brought_into_existence" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P92_brought_into_existence",
+      "@type" : "@id"
+    },
+    "E42_Identifier" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"
+    },
+    "Permission" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Permission"
+    },
+    "Thing" : {
+      "@id" : "https://schema.org/Thing"
+    },
+    "CACAO_0000020" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000020"
+    },
+    "CACAO_0000031" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000031",
+      "@type" : "@id"
+    },
+    "CACAO_0000032" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000032",
+      "@type" : "@id"
+    },
+    "compensatedParty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/compensatedParty",
+      "@type" : "@id"
+    },
+    "E54_Dimension" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+    },
+    "E70_Thing" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E70_Thing"
+    },
+    "contractedParty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/contractedParty",
+      "@type" : "@id"
+    },
+    "P46i_forms_part_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of",
+      "@type" : "@id"
+    },
+    "Offer" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Offer"
+    },
+    "E4_Period" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E4_Period"
+    },
+    "E64_End_of_Existence" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E64_End_of_Existence"
+    },
+    "Class" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "P140i_was_attributed_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by",
+      "@type" : "@id"
+    },
+    "E78_Curated_Holding" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding"
+    },
+    "CACAO_0000039" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000039",
+      "@type" : "@id"
+    },
+    "P7_took_place_at" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at",
+      "@type" : "@id"
+    },
+    "Agreement" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Agreement"
+    },
+    "E74_Group" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E74_Group"
+    },
+    "operator" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/operator",
+      "@type" : "@id"
+    },
+    "supersededBy" : {
+      "@id" : "https://schema.org/supersededBy",
+      "@type" : "@id"
+    },
+    "P4_has_time-span" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span",
+      "@type" : "@id"
+    },
+    "E7_Activity" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+    },
+    "CACAO_0000014" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000014"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Prohibition" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Prohibition"
+    },
+    "P109i_is_current_or_former_curator_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P109i_is_current_or_former_curator_of",
+      "@type" : "@id"
+    },
+    "E28_Conceptual_Object" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+    },
+    "CACAO_0000026" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000026",
+      "@type" : "@id"
+    },
+    "E3_Condition_State" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "P130_shows_features_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of",
+      "@type" : "@id"
+    },
+    "informedParty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/informedParty",
+      "@type" : "@id"
+    },
+    "MediaObject" : {
+      "@id" : "https://schema.org/MediaObject"
+    },
+    "LeftOperand" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/LeftOperand"
+    },
+    "P3_has_note" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P3_has_note"
+    },
+    "E77_Persistent_Item" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item"
+    },
+    "CACAO_0000023" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000023"
+    },
+    "P12_occurred_in_the_presence_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of",
+      "@type" : "@id"
+    },
+    "P55i_currently_holds" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P55i_currently_holds",
+      "@type" : "@id"
+    },
+    "P98_brought_into_life" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P98_brought_into_life",
+      "@type" : "@id"
+    },
+    "consequence" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/consequence",
+      "@type" : "@id"
+    },
+    "P107i_is_current_or_former_member_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of",
+      "@type" : "@id"
+    },
+    "assigner" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/assigner",
+      "@type" : "@id"
+    },
+    "P39_measured" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P39_measured",
+      "@type" : "@id"
+    },
+    "UndefinedTerm" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/UndefinedTerm"
+    },
+    "exactMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#exactMatch"
+    },
+    "operand" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/operand",
+      "@type" : "@id"
+    },
+    "P48_has_preferred_identifier" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier",
+      "@type" : "@id"
+    },
+    "AssetCollection" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/AssetCollection"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "E1_CRM_Entity" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+    },
+    "CACAO_0000038" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000038",
+      "@type" : "@id"
+    },
+    "P55_has_current_location" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P55_has_current_location",
+      "@type" : "@id"
+    },
+    "E35_Title" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E35_Title"
+    },
+    "P54_has_current_permanent_location" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P54_has_current_permanent_location",
+      "@type" : "@id"
+    },
+    "E67_Birth" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E67_Birth"
+    },
+    "CACAO_0000012" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000012"
+    },
+    "E58_Measurement_Unit" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"
+    },
+    "P49i_is_former_or_current_keeper_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P49i_is_former_or_current_keeper_of",
+      "@type" : "@id"
+    },
+    "notation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "P91i_is_unit_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P91i_is_unit_of",
+      "@type" : "@id"
+    },
+    "inheritFrom" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/inheritFrom",
+      "@type" : "@id"
+    },
+    "E73_Information_Object" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+    },
+    "P40i_was_observed_in" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P40i_was_observed_in",
+      "@type" : "@id"
+    },
+    "Agent" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    },
+    "CACAO_0000036" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000036"
+    },
+    "Ticket" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Ticket"
+    },
+    "P129_is_about" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P129_is_about",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "E19_Physical_Object" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object"
+    },
+    "E5_Event" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    },
+    "E21_Person" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
+    },
+    "Individual" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#Individual"
+    },
+    "Role" : {
+      "@id" : "https://schema.org/Role"
+    },
+    "Constraint" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Constraint"
+    },
+    "CACAO_0000027" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000027"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "P100_was_death_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P100_was_death_of",
+      "@type" : "@id"
+    },
+    "CACAO_0000010" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000010"
+    },
+    "E22_Human-Made_Object" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"
+    },
+    "P53i_is_former_or_current_location_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P53i_is_former_or_current_location_of",
+      "@type" : "@id"
+    },
+    "P50_has_current_keeper" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P50_has_current_keeper",
+      "@type" : "@id"
+    },
+    "CACAO_0000005" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000005"
+    },
+    "E52_Time-Span" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
+    },
+    "CreativeWork" : {
+      "@id" : "https://schema.org/CreativeWork"
+    },
+    "P138i_has_representation" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P138i_has_representation",
+      "@type" : "@id"
+    },
+    "CACAO_0000016" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000016"
+    },
+    "P104_is_subject_to" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P104_is_subject_to",
+      "@type" : "@id"
+    },
+    "partOf" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/partOf",
+      "@type" : "@id"
+    },
+    "failure" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/failure",
+      "@type" : "@id"
+    },
+    "E20_Biological_Object" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E20_Biological_Object"
+    },
+    "E71_Human-Made_Thing" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E71_Human-Made_Thing"
+    },
+    "conflict" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/conflict",
+      "@type" : "@id"
+    },
+    "or" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/or",
+      "@type" : "@id"
+    },
+    "P12i_was_present_at" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at",
+      "@type" : "@id"
+    },
+    "P75i_is_possessed_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P75i_is_possessed_by",
+      "@type" : "@id"
+    },
+    "rightOperand" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/rightOperand"
+    },
+    "P106i_forms_part_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P106i_forms_part_of",
+      "@type" : "@id"
+    },
+    "assigneeOf" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/assigneeOf",
+      "@type" : "@id"
+    },
+    "P93i_was_taken_out_of_existence_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P93i_was_taken_out_of_existence_by",
+      "@type" : "@id"
+    },
+    "contractingParty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/contractingParty",
+      "@type" : "@id"
+    },
+    "P53_has_former_or_current_location" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P53_has_former_or_current_location",
+      "@type" : "@id"
+    },
+    "action" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/action",
+      "@type" : "@id"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "P90_has_value" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P90_has_value"
+    },
+    "P104i_applies_to" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P104i_applies_to",
+      "@type" : "@id"
+    },
+    "hasPolicy" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/hasPolicy",
+      "@type" : "@id"
+    },
+    "permission" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/permission",
+      "@type" : "@id"
+    },
+    "obligation" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/obligation",
+      "@type" : "@id"
+    },
+    "attributedParty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/attributedParty",
+      "@type" : "@id"
+    },
+    "consentedParty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/consentedParty",
+      "@type" : "@id"
+    },
+    "Datatype" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    },
+    "CACAO_0000030" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000030",
+      "@type" : "@id"
+    },
+    "CACAO_0000002" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000002"
+    },
+    "trackedParty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/trackedParty",
+      "@type" : "@id"
+    },
+    "Place" : {
+      "@id" : "https://schema.org/Place"
+    },
+    "TextObject" : {
+      "@id" : "https://schema.org/TextObject"
+    },
+    "Specialty" : {
+      "@id" : "https://schema.org/Specialty"
+    },
+    "P93_took_out_of_existence" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P93_took_out_of_existence",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "CACAO_0000028" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000028"
+    },
+    "function" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/function",
+      "@type" : "@id"
+    },
+    "CACAO_0000033" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000033",
+      "@type" : "@id"
+    },
+    "includedIn" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/includedIn",
+      "@type" : "@id"
+    },
+    "refinement" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/refinement",
+      "@type" : "@id"
+    },
+    "E53_Place" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    },
+    "E90_Symbolic_Object" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"
+    },
+    "P91_has_unit" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P91_has_unit",
+      "@type" : "@id"
+    },
+    "Assertion" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Assertion"
+    },
+    "CACAO_0000015" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000015"
+    },
+    "and" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/and",
+      "@type" : "@id"
+    },
+    "P141_assigned" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P141_assigned",
+      "@type" : "@id"
+    },
+    "P44_has_condition" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P44_has_condition",
+      "@type" : "@id"
+    },
+    "consentingParty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/consentingParty",
+      "@type" : "@id"
+    },
+    "Property" : {
+      "@id" : "https://schema.org/Property"
+    },
+    "Rule" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Rule"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "dataType" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/dataType",
+      "@type" : "@id"
+    },
+    "assignee" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/assignee",
+      "@type" : "@id"
+    },
+    "P102_has_title" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P102_has_title",
+      "@type" : "@id"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "P89_falls_within" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+      "@type" : "@id"
+    },
+    "PartyScope" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/PartyScope"
+    },
+    "E33_Linguistic_Object" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"
+    },
+    "Operator" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Operator"
+    },
+    "P190_has_symbolic_content" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content"
+    },
+    "CACAO_0000011" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000011"
+    },
+    "P45_consists_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P45_consists_of",
+      "@type" : "@id"
+    },
+    "P1_is_identified_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "P102i_is_title_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P102i_is_title_of",
+      "@type" : "@id"
+    },
+    "E16_Measurement" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E16_Measurement"
+    },
+    "P105_right_held_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P105_right_held_by",
+      "@type" : "@id"
+    },
+    "anyURI" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "target" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/target",
+      "@type" : "@id"
+    },
+    "E65_Creation" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E65_Creation"
+    },
+    "E41_Appellation" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    },
+    "duty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/duty",
+      "@type" : "@id"
+    },
+    "CACAO_0000003" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000003"
+    },
+    "P51i_is_former_or_current_owner_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P51i_is_former_or_current_owner_of",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/terms/date"
+    },
+    "P130i_features_are_also_found_on" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on",
+      "@type" : "@id"
+    },
+    "Text" : {
+      "@id" : "https://schema.org/Text"
+    },
+    "CACAO_0000018" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000018",
+      "@type" : "@id"
+    },
+    "andSequence" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/andSequence",
+      "@type" : "@id"
+    },
+    "E2_Temporal_Entity" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity"
+    },
+    "Policy" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Policy"
+    },
+    "P105i_has_right_on" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P105i_has_right_on",
+      "@type" : "@id"
+    },
+    "broader" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broader"
+    },
+    "P4i_is_time-span_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P4i_is_time-span_of",
+      "@type" : "@id"
+    },
+    "E69_Death" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E69_Death"
+    },
+    "P14_carried_out_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by",
+      "@type" : "@id"
+    },
+    "E57_Material" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E57_Material"
+    },
+    "P7i_witnessed" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed",
+      "@type" : "@id"
+    },
+    "P92i_was_brought_into_existence_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P92i_was_brought_into_existence_by",
+      "@type" : "@id"
+    },
+    "CACAO_0000035" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000035",
+      "@type" : "@id"
+    },
+    "CACAO_0000025" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000025"
+    },
+    "Enumeration" : {
+      "@id" : "https://schema.org/Enumeration"
+    },
+    "Party" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Party"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "remedy" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/remedy",
+      "@type" : "@id"
+    },
+    "assignerOf" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/assignerOf",
+      "@type" : "@id"
+    },
+    "P67i_is_referred_to_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "P75_possesses" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P75_possesses",
+      "@type" : "@id"
+    },
+    "E89_Propositional_Object" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+    },
+    "CACAO_0000024" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000024"
+    },
+    "P138_represents" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P138_represents",
+      "@type" : "@id"
+    },
+    "CACAO_0000013" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000013"
+    },
+    "nationality" : {
+      "@id" : "https://schema.org/nationality",
+      "@type" : "@id"
+    },
+    "E24_Physical_Human-Made_Thing" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"
+    },
+    "CACAO_0000040" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000040",
+      "@type" : "@id"
+    },
+    "P106_is_composed_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of",
+      "@type" : "@id"
+    },
+    "Action" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Action"
+    },
+    "P98i_was_born" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P98i_was_born",
+      "@type" : "@id"
+    },
+    "ConflictTerm" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/ConflictTerm"
+    },
+    "compensatingParty" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/compensatingParty",
+      "@type" : "@id"
+    },
+    "E36_Visual_Item" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"
+    },
+    "AdministrativeArea" : {
+      "@id" : "https://schema.org/AdministrativeArea"
+    },
+    "P40_observed_dimension" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension",
+      "@type" : "@id"
+    },
+    "P54i_is_current_permanent_location_of" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P54i_is_current_permanent_location_of",
+      "@type" : "@id"
+    },
+    "P39i_was_measured_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P39i_was_measured_by",
+      "@type" : "@id"
+    },
+    "Intangible" : {
+      "@id" : "https://schema.org/Intangible"
+    },
+    "Literal" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "E18_Physical_Thing" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"
+    },
+    "E55_Type" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+    },
+    "LogicalConstraint" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/LogicalConstraint"
+    },
+    "prohibition" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/prohibition",
+      "@type" : "@id"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "P14i_performed" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P14i_performed",
+      "@type" : "@id"
+    },
+    "P1i_identifies" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P1i_identifies",
+      "@type" : "@id"
+    },
+    "P79_beginning_is_qualified_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P79_beginning_is_qualified_by"
+    },
+    "P45i_is_incorporated_in" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P45i_is_incorporated_in",
+      "@type" : "@id"
+    },
+    "PartyCollection" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/PartyCollection"
+    },
+    "description" : {
+      "@id" : "https://schema.org/description",
+      "@type" : "@id"
+    },
+    "P80_end_is_qualified_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P80_end_is_qualified_by"
+    },
+    "P140_assigned_attribute_to" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to",
+      "@type" : "@id"
+    },
+    "relation" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/relation",
+      "@type" : "@id"
+    },
+    "E92_Spacetime_Volume" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E92_Spacetime_Volume"
+    },
+    "E13_Attribute_Assignment" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"
+    },
+    "constraint" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/constraint",
+      "@type" : "@id"
+    },
+    "CACAO_0000034" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000034",
+      "@type" : "@id"
+    },
+    "Set" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/Set"
+    },
+    "xone" : {
+      "@id" : "http://www.w3.org/ns/odrl/2/xone",
+      "@type" : "@id"
+    },
+    "Collection" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+    },
+    "P67_refers_to" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to",
+      "@type" : "@id"
+    },
+    "P51_has_former_or_current_owner" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P51_has_former_or_current_owner",
+      "@type" : "@id"
+    },
+    "E30_Right" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/E30_Right"
+    }
+  }
+}
