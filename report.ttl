@@ -1,0 +1,184 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063FOAF_IMPORTOWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab foaf_import.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#FOAF_IMPORT.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1747071347063> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" .
+
+<http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
+        a       owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#entrySubject>
+        a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063CACAO-IDRANGESOWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab cacao-idranges.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#CACAO-IDRANGES.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1747071347063> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" .
+
+<http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+        a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063CACAO-EDITOWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab cacao-edit.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#CACAO-EDIT.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1747071347063> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" .
+
+rdfs:label  a   owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#reportDate>
+        a       owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#REPORT1747071347063>
+        a           <http://vocab.linkeddata.es/ontology/report#Report> ;
+        rdfs:label  "Report created on Mon May 12 19:35:47 CEST 2025" ;
+        <http://vocab.linkeddata.es/ontology/report#hasEntry>
+                <http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063SCHEMA_IMPORTOWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063FOAF_IMPORTOWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063CRM_IMPORTOWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063CACAO-IDRANGESOWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063CACAO-EDITOWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063HOMEAHMADREPOSPREVCLONE-BAS3CACAO-SIMPLEOWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063CATALOG-V001XML> , <http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063HOMEAHMADREPOSPREVCLONE-BAS3CACAO-FULLOWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063ODRL_IMPORTOWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063HOMEAHMADREPOSPREVCLONE-BAS3CACAOOWL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063HOMEAHMADREPOSPREVCLONE-BAS3CACAO-BASEOWL> ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsError>
+                "7" ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
+                "4" ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
+                "0" ;
+        <http://vocab.linkeddata.es/ontology/report#reportDate>
+                "Mon May 12 19:35:47 CEST 2025"^^xsd:dateTime .
+
+<http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+        a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#Error>
+        a       owl:Class .
+
+<http://vocab.linkeddata.es/ontology/report#Report>
+        a       owl:Class .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063HOMEAHMADREPOSPREVCLONE-BAS3CACAOOWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab /home/ahmad/repos/prevclone-BAs3/cacao.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-BAS3CACAO.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1747071347063> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#success" .
+
+<http://vocab.linkeddata.es/ontology/report#GENERICERROR>
+        a           <http://vocab.linkeddata.es/ontology/report#Error> ;
+        rdfs:label  "Error: the vocabulary could not be loaded or processed" .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063CATALOG-V001XML>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab catalog-v001.xml" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#CATALOG-V001.XML> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1747071347063> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063HOMEAHMADREPOSPREVCLONE-BAS3CACAO-BASEOWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab /home/ahmad/repos/prevclone-BAs3/cacao-base.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-BAS3CACAO-BASE.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1747071347063> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#success" .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063HOMEAHMADREPOSPREVCLONE-BAS3CACAO-FULLOWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab /home/ahmad/repos/prevclone-BAs3/cacao-full.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-BAS3CACAO-FULL.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1747071347063> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#success" .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063CRM_IMPORTOWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab crm_import.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#CRM_IMPORT.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1747071347063> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" .
+
+<http://vocab.linkeddata.es/ontology/report#numberVocabsError>
+        a       owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
+        a       owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#Entry>
+        a       owl:Class .
+
+<http://vocab.linkeddata.es/ontology/report#hasEntry>
+        a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063ODRL_IMPORTOWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab odrl_import.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#ODRL_IMPORT.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1747071347063> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" .
+
+<http://vocab.linkeddata.es/ontology/report#detectedProblem>
+        a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063HOMEAHMADREPOSPREVCLONE-BAS3CACAO-SIMPLEOWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab /home/ahmad/repos/prevclone-BAs3/cacao-simple.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#/HOMEAHMADREPOSPREVCLONE-BAS3CACAO-SIMPLE.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1747071347063> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#success" .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1747071347063SCHEMA_IMPORTOWL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab schema_import.owl" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#SCHEMA_IMPORT.OWL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1747071347063> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" .
