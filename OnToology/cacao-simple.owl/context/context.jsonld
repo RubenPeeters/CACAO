@@ -1,0 +1,148 @@
+{
+  "@context" : {
+    "P109_has_current_or_former_curator" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator",
+      "@type" : "@id"
+    },
+    "CACAO_0000017" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000017",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "CACAO_0000022" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000022"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "CACAO_0000020" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000020"
+    },
+    "CACAO_0000031" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000031",
+      "@type" : "@id"
+    },
+    "CACAO_0000032" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000032",
+      "@type" : "@id"
+    },
+    "CACAO_0000039" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000039",
+      "@type" : "@id"
+    },
+    "CACAO_0000014" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000014"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "CACAO_0000026" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000026",
+      "@type" : "@id"
+    },
+    "CACAO_0000023" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000023"
+    },
+    "CACAO_0000038" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000038",
+      "@type" : "@id"
+    },
+    "CACAO_0000012" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000012"
+    },
+    "notation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "CACAO_0000036" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000036"
+    },
+    "CACAO_0000027" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000027"
+    },
+    "CACAO_0000010" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000010"
+    },
+    "CACAO_0000005" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000005"
+    },
+    "CACAO_0000016" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000016"
+    },
+    "CACAO_0000030" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000030",
+      "@type" : "@id"
+    },
+    "CACAO_0000002" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000002"
+    },
+    "CACAO_0000028" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000028"
+    },
+    "CACAO_0000033" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000033",
+      "@type" : "@id"
+    },
+    "CACAO_0000015" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000015"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "CACAO_0000011" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000011"
+    },
+    "P1_is_identified_by" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
+      "@type" : "@id"
+    },
+    "CACAO_0000003" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000003"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/terms/date"
+    },
+    "CACAO_0000018" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000018",
+      "@type" : "@id"
+    },
+    "CACAO_0000035" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000035",
+      "@type" : "@id"
+    },
+    "CACAO_0000025" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000025"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "CACAO_0000024" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000024"
+    },
+    "CACAO_0000013" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000013"
+    },
+    "CACAO_0000040" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000040",
+      "@type" : "@id"
+    },
+    "P40_observed_dimension" : {
+      "@id" : "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension",
+      "@type" : "@id"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "CACAO_0000034" : {
+      "@id" : "http://w3id.org/cacao/CACAO_0000034",
+      "@type" : "@id"
+    }
+  }
+}

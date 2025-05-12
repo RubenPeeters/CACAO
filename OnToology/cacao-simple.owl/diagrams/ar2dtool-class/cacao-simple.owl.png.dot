@@ -1,0 +1,50 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://w3id.org/cacao/CACAO_0000023" "http://w3id.org/cacao/CACAO_0000011" "http://w3id.org/cacao/CACAO_0000016" "http://w3id.org/cacao/CACAO_0000003" "http://w3id.org/cacao/CACAO_0000028" "http://w3id.org/cacao/CACAO_0000013" "http://w3id.org/cacao/CACAO_0000010" "http://w3id.org/cacao/CACAO_0000022" "http://w3id.org/cacao/CACAO_0000005" "http://w3id.org/cacao/CACAO_0000014" "http://w3id.org/cacao/CACAO_0000027" "http://w3id.org/cacao/CACAO_0000020" "http://w3id.org/cacao/CACAO_0000002" "http://w3id.org/cacao/CACAO_0000012" "http://w3id.org/cacao/CACAO_0000015" "http://w3id.org/cacao/CACAO_0000024" "http://w3id.org/cacao/CACAO_0000025" "http://w3id.org/cacao/CACAO_0000036" ; /*classes style*/
+	"http://w3id.org/cacao/CACAO_0000017" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000020" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000026" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000035" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000010" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000016" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000025" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000034" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000034" -> "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension" [ label = "rdfs:subPropertyOf" ];
+	"http://w3id.org/cacao/CACAO_0000015" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000024" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000005" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000033" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000033" -> "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension" [ label = "rdfs:subPropertyOf" ];
+	"http://w3id.org/cacao/CACAO_0000039" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000039" -> "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by" [ label = "rdfs:subPropertyOf" ];
+	"http://w3id.org/cacao/CACAO_0000014" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000023" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000032" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000032" -> "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension" [ label = "rdfs:subPropertyOf" ];
+	"http://w3id.org/cacao/CACAO_0000038" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000038" -> "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by" [ label = "rdfs:subPropertyOf" ];
+	"http://w3id.org/cacao/CACAO_0000013" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000022" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000028" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000003" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000031" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000031" -> "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension" [ label = "rdfs:subPropertyOf" ];
+	"http://w3id.org/cacao/CACAO_0000012" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000018" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000040" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000027" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/cacao/cacao-simple.owl" -> "https://creativecommons.org/licenses/unspecified" [ label = "terms:license" ];
+	"http://w3id.org/cacao/cacao/cacao-simple.owl" -> "http://w3id.org/cacao/cacao/releases/2025-05-08/cacao-simple.owl" [ label = "owl:versionIRI" ];
+	"http://w3id.org/cacao/CACAO_0000002" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000030" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000030" -> "http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension" [ label = "rdfs:subPropertyOf" ];
+	"http://w3id.org/cacao/CACAO_0000036" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000011" -> "https://orcid.org/0000-0002-0905-7033" [ label = "terms:contributor" ];
+	"http://w3id.org/cacao/CACAO_0000020" -> "owl:Thing" [ label = "http://www.cidoc-crm.org/cidoc-crm/P109_has_current_or_former_curator" ];
+	"owl:Thing" -> "http://w3id.org/cacao/CACAO_0000036" [ label = "http://w3id.org/cacao/CACAO_0000035" ];
+	"owl:Thing" -> "http://w3id.org/cacao/CACAO_0000010" [ label = "http://w3id.org/cacao/CACAO_0000018" ];
+	"owl:Thing" -> "http://w3id.org/cacao/CACAO_0000027" [ label = "http://w3id.org/cacao/CACAO_0000017" ];
+	"owl:Thing" -> "http://w3id.org/cacao/CACAO_0000028" [ label = "http://w3id.org/cacao/CACAO_0000026" ];
+
+}

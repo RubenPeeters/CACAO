@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://w3id.org/cacao/CACAO_0000023" "http://w3id.org/cacao/CACAO_0000011" "http://w3id.org/cacao/CACAO_0000013" "http://w3id.org/cacao/CACAO_0000010" "http://w3id.org/cacao/CACAO_0000012" "http://w3id.org/cacao/CACAO_0000024" "http://w3id.org/cacao/CACAO_0000025" ; /*classes style*/
+	"http://w3id.org/cacao/CACAO_0000024" -> "http://w3id.org/cacao/CACAO_0000023" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000013" -> "http://w3id.org/cacao/CACAO_0000010" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000011" -> "http://w3id.org/cacao/CACAO_0000010" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000025" -> "http://w3id.org/cacao/CACAO_0000023" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/cacao/CACAO_0000012" -> "http://w3id.org/cacao/CACAO_0000010" [ label = "rdfs:subClassOf" ];
+
+}
